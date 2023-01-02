@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Arc Menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Arc Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-19 15:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Foivos Zakkak <foivos@zakkak.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Greek \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.js:42
+msgid "General"
+msgstr ""
+
+#: prefs.js:54
+msgid "Behaviour"
+msgstr "Συμπεριφορά"
+
+#: prefs.js:63
+msgid "Disable activities hot corner"
+msgstr "Απενεργοποίηση της πάνω αριστερής γωνίας"
+
+#: prefs.js:85
+msgid "Set menu hotkey"
+msgstr "Ορισμός συντόμευσης για το μενού"
+
+#: prefs.js:91
+msgid "Undefined"
+msgstr "Μη ενεργό"
+
+#: prefs.js:92
+msgid "Left Super Key"
+msgstr "Αριστερό πλήκτρο Super"
+
+#: prefs.js:93
+msgid "Right Super Key"
+msgstr "Δεξί πλήκτρο Super"
+
+#: prefs.js:105
+msgid "Enable custom menu keybinding"
+msgstr "Ενεργοποίηση εξατομικευμένης συντόμευσης για το μενού"
+
+#: prefs.js:112
+msgid "Syntax: <Shift>, <Ctrl>, <Alt>, <Super>"
+msgstr "Σύνταξη: <Shift>, <Ctrl>, <Alt>, <Super>"
+
+#: prefs.js:153
+msgid "Button appearance"
+msgstr "Εμφάνιση πλήκτρου"
+
+#: prefs.js:165
+msgid "Text for the menu button"
+msgstr "Κείμενο για το πλήκτρο του μενού"
+
+#: prefs.js:171
+msgid "System text"
+msgstr "Κείμενο για το \"Σύστημα\""
+
+#: prefs.js:174
+msgid "Custom text"
+msgstr "Εξατομικευμένο κείμενο"
+
+#: prefs.js:198
+msgid "Set custom text for the menu button"
+msgstr "Ορισμός εξατομικευμένου κειμένου για το πλήκτρο του μενού"
+
+#: prefs.js:218
+msgid "Enable the arrow icon beside the button text"
+msgstr "Ενεργοποίηση βέλους δίπλα στο κείμενο του πλήκτρου"
+
+#: prefs.js:240
+msgid "Select icon for the menu button"
+msgstr "Επιλογή εικονιδίου για το πλήκτρο μενού"
+
+#: prefs.js:250
+msgid "Please select an image icon"
+msgstr "Παρακαλώ επιλέξτε ένα εικονίδιο"
+
+#: prefs.js:255
+msgid "Arc Menu Icon"
+msgstr "Εικονίδιο Arc Menu"
+
+#: prefs.js:256
+msgid "System Icon"
+msgstr "Εικονίδιο για το \"Σύστημα\""
+
+#: prefs.js:257
+msgid "Custom Icon"
+msgstr "Εξατομικευμένο εικονίδιο"
+
+#: prefs.js:283
+msgid "Icon size"
+msgstr "Μέγεθος εικονιδίου"
+
+#: prefs.js:283
+msgid "default is"
+msgstr "Η προεπιλογή είναι"
+
+#: prefs.js:323
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+#: prefs.js:332
+msgid "Customize menu button appearance"
+msgstr "Εξατομίκευση εμφάνισης πλήκτρου μενού"
+
+#: prefs.js:342
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+#: prefs.js:343
+msgid "Text"
+msgstr "Κείμενο"
+
+#: prefs.js:344
+msgid "Icon and Text"
+msgstr "Εικονίδιο και Κείμενο"
+
+#: prefs.js:345
+msgid "Text and Icon"
+msgstr "Κείμενο και Εικονίδιο"
+
+#: prefs.js:370
+msgid "Menu position in panel"
+msgstr "Τοποθεσία μενού στο πάνελ"
+
+#: prefs.js:377
+msgid "Left"
+msgstr "Αριστερά"
+
+#: prefs.js:380
+msgid "Center"
+msgstr "Κέντρο"
+
+#: prefs.js:384
+msgid "Right"
+msgstr "Δεξιά"
+
+#: prefs.js:461
+msgid "About"
+msgstr "Σχετικά"
+
+#: prefs.js:490
+msgid "Arc-Menu"
+msgstr "Arc-Menu"
+
+#: prefs.js:495
+msgid "version: "
+msgstr "έκδοση"
+
+#: prefs.js:503
+msgid "GitLab Page"
+msgstr ""
+
+#: menu.js:272
+msgid "Home"
+msgstr "Αρχικός φάκελος"
+
+#: menu.js:456 menu.js:461
+msgid "Software"
+msgstr "Λογισμικό"
+
+#: menu.js:466
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: menu.js:471
+msgid "Tweak Tool"
+msgstr "Tweak Tool"
+
+#: menu.js:476
+#, fuzzy
+msgid "Tweaks"
+msgstr "Tweak Tool"
+
+#: menu.js:481
+msgid "Terminal"
+msgstr ""
+
+#: menuWidgets.js:86
+msgid "Activities Overview"
+msgstr "Προεπισκόπηση Δραστηριοτήτων"
+
+#: menuWidgets.js:199
+msgid "Power Off"
+msgstr "Απενεργοποίηση"
+
+#: menuWidgets.js:212
+msgid "Log Out"
+msgstr "Αποσύνδεση"
+
+#: menuWidgets.js:225
+msgid "Suspend"
+msgstr "Αδρανοποίηση"
+
+#: menuWidgets.js:243
+msgid "Lock"
+msgstr "Κλείδωμα"
+
+#: menuWidgets.js:265
+msgid "Back"
+msgstr "Πίσω"
+
+#: menuWidgets.js:483
+msgid "Favorites"
+msgstr "Αγαπημένα"
+
+#: menuWidgets.js:616
+msgid "Type to search…"
+msgstr "Πληκτρολογήστε για αναζήτηση..."
+
+#: menuWidgets.js:781
+msgid "Applications"
+msgstr "Εφαρμογές"
+
+#~ msgid "Webpage"
+#~ msgstr "Ιστοσελίδα"

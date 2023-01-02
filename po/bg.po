@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Arc Menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arc Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-19 15:14+0100\n"
+"PO-Revision-Date: 2017-09-02 18:00+0200\n"
+"Last-Translator: Ivailo Momchilov Panamski <ipanamski@gmail.com>\n"
+"Language-Team: \n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.js:42
+msgid "General"
+msgstr ""
+
+#: prefs.js:54
+msgid "Behaviour"
+msgstr "Поведение"
+
+#: prefs.js:63
+msgid "Disable activities hot corner"
+msgstr "Изключване на горещият ъгъл"
+
+#: prefs.js:85
+msgid "Set menu hotkey"
+msgstr "Горещ клавиш за менюто"
+
+#: prefs.js:91
+msgid "Undefined"
+msgstr "Неопределен"
+
+#: prefs.js:92
+msgid "Left Super Key"
+msgstr "Ляв Super клавиш"
+
+#: prefs.js:93
+msgid "Right Super Key"
+msgstr "Десен Super клавиш"
+
+#: prefs.js:105
+msgid "Enable custom menu keybinding"
+msgstr "Използване на персонализиран клавиш"
+
+#: prefs.js:112
+msgid "Syntax: <Shift>, <Ctrl>, <Alt>, <Super>"
+msgstr "Синтаксис: <Shift>, <Ctrl>, <Alt>, <Super>"
+
+#: prefs.js:153
+msgid "Button appearance"
+msgstr "Изглед на бутона"
+
+#: prefs.js:165
+msgid "Text for the menu button"
+msgstr "Текст на бутона за менюто"
+
+#: prefs.js:171
+msgid "System text"
+msgstr "Системен текст"
+
+#: prefs.js:174
+msgid "Custom text"
+msgstr "Персонализиран текст"
+
+#: prefs.js:198
+msgid "Set custom text for the menu button"
+msgstr "Задай персонализиран текст на бутона за менюто"
+
+#: prefs.js:218
+msgid "Enable the arrow icon beside the button text"
+msgstr "Включи иконката стрелка до текста на бутона"
+
+#: prefs.js:240
+msgid "Select icon for the menu button"
+msgstr "Избери иконка за бутона за менюто"
+
+#: prefs.js:250
+msgid "Please select an image icon"
+msgstr "Изберете иконка"
+
+#: prefs.js:255
+msgid "Arc Menu Icon"
+msgstr "Arc меню иконка"
+
+#: prefs.js:256
+msgid "System Icon"
+msgstr "Системна иконка"
+
+#: prefs.js:257
+msgid "Custom Icon"
+msgstr "Персонализирана иконка"
+
+#: prefs.js:283
+msgid "Icon size"
+msgstr "Размер на иконката"
+
+#: prefs.js:283
+msgid "default is"
+msgstr "по подразбиране е"
+
+#: prefs.js:323
+msgid "Appearance"
+msgstr "Изглед"
+
+#: prefs.js:332
+msgid "Customize menu button appearance"
+msgstr "Персонализирай изгледа на меню бутона"
+
+#: prefs.js:342
+msgid "Icon"
+msgstr "Иконка"
+
+#: prefs.js:343
+msgid "Text"
+msgstr "Текст"
+
+#: prefs.js:344
+msgid "Icon and Text"
+msgstr "Иконка и текст"
+
+#: prefs.js:345
+msgid "Text and Icon"
+msgstr "Текст и иконка"
+
+#: prefs.js:370
+msgid "Menu position in panel"
+msgstr "Позиция на менюто в панела"
+
+#: prefs.js:377
+msgid "Left"
+msgstr "Вляво"
+
+#: prefs.js:380
+msgid "Center"
+msgstr "Центрирано"
+
+#: prefs.js:384
+msgid "Right"
+msgstr "Вдясно"
+
+#: prefs.js:461
+msgid "About"
+msgstr "Относно"
+
+#: prefs.js:490
+msgid "Arc-Menu"
+msgstr "Arc-Menu"
+
+#: prefs.js:495
+msgid "version: "
+msgstr "версия: "
+
+#: prefs.js:503
+msgid "GitLab Page"
+msgstr ""
+
+#: menu.js:272
+msgid "Home"
+msgstr "Домашна папка"
+
+#: menu.js:456 menu.js:461
+msgid "Software"
+msgstr "Софтуер"
+
+#: menu.js:466
+msgid "Settings"
+msgstr "Настройки"
+
+#: menu.js:471
+msgid "Tweak Tool"
+msgstr "Натаманяване"
+
+#: menu.js:476
+#, fuzzy
+msgid "Tweaks"
+msgstr "Натаманяване"
+
+#: menu.js:481
+msgid "Terminal"
+msgstr ""
+
+#: menuWidgets.js:86
+msgid "Activities Overview"
+msgstr "Преглед на активностите"
+
+#: menuWidgets.js:199
+msgid "Power Off"
+msgstr "Изключване"
+
+#: menuWidgets.js:212
+msgid "Log Out"
+msgstr "Изход от системата"
+
+#: menuWidgets.js:225
+msgid "Suspend"
+msgstr "Приспиване"
+
+#: menuWidgets.js:243
+msgid "Lock"
+msgstr "Заключване"
+
+#: menuWidgets.js:265
+msgid "Back"
+msgstr "Назад"
+
+#: menuWidgets.js:483
+msgid "Favorites"
+msgstr "Любими"
+
+#: menuWidgets.js:616
+msgid "Type to search…"
+msgstr "Въведете дума за търсене…"
+
+#: menuWidgets.js:781
+msgid "Applications"
+msgstr "Приложения"
+
+#~ msgid "Webpage"
+#~ msgstr "Уебстраница"

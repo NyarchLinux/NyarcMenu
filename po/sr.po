@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Arc Menu package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Arc Menu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-19 15:14+0100\n"
+"PO-Revision-Date: 2018-02-24 16:01+0100\n"
+"Last-Translator: Слободан Терзић  <slobodan.terzic@zoho.eu>\n"
+"Language-Team: \n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: prefs.js:42
+msgid "General"
+msgstr ""
+
+#: prefs.js:54
+msgid "Behaviour"
+msgstr "Понашање"
+
+#: prefs.js:63
+msgid "Disable activities hot corner"
+msgstr "Онемогући врући угао активности"
+
+#: prefs.js:85
+msgid "Set menu hotkey"
+msgstr "Постави врући тастер менија"
+
+#: prefs.js:91
+msgid "Undefined"
+msgstr "недефинисан"
+
+#: prefs.js:92
+msgid "Left Super Key"
+msgstr "леви тастер Супер"
+
+#: prefs.js:93
+msgid "Right Super Key"
+msgstr "десни тастер Супер"
+
+#: prefs.js:105
+msgid "Enable custom menu keybinding"
+msgstr "Користи прилагођену пречицу менија"
+
+#: prefs.js:112
+msgid "Syntax: <Shift>, <Ctrl>, <Alt>, <Super>"
+msgstr "Синтакса: <Shift>, <Ctrl>, <Alt>, <Super>"
+
+#: prefs.js:153
+msgid "Button appearance"
+msgstr "Изглед дугмета"
+
+#: prefs.js:165
+msgid "Text for the menu button"
+msgstr "Текст дугмета менија"
+
+#: prefs.js:171
+msgid "System text"
+msgstr "системски текст"
+
+#: prefs.js:174
+msgid "Custom text"
+msgstr "прилагођен текст"
+
+#: prefs.js:198
+msgid "Set custom text for the menu button"
+msgstr "Постави прилагођен текст дугмета менија"
+
+#: prefs.js:218
+msgid "Enable the arrow icon beside the button text"
+msgstr "Укључи икону стрелице поред текста дугмета"
+
+#: prefs.js:240
+msgid "Select icon for the menu button"
+msgstr "Изаберите икону за дугме менија"
+
+#: prefs.js:250
+msgid "Please select an image icon"
+msgstr "Изаберите слику за икону"
+
+#: prefs.js:255
+msgid "Arc Menu Icon"
+msgstr "икона Арц менија"
+
+#: prefs.js:256
+msgid "System Icon"
+msgstr "системска икона"
+
+#: prefs.js:257
+msgid "Custom Icon"
+msgstr "прилагођена икона"
+
+#: prefs.js:283
+msgid "Icon size"
+msgstr "Величина иконе"
+
+#: prefs.js:283
+msgid "default is"
+msgstr "основна је"
+
+#: prefs.js:323
+msgid "Appearance"
+msgstr "Изглед"
+
+#: prefs.js:332
+msgid "Customize menu button appearance"
+msgstr "Прилагођавање изгледа дугмета менија"
+
+#: prefs.js:342
+msgid "Icon"
+msgstr "икона"
+
+#: prefs.js:343
+msgid "Text"
+msgstr "текст"
+
+#: prefs.js:344
+msgid "Icon and Text"
+msgstr "икона и текст"
+
+#: prefs.js:345
+msgid "Text and Icon"
+msgstr "текст и икона"
+
+#: prefs.js:370
+msgid "Menu position in panel"
+msgstr "Позиција менија на панелу"
+
+#: prefs.js:377
+msgid "Left"
+msgstr "лево"
+
+#: prefs.js:380
+msgid "Center"
+msgstr "центар"
+
+#: prefs.js:384
+msgid "Right"
+msgstr "десно"
+
+#: prefs.js:461
+msgid "About"
+msgstr "О програму"
+
+#: prefs.js:490
+msgid "Arc-Menu"
+msgstr "Арц мени"
+
+#: prefs.js:495
+msgid "version: "
+msgstr "верзија: "
+
+#: prefs.js:503
+msgid "GitLab Page"
+msgstr ""
+
+#: menu.js:272
+msgid "Home"
+msgstr "Домаће"
+
+#: menu.js:456 menu.js:461
+msgid "Software"
+msgstr "Програми"
+
+#: menu.js:466
+msgid "Settings"
+msgstr "Подешавања"
+
+#: menu.js:471
+msgid "Tweak Tool"
+msgstr "Лицкања"
+
+#: menu.js:476
+#, fuzzy
+msgid "Tweaks"
+msgstr "Лицкања"
+
+#: menu.js:481
+msgid "Terminal"
+msgstr ""
+
+#: menuWidgets.js:86
+msgid "Activities Overview"
+msgstr "Преглед активности"
+
+#: menuWidgets.js:199
+msgid "Power Off"
+msgstr "Гашење"
+
+#: menuWidgets.js:212
+msgid "Log Out"
+msgstr "Одјављивање"
+
+#: menuWidgets.js:225
+msgid "Suspend"
+msgstr "На спавање"
+
+#: menuWidgets.js:243
+msgid "Lock"
+msgstr "Закључавање"
+
+#: menuWidgets.js:265
+msgid "Back"
+msgstr "Назад"
+
+#: menuWidgets.js:483
+msgid "Favorites"
+msgstr "Омиљено"
+
+#: menuWidgets.js:616
+msgid "Type to search…"
+msgstr "Куцајте за претрагу…"
+
+#: menuWidgets.js:781
+msgid "Applications"
+msgstr "Програми"
+
+#~ msgid "Webpage"
+#~ msgstr "Веб страница"
