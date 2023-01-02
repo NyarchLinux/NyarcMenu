@@ -127,7 +127,7 @@ StScrollView .small-vfade{
 }
 
 .arcmenu-margin-box{
-    margin: 0px 6px;
+    margin: 0px 0px;
 }
 
 .arcmenu-menu .popup-menu-ornament{
@@ -137,7 +137,7 @@ StScrollView .small-vfade{
 .arcmenu-button{
     -st-icon-style: symbolic;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 999px 0px 0px 999px;
     padding: 8px;
     min-height: 0px;
 }
