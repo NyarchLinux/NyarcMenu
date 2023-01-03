@@ -192,14 +192,23 @@ function getCategoryDetails(currentCategory){
         if(entry.CATEGORY === currentCategory){
             name = entry.NAME;
             gicon = Gio.icon_new_for_string(entry.ICON);
-            return [name, gicon, fallbackIcon];
+            if (entry.PATH) {
+                let iconString = entry.ICON + ".svg";
+                fallbackIcon = Gio.icon_new_for_string(Me.path + '/media/icons/menu_icons/category_icons/' + iconString);
+                return [name, fallbackIcon, fallbackIcon];
+            } else { 
+                return [name, gicon, fallbackIcon];
+            }
+            
         }
     }
 
     if(currentCategory === Constants.CategoryType.HOME_SCREEN){
         name = _("Home");
-        gicon = Gio.icon_new_for_string('computer-symbolic');
-        return [name, gicon, fallbackIcon];
+        //gicon = Gio.icon_new_for_string('computer-symbolic');
+        let iconString = "computer-symbolic.svg";
+        fallbackIcon = Gio.icon_new_for_string(Me.path + '/media/icons/menu_icons/category_icons/' + iconString);
+        return [name, fallbackIcon, fallbackIcon];
     }
     else{
         name = currentCategory.get_name();
@@ -213,9 +222,11 @@ function getCategoryDetails(currentCategory){
         gicon = currentCategory.get_icon();
 
         let iconString = currentCategory.get_icon().to_string() + '-symbolic.svg';
-        fallbackIcon = Gio.icon_new_for_string(Me.path + '/media/icons/menu_icons/category_icons/' + iconString);
 
-        return [name, gicon, fallbackIcon];
+        fallbackIcon = Gio.icon_new_for_string(Me.path + '/media/icons/menu_icons/category_icons/' + iconString);
+        // return [name, gicon, fallbackIcon]; 
+        // Force use the icon in the sources
+        return [name, fallbackIcon, fallbackIcon];
     }
 }
 
