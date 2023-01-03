@@ -84,7 +84,7 @@ var Menu = class extends BaseMenuLayout{
         });
         this.actionsBoxContainer.add_child(this.actionsBox);
         this.actionsBox.style = "spacing: 5px;";
-        this.actionsBoxContainerStyle =  "margin: 0px 0px 0px 0px; spacing: 10px; background-color: rgba(10, 10, 15, 0.1); padding: 5px 0px;"+
+        this.actionsBoxContainerStyle =  "margin: 0px 0px 0px 0px; spacing: 10px; background-color: #262830; padding: 5px 0px;"+
                                          "border: none;";
 
 
