@@ -49,7 +49,7 @@ function enable() {
 
     // dash to panel might get enabled after ArcMenu
     extensionChangedId = Main.extensionManager.connect('extension-state-changed', (data, extension) => {
-        if (extension.uuid === Constants.DASH_TO_PANEL_UUID || extension.uuid === Constants.AZTASKBAR_UUID) {
+        if (extension.uuid === Constants.DASH_TO_PANEL_UUID || extension.uuid === Constants.AZTASKBAR_UUID || extension.uuid == Constants.BLUR_MY_SHELL_UUID || extension.uuid == Constants.MATERIAL_YOU_UUID) {
             _disconnectExtensionSignals();
             _connectExtensionSignals();
             _reload();

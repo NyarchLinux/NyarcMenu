@@ -3,6 +3,8 @@ const Constants = Me.imports.constants;
 const {Clutter, Gio, GLib, St} = imports.gi;
 const Main = imports.ui.main;
 const Gtk = imports.gi.Gtk;
+const ExtensionUtils = imports.misc.extensionUtils;
+const { ExtensionState } = ExtensionUtils;
 const Stylesheet = Gtk.CssProvider.get_default();
 
 Gio._promisify(Gio.File.prototype, 'replace_contents_bytes_async', 'replace_contents_finish');
@@ -61,10 +63,44 @@ async function deleteStylesheet(){
             log(`ArcMenu - Error deleting custom stylesheet: ${e}`);
     }
 }
+function read_file(path) {
+    const file = Gio.File.new_for_path(path);
+    const [, contents, etag] = file.load_contents(null);
+    const decoder = new TextDecoder('utf-8');
+    const contentsString = decoder.decode(contents);
+
+    return contentsString;
+}
+function get_gtk4_theme() {
+    let config_path = GLib.get_home_dir() + "/.config";
+    let gtk4path = config_path + "/gtk-4.0/gtk.css";
+    try {
+        color_string = read_file(gtk4path);
+        log("BUEBIUEB");
+    } catch(e) {
+        log(e);
+        return null;
+    }
+    lines = color_string.split("\n");
+    const colors = {};
+    for (const string of lines) {
+        try{
+            let spl = string.split(' ');
+            if (spl.length < 3) {
+                continue;
+            }
+            key = spl[1];
+            value = spl[2];
+            colors[key] = value.replace(';', ''); //TODO fix if color is not hex
+        } catch (e) {
+            log(e);
+        }
+    }
+    return colors;
+}
 async function updateStylesheet(settings){
     let stylesheet = Me.customStylesheet;
-
-
+    blurMyShell = Main.extensionManager.lookup(Constants.BLUR_MY_SHELL_UUID);
     if(!stylesheet){
         log("ArcMenu - Warning: Custom stylesheet not found! Unable to set contents of custom stylesheet.");
         return;
@@ -82,27 +118,48 @@ async function updateStylesheet(settings){
     
     const [, bpBg] = node.lookup_color('background-color', true); // property that is actually used for menu background
     log(bpBg.to_string());
-    log("AEEEE");
     const bg = node.get_background_color();
     log(bg.to_string()); 
 
     unloadStylesheet();
-
+    
     let customMenuThemeCSS = ``;
     let extraStylingCSS = ``;
+    let colors = get_gtk4_theme();
 
-    let menuBGColor = settings.get_string('menu-background-color');
-    let menuFGColor = settings.get_string('menu-foreground-color');
     let menuBorderColor = settings.get_string('menu-border-color');
     let menuBorderWidth = settings.get_int('menu-border-width');
     let menuBorderRadius = settings.get_int('menu-border-radius');
     let menuFontSize = settings.get_int('menu-font-size');
     let menuSeparatorColor = settings.get_string('menu-separator-color');
-    let itemHoverBGColor = settings.get_string('menu-item-hover-bg-color');
-    let itemHoverFGColor = settings.get_string('menu-item-hover-fg-color');
-    let itemActiveBGColor = settings.get_string('menu-item-active-bg-color');
-    let itemActiveFGColor = settings.get_string('menu-item-active-fg-color');
-
+    let menuBGColor;
+    let menuFGColor;
+    let itemHoverBGColor;
+    let itemHoverFGColor;
+    let itemActiveBGColor;
+    let itemActiveFGColor;
+    let ravenMenu;
+    let menubgtrasparency = 1;
+    if (blurMyShell.state === ExtensionState.ENABLED) {
+        menubgtrasparency = 0.8;
+    }
+    if (colors == null) {
+        menuBGColor = settings.get_string('menu-background-color');
+        menuFGColor = settings.get_string('menu-foreground-color');
+        itemHoverBGColor = settings.get_string('menu-item-hover-bg-color');
+        itemHoverFGColor = settings.get_string('menu-item-hover-fg-color');
+        itemActiveBGColor = settings.get_string('menu-item-active-bg-color');
+        itemActiveFGColor = settings.get_string('menu-item-active-fg-color');
+        ravenMenu = "#262830";
+    } else {
+        menuBGColor = colors['window_bg_color'];
+        menuFGColor = colors['destructive_fg_color']; // Alternative headerbar_fg_color
+        itemHoverBGColor = colors['accent_bg_color']; // popover_bg_color
+        itemHoverFGColor = colors['headerbar_fg_color'];
+        itemActiveBGColor = colors['window_bg_color'];
+        itemActiveFGColor = colors['accent_fg_color'];
+        ravenMenu = colors['headerbar_bg_color'];
+    }
     let [menuRise, menuRiseValue] = settings.get_value('menu-arrow-rise').deep_unpack();
 
     let [buttonFG, buttonFGColor] = settings.get_value('menu-button-fg-color').deep_unpack();
@@ -167,7 +224,9 @@ async function updateStylesheet(settings){
                                 border-radius: ${searchBorderValue}px;
                             }`;
     }
-
+    extraStylingCSS += `.actionsBox{
+        background-color: ${ravenMenu};
+    }`;
     if(settings.get_boolean('override-menu-theme')){
         customMenuThemeCSS = `
         .arcmenu-menu{
@@ -175,14 +234,14 @@ async function updateStylesheet(settings){
             color: ${menuFGColor};
         }
        .arcmenu-menu .popup-menu-content {
-            background-color: ${menuBGColor};
+            background-color: ${modifyColorLuminance(menuBGColor, 0, menubgtrasparency)};
             border-color: ${menuBorderColor};
             border-width: ${menuBorderWidth}px;
             border-radius: ${menuBorderRadius}px;
         }
         .arcmenu-menu StButton {
             color: ${menuFGColor};
-            background-color: ${menuBGColor};
+            background-color: ${modifyColorLuminance(menuBGColor, 0, .1)};
             border-width: 0px;
             box-shadow: none;
             border-radius: 8px;

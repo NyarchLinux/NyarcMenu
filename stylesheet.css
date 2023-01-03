@@ -101,8 +101,7 @@
     border-color: transparent;
 }
 .actionsBox {
-    background-color: #262830;
-    border-radius: 400px;
+    border-radius: 700px;
 }
 #arcmenu-plasma-button-top:active-item, .arcmenu-plasma-button-top:active{
     background-color: rgba(245, 245, 245, .05);
