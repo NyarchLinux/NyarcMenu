@@ -65,14 +65,15 @@ var Menu = class extends BaseMenuLayout{
             this.activeCategory = _("All Programs");
 
         this.ravenMenuActorStyle = "-arrow-base: 0px; -arrow-rise: 0px; -boxpointer-gap: 0px; -arrow-border-radius: 0px; margin: 0px;";
-        this.arcMenu.box.style = "padding: 0px; margin: 0px; border-radius: 0px;";
+        this.arcMenu.box.style = "padding: 0px; margin: 0px; border-radius: 25px;";
 
         this.actionsBoxContainer = new St.BoxLayout({
             x_expand: false,
             y_expand: true,
             x_align: Clutter.ActorAlign.START,
             y_align: Clutter.ActorAlign.FILL,
-            vertical: true
+            vertical: true,
+            style_class: "actionsBox",
         });
 
         this.actionsBox = new St.BoxLayout({
@@ -80,11 +81,11 @@ var Menu = class extends BaseMenuLayout{
             y_expand: true,
             x_align: Clutter.ActorAlign.START,
             y_align: Clutter.ActorAlign.CENTER,
-            vertical: true
+            vertical: true,
         });
         this.actionsBoxContainer.add_child(this.actionsBox);
         this.actionsBox.style = "spacing: 5px;";
-        this.actionsBoxContainerStyle =  "margin: 0px 0px 0px 0px; spacing: 10px; background-color: #262830; padding: 5px 0px;"+
+        this.actionsBoxContainerStyle =  "margin: 0px 0px 0px 0px; spacing: 10px; padding: 5px 0px;"+
                                          "border: none;";
 
 
