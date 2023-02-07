@@ -52,6 +52,7 @@ function enable() {
         if (extension.uuid === Constants.DASH_TO_PANEL_UUID || extension.uuid === Constants.AZTASKBAR_UUID || extension.uuid == Constants.BLUR_MY_SHELL_UUID || extension.uuid == Constants.MATERIAL_YOU_UUID) {
             _disconnectExtensionSignals();
             _connectExtensionSignals();
+            Theming.updateStylesheet(settings);
             _reload();
         }
     });
