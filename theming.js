@@ -153,7 +153,7 @@ async function updateStylesheet(settings){
         ravenMenu = "#262830";
     } else {
         menuBGColor = colors['window_bg_color'];
-        menuFGColor = colors['destructive_fg_color']; // Alternative headerbar_fg_color
+        menuFGColor = colors['view_fg_color']; // Alternative headerbar_fg_color
         itemHoverBGColor = colors['accent_bg_color']; // popover_bg_color
         itemHoverFGColor = colors['headerbar_fg_color'];
         itemActiveBGColor = colors['window_bg_color'];
