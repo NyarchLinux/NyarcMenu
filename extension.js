@@ -28,10 +28,26 @@ const Main = imports.ui.main;
 const Theming = Me.imports.theming;
 const Util = imports.misc.util;
 const Utils = Me.imports.utils;
+const MessageTray = imports.ui.messageTray;
 
 let settings;
 let settingsControllers;
 let extensionChangedId;
+
+
+async function reloadTheme() {
+    await new Promise(r => setTimeout(r, 500));
+    Theming.updateStylesheet(settings);
+}
+let customUpdateState = function() {
+    this._notificationQueue = this._notificationQueue.filter((notification) => {
+      if (notification.title.includes("Applied")) {
+        reloadTheme();
+      }
+      return true;
+    });
+    this._updateStateOriginal();
+}
 
 function init() {
     ExtensionUtils.initTranslations(Me.metadata['gettext-domain']);
@@ -59,6 +75,11 @@ function enable() {
 
     // listen to dash to panel if they are compatible and already enabled
     _connectExtensionSignals();
+
+    // Override updatestate
+    MessageTray.MessageTray.prototype._updateStateOriginal =
+    MessageTray.MessageTray.prototype._updateState;
+    MessageTray.MessageTray.prototype._updateState = customUpdateState;
 }
 
 function disable() {
@@ -74,9 +95,12 @@ function disable() {
 
     _disableButtons();
     settingsControllers = null;
-
+    MessageTray.MessageTray.prototype._updateState =
+    MessageTray.MessageTray.prototype._updateStateOriginal;
+    delete MessageTray.MessageTray.prototype._updateStateOriginal;
     settings.run_dispose();
     settings = null;
+    
 }
 
 
