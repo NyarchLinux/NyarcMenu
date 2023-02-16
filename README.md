@@ -1,3 +1,14 @@
+# NyarcMenu
+Nyarcmenu is an ArcMenu Gnome Extension fork made for [NyarchLinux](https://nyarchlinux.moe). 
+Differences:
+- It follows GTK4 theme is override theme is touched and Material You extension is enabled
+- It enables trasparency when Blurmyshell is actived
+- Different category icons
+- Many tweaks applied to RavenMenu
+
+![](http://nyarchlinux.moe/assets/img/nyarch_screen.jpg)
+# ArcMenu readme
+
 ![](https://gitlab.com/arcmenu/arcmenu-assets/raw/master/images/ArcMenu_WideBanner.png)
 
 -----
