@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="nyarcmenu">
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menulayout'>
+<schemalist gettext-domain="arcmenu">
+    <enum id='org.gnome.shell.extensions.arcmenu.menulayout'>
         <value value='0' nick='Default'/>
         <value value='1' nick='Brisk'/>
         <value value='2' nick='Whisker'/>
@@ -20,77 +20,78 @@
         <value value='16' nick='Windows'/>
         <value value='17' nick='Eleven'/>
         <value value='18' nick='AZ'/>
+        <value value='19' nick='Enterprise'/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.forcemenulocation'>
+    <enum id='org.gnome.shell.extensions.arcmenu.forcemenulocation'>
         <value value='0' nick='Off'/>
         <value value='1' nick='TopCentered'/>
         <value value='2' nick='BottomCentered'/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menu-hotkey-type'>
+    <enum id='org.gnome.shell.extensions.arcmenu.menu-hotkey-type'>
         <value value='0' nick='Super_L'/>
         <value value='1' nick='Custom'/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menu-position'>
+    <enum id='org.gnome.shell.extensions.arcmenu.menu-position'>
         <value value="0" nick="Left"/>
         <value value="1" nick="Center"/>
         <value value="2" nick="Right"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.raven-position'>
+    <enum id='org.gnome.shell.extensions.arcmenu.raven-position'>
         <value value="0" nick="Left"/>
         <value value="1" nick="Right"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menu-button-appearance'>
+    <enum id='org.gnome.shell.extensions.arcmenu.menu-button-appearance'>
         <value value="0" nick="Icon"/>
         <value value="1" nick="Text"/>
         <value value="2" nick="Icon_Text"/>
         <value value="3" nick="Text_Icon"/>
         <value value="4" nick="None"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.avatar-style'>
+    <enum id='org.gnome.shell.extensions.arcmenu.avatar-style'>
         <value value="0" nick="Round"/>
         <value value="1" nick="Square"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menu-button-icon'>
+    <enum id='org.gnome.shell.extensions.arcmenu.menu-button-icon'>
         <value value="0" nick="Menu_Icon"/>
         <value value="1" nick="Distro_Icon"/>
         <value value="2" nick="Custom_Icon"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.default-menu-view'>
+    <enum id='org.gnome.shell.extensions.arcmenu.default-menu-view'>
         <value value="0" nick="Pinned_Apps"/>
         <value value="1" nick="Categories_List"/>
         <value value="2" nick="Frequent_Apps"/>
         <value value="3" nick="All_Programs"/>
     </enum>
-        <enum id='org.gnome.shell.extensions.nyarcmenu.default-menu-view-tognee'>
+        <enum id='org.gnome.shell.extensions.arcmenu.default-menu-view-tognee'>
         <value value="0" nick="Categories_List"/>
         <value value="1" nick="All_Programs"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.default-menu-view-redmond'>
+    <enum id='org.gnome.shell.extensions.arcmenu.default-menu-view-redmond'>
         <value value="0" nick="All_Programs"/>
         <value value="1" nick="Pinned_Apps"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.runner-position'>
+    <enum id='org.gnome.shell.extensions.arcmenu.runner-position'>
         <value value="0" nick="Top"/>
         <value value="1" nick="Centered"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.search-display-style'>
+    <enum id='org.gnome.shell.extensions.arcmenu.search-display-style'>
         <value value="0" nick="List"/>
         <value value="1" nick="Grid"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.searchbar-location'>
+    <enum id='org.gnome.shell.extensions.arcmenu.searchbar-location'>
         <value value="0" nick="Bottom"/>
         <value value="1" nick="Top"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.menuitem-location'>
+    <enum id='org.gnome.shell.extensions.arcmenu.menuitem-location'>
         <value value="0" nick="Bottom"/>
         <value value="1" nick="Top"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.power-display-style'>
+    <enum id='org.gnome.shell.extensions.arcmenu.power-display-style'>
         <value value="0" nick="Default"/>
         <value value="1" nick="In_Line"/>
         <value value="2" nick="Menu"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.icon-sizes'>
+    <enum id='org.gnome.shell.extensions.arcmenu.icon-sizes'>
         <value value="0" nick="Default"/>
         <value value="1" nick="ExtraSmall"/>
         <value value="2" nick="Small"/>
@@ -99,7 +100,7 @@
         <value value="5" nick="Extralarge"/>
         <value value="6" nick="Hidden"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.grid-icon-sizes'>
+    <enum id='org.gnome.shell.extensions.arcmenu.grid-icon-sizes'>
         <value value="0" nick="Default"/>
         <value value="1" nick="Small"/>
         <value value="2" nick="Medium"/>
@@ -108,17 +109,17 @@
         <value value="5" nick="Medium_Rect"/>
         <value value="6" nick="Large_Rect"/>
     </enum>
-    <enum id='org.gnome.shell.extensions.nyarcmenu.category-icon-type'>
+    <enum id='org.gnome.shell.extensions.arcmenu.category-icon-type'>
         <value value="0" nick="Full_Color"/>
         <value value="1" nick="Symbolic"/>
     </enum>
-  <schema path="/org/gnome/shell/extensions/arcmenu/" id="org.gnome.shell.extensions.nyarcmenu">
+  <schema path="/org/gnome/shell/extensions/arcmenu/" id="org.gnome.shell.extensions.arcmenu">
     <key type="i" name="menu-position-alignment">
       <default>50</default>
       <summary>Menu position alignment</summary>
       <description>Menu position alignment 0 = Left, 50 = Center, 100 = Right</description>
     </key>
-    <key name="menu-layout" enum="org.gnome.shell.extensions.nyarcmenu.menulayout">
+    <key name="menu-layout" enum="org.gnome.shell.extensions.arcmenu.menulayout">
       <default>'Default'</default>
       <summary>menu layout</summary>
       <description>Menu Layout</description>
@@ -244,7 +245,7 @@
       <description> List of color themes.</description>
     </key>
 
-    <key name="force-menu-location" enum="org.gnome.shell.extensions.nyarcmenu.forcemenulocation">
+    <key name="force-menu-location" enum="org.gnome.shell.extensions.arcmenu.forcemenulocation">
       <default>'Off'</default>
       <summary>Force the menu to a specific location</summary>
       <description>Force the menu to a specific location</description>
@@ -269,12 +270,12 @@
       <summary>ArcMenu Settings Height</summary>
       <description>ArcMenu Settings Height.</description>
     </key>
-    <key name="raven-search-display-style" enum="org.gnome.shell.extensions.nyarcmenu.search-display-style">
+    <key name="raven-search-display-style" enum="org.gnome.shell.extensions.arcmenu.search-display-style">
       <default>'Grid'</default>
       <summary>Raven Layout Search Display Style</summary>
       <description>Raven Layout Search Display Style.</description>
     </key>
-    <key name="raven-position" enum="org.gnome.shell.extensions.nyarcmenu.raven-position">
+    <key name="raven-position" enum="org.gnome.shell.extensions.arcmenu.raven-position">
       <default>'Left'</default>
       <summary>Raven layout position. 'Left' or 'Right' side of screen</summary>
       <description>Raven layout position. 'Left' or 'Right' side of screen.</description>
@@ -299,12 +300,12 @@
       <summary>Enable Clocks Widget Unity layout</summary>
       <description>Enable Clocks Widget Unity layout.</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.category-icon-type" name="category-icon-type">
+    <key enum="org.gnome.shell.extensions.arcmenu.category-icon-type" name="category-icon-type">
       <default>'Symbolic'</default>
       <summary>Category icon type. Full_Color or Symbolic</summary>
       <description>Category icon type. Full_Color or Symbolic</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.category-icon-type" name="shortcut-icon-type">
+    <key enum="org.gnome.shell.extensions.arcmenu.category-icon-type" name="shortcut-icon-type">
       <default>'Symbolic'</default>
       <summary>Shortcut icon type. Full_Color or Symbolic</summary>
       <description>Shortcut icon type. Full_Color or Symbolic</description>
@@ -379,17 +380,17 @@
       <summary>Multi-lined labels for large icon application grid layouts</summary>
       <description>Multi-lined labels for large icon application grid layouts.</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.default-menu-view" name="default-menu-view">
+    <key enum="org.gnome.shell.extensions.arcmenu.default-menu-view" name="default-menu-view">
       <default>'Pinned_Apps'</default>
       <summary>Set ArcMenu Layout Default View</summary>
       <description>Set ArcMenu Layout Default View.</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.default-menu-view-tognee" name="default-menu-view-tognee">
+    <key enum="org.gnome.shell.extensions.arcmenu.default-menu-view-tognee" name="default-menu-view-tognee">
       <default>'Categories_List'</default>
       <summary>Set Tognee Layout Default View</summary>
       <description>Set Tognee Layout Default View.</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.default-menu-view-redmond" name="default-menu-view-redmond">
+    <key enum="org.gnome.shell.extensions.arcmenu.default-menu-view-redmond" name="default-menu-view-redmond">
       <default>'All_Programs'</default>
       <summary>Set Redmond Layout Default View</summary>
       <description>Set Redmond  Layout Default View.</description>
@@ -409,12 +410,12 @@
       <summary>Enable an Activitities Overview Shortcut</summary>
       <description>Enable an Activitities Overview Shortcut</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.searchbar-location" name="searchbar-default-bottom-location">
+    <key enum="org.gnome.shell.extensions.arcmenu.searchbar-location" name="searchbar-default-bottom-location">
       <default>'Bottom'</default>
       <summary>Searchbar location for layouts with default searchbar on bottom</summary>
       <description>Searchbar location for layouts with default searchbar on bottom</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.searchbar-location" name="searchbar-default-top-location">
+    <key enum="org.gnome.shell.extensions.arcmenu.searchbar-location" name="searchbar-default-top-location">
       <default>'Top'</default>
       <summary>Searchbar location for layouts with default searchbar on top</summary>
       <description>Searchbar location for layouts with default searchbar on top</description>
@@ -509,7 +510,7 @@
       <summary>Power Options</summary>
       <description>See Constants.js PowerOptions</description>
     </key>
-    <key name="power-display-style" enum="org.gnome.shell.extensions.nyarcmenu.power-display-style">
+    <key name="power-display-style" enum="org.gnome.shell.extensions.arcmenu.power-display-style">
       <default>'Default'</default>
       <summary>Display type for power options</summary>
       <description>Display type for power options.</description>
@@ -529,7 +530,7 @@
       <summary>Enable a hotkey to open ArcMenu.</summary>
       <description>Enable a hotkey to open ArcMenu.</description>
     </key>
-    <key name="menu-hotkey-type" enum="org.gnome.shell.extensions.nyarcmenu.menu-hotkey-type">
+    <key name="menu-hotkey-type" enum="org.gnome.shell.extensions.arcmenu.menu-hotkey-type">
       <default>'Super_L'</default>
       <summary>Set a hotkey to open ArcMenu</summary>
       <description>Set a hotkey to open ArcMenu.</description>
@@ -544,7 +545,7 @@
       <summary>Enable a standalone Runner menu.</summary>
       <description>Enable a standalone Runner menu.</description>
     </key>
-    <key name="runner-menu-hotkey-type" enum="org.gnome.shell.extensions.nyarcmenu.menu-hotkey-type">
+    <key name="runner-menu-hotkey-type" enum="org.gnome.shell.extensions.arcmenu.menu-hotkey-type">
       <default>'Custom'</default>
       <summary>Set a hotkey to open the standalone Runner menu.</summary>
       <description>Set a hotkey to open the standalone Runner menu.</description>
@@ -554,57 +555,57 @@
       <summary>Keybinding to open the standalone runner menu</summary>
       <description>Keybinding to open the standalone runner menu.</description>
     </key>
-    <key name="position-in-panel" enum="org.gnome.shell.extensions.nyarcmenu.menu-position">
+    <key name="position-in-panel" enum="org.gnome.shell.extensions.arcmenu.menu-position">
       <default>'Left'</default>
       <summary>The menu position in the panel</summary>
       <description>The menu position in the panel.</description>
     </key>
-    <key name="runner-position" enum="org.gnome.shell.extensions.nyarcmenu.runner-position">
+    <key name="runner-position" enum="org.gnome.shell.extensions.arcmenu.runner-position">
       <default>'Top'</default>
       <summary>Runner Menu Position</summary>
       <description>Runner Menu Position.</description>
     </key>
-    <key name="runner-search-display-style" enum="org.gnome.shell.extensions.nyarcmenu.search-display-style">
+    <key name="runner-search-display-style" enum="org.gnome.shell.extensions.arcmenu.search-display-style">
       <default>'List'</default>
       <summary>Runner Search Display Style</summary>
       <description>Runner Search Display Style.</description>
     </key>
-    <key name="menu-button-appearance" enum="org.gnome.shell.extensions.nyarcmenu.menu-button-appearance">
+    <key name="menu-button-appearance" enum="org.gnome.shell.extensions.arcmenu.menu-button-appearance">
       <default>'Icon'</default>
       <summary>Appearance of the menu button.</summary>
       <description>Appearance of the menu button.</description>
     </key>
-      <key name="avatar-style" enum="org.gnome.shell.extensions.nyarcmenu.avatar-style">
+      <key name="avatar-style" enum="org.gnome.shell.extensions.arcmenu.avatar-style">
       <default>'Round'</default>
       <summary>Appearance of the avatar icon.</summary>
       <description>Appearance of the avatar icon.</description>
     </key>
-    <key name="menu-item-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.icon-sizes">
+    <key name="menu-item-icon-size" enum="org.gnome.shell.extensions.arcmenu.icon-sizes">
       <default>'Default'</default>
       <summary>Size of the menu items icon.</summary>
       <description>Size of the menu items icon. Includes all application items, search results.</description>
     </key>
-    <key name="menu-item-category-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.icon-sizes">
+    <key name="menu-item-category-icon-size" enum="org.gnome.shell.extensions.arcmenu.icon-sizes">
       <default>'Default'</default>
       <summary>Size of the category icons.</summary>
       <description>Size of the category icons.</description>
     </key>
-    <key name="menu-item-grid-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.grid-icon-sizes">
+    <key name="menu-item-grid-icon-size" enum="org.gnome.shell.extensions.arcmenu.grid-icon-sizes">
       <default>'Default'</default>
       <summary>Size of the menu grid icons.</summary>
       <description>Size of the menu grid icon.</description>
     </key>
-    <key name="button-item-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.icon-sizes">
+    <key name="button-item-icon-size" enum="org.gnome.shell.extensions.arcmenu.icon-sizes">
       <default>'Default'</default>
       <summary>Size of the button items in ArcMenu.</summary>
       <description>Size of the button items in ArcMenu. Includes all buttons inside the menu</description>
     </key>
-    <key name="misc-item-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.icon-sizes">
+    <key name="misc-item-icon-size" enum="org.gnome.shell.extensions.arcmenu.icon-sizes">
       <default>'Default'</default>
       <summary>Size of misc items in ArcMenu.</summary>
       <description>Size of misc items in ArcMenu. Includes searchbox icons, back menu item, all applications menu item, usermenu item.</description>
     </key>
-    <key name="quicklinks-item-icon-size" enum="org.gnome.shell.extensions.nyarcmenu.icon-sizes">
+    <key name="quicklinks-item-icon-size" enum="org.gnome.shell.extensions.arcmenu.icon-sizes">
       <default>'Default'</default>
       <summary>Size of quicklink items in ArcMenu.</summary>
       <description>Size of quicklink items in ArcMenu. Includes places, shortcuts, external devices, bookmarks.</description>
@@ -624,7 +625,7 @@
       <summary>Text of the menu button.</summary>
       <description>Text of the menu button.</description>
     </key>
-    <key name="menu-button-icon" enum="org.gnome.shell.extensions.nyarcmenu.menu-button-icon">
+    <key name="menu-button-icon" enum="org.gnome.shell.extensions.arcmenu.menu-button-icon">
       <default>'Menu_Icon'</default>
       <summary>Icon type for the menu button.</summary>
       <description>Controls which group of icons you wish to use.</description>
@@ -669,7 +670,7 @@
       <summary>Array of extra categories links for ArcMenu layout. See Constants.js - Categories</summary>
       <description>Array of extra categories for ArcMenu layout. See Constants.js - Categories</description>
     </key>
-    <key enum="org.gnome.shell.extensions.nyarcmenu.menuitem-location" name="arcmenu-extra-categories-links-location">
+    <key enum="org.gnome.shell.extensions.arcmenu.menuitem-location" name="arcmenu-extra-categories-links-location">
       <default>'Bottom'</default>
       <summary>Display extra categories quick links on ArcMenu Layout home page</summary>
       <description>Display extra categories quick links on ArcMenu Layout home page</description>
@@ -680,10 +681,10 @@
       <description>List of recently installed apps</description>
     </key>
     <key name="pinned-app-list" type="as">
-      <default> [ "ArcMenu_WebBrowser","WebBrowser", "WebBrowser",
-                  "Files", "", "org.gnome.Nautilus.desktop",
-                  "Terminal", "", "org.gnome.Terminal.desktop",
-                  "ArcMenu Settings", "ArcMenu_ArcMenuIcon", "gnome-extensions prefs nyarcmenu@nyarchlinux.moe"
+      <default> [ "", "", "firefox.desktop",
+                  "", "", "org.gnome.Nautilus.desktop",
+                  "", "", "org.gnome.Terminal.desktop",
+                  "ArcMenu Settings", "ArcMenu_ArcMenuIcon", "gnome-extensions prefs arcmenu@arcmenu.com"
                 ]
       </default>
       <summary>List of Apps Pinned to Menu</summary>
@@ -701,8 +702,8 @@
       <description>List of default directory paths used for links on the right side of ArcMenu.</description>
     </key>
     <key name="application-shortcuts-list" type="aas">
-      <default>[["Software", "", "ArcMenu_Software"], ["Settings","", "org.gnome.Settings.desktop"],
-          ["Tweaks", "", "org.gnome.tweaks.desktop"],["Terminal", "", "org.gnome.Terminal.desktop"],
+      <default>[["Software", "", "ArcMenu_Software"], ["","", "org.gnome.Settings.desktop"],
+          ["", "", "org.gnome.tweaks.desktop"],["", "", "org.gnome.Terminal.desktop"],
           ["Activities Overview", "view-fullscreen-symbolic", "ArcMenu_ActivitiesOverview"]]</default>
       <summary>List of default directory paths used for links on the right side of ArcMenu</summary>
       <description>List of default directory paths used for links on the right side of ArcMenu.</description>

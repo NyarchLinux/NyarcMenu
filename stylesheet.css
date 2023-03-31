@@ -62,6 +62,10 @@
     margin: 0px;
 }
 
+.bottomOfScreenMenu{
+    margin-bottom: 0px;
+}
+
 .arcmenu-search-entry{
     min-height: 0px;
     border-width: 1px;
@@ -130,7 +134,7 @@ StScrollView .small-vfade{
 }
 
 .arcmenu-margin-box{
-    margin: 0px 0px;
+    margin: 0px 6px;
 }
 
 .arcmenu-menu .popup-menu-ornament{
