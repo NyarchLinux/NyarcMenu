@@ -6,7 +6,7 @@ const _ = Gettext.gettext;
 
 var DASH_TO_PANEL_UUID = 'dash-to-panel@jderose9.github.com';
 var BLUR_MY_SHELL_UUID = 'blur-my-shell@aunetx';
-var MATERIAL_YOU_UUID = 'blur-my-shell@aunetx';
+var MATERIAL_YOU_UUID = 'material-you-theme@asubbiah.com';
 var AZTASKBAR_UUID = 'aztaskbar@aztaskbar.gitlab.com';
 
 var SearchbarLocation = {

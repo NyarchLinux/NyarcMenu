@@ -2,6 +2,10 @@
    deleteStylesheet, updateStylesheet */
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const {Clutter, Gio, GLib, St} = imports.gi;
+const Main = imports.ui.main;
+const ExtensionUtils = imports.misc.extensionUtils;
+const { ExtensionState } = ExtensionUtils;
+const Constants = Me.imports.constants;
 
 Gio._promisify(Gio.File.prototype, 'replace_contents_bytes_async', 'replace_contents_finish');
 Gio._promisify(Gio.File.prototype, 'create_async');
@@ -106,29 +110,18 @@ function get_gtk4_theme() {
     }
     return colors;
 }
+
 async function updateStylesheet(settings){
-    let stylesheet = Me.customStylesheet;
-    blurMyShell = Main.extensionManager.lookup(Constants.BLUR_MY_SHELL_UUID);
-    if(!stylesheet){
-        log("ArcMenu - Warning: Custom stylesheet not found! Unable to set contents of custom stylesheet.");
+    const stylesheet = Me.customStylesheet;
+
+    if (!stylesheet) {
+        log('ArcMenu - Warning: Custom stylesheet not found! Unable to set contents of custom stylesheet.');
         return;
     }
-    const ctx = St.ThemeContext.get_for_stage(global.stage);
-    const node = St.ThemeNode.new(
-        ctx,
-        null, /* parent node */
-        ctx.get_theme(),
-        St.Entry, /* gtype */
-        '', /* id */
-        'candidate-box', /* class */
-        'selected', /* pseudo class */
-        ''); /* inline style */
-    
-    const [, bpBg] = node.lookup_color('background-color', true); // property that is actually used for menu background
-    log(bpBg.to_string());
-    const bg = node.get_background_color();
-    log(bg.to_string()); 
-
+    log("AESDFS1");
+    blurMyShell = Main.extensionManager.lookup(Constants.BLUR_MY_SHELL_UUID);
+    log("AESDFS2");
+    //const ctx = St.ThemeContext.get_for_stage(global.stage);
     unloadStylesheet();
     
     let customMenuThemeCSS = ``;
@@ -167,6 +160,7 @@ async function updateStylesheet(settings){
         itemActiveBGColor = colors['window_bg_color'];
         itemActiveFGColor = colors['accent_fg_color'];
         ravenMenu = colors['headerbar_bg_color'];
+        log(ravenMenu);
     }
     let [menuRise, menuRiseValue] = settings.get_value('menu-arrow-rise').deep_unpack();
 

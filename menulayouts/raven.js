@@ -61,7 +61,6 @@ var Menu = class ArcMenuRavenLayout extends BaseMenuLayout {
 
         this.ravenMenuActorStyle = "-arrow-base: 0px; -arrow-rise: 0px; -boxpointer-gap: 0px; -arrow-border-radius: 0px; margin: 0px;";
         this.arcMenu.box.style = "padding: 0px; margin: 0px; border-radius: 25px;";
-	this.searchBox.style = 'margin: 10px 10px 10px 10px;';
         this.actionsBoxContainer = new St.BoxLayout({
             x_expand: false,
             y_expand: true,
@@ -77,7 +76,6 @@ var Menu = class ArcMenuRavenLayout extends BaseMenuLayout {
             x_align: Clutter.ActorAlign.START,
             y_align: Clutter.ActorAlign.CENTER,
             vertical: true,
-            style: 'spacing: 5px;',
         });
         this.actionsBoxContainer.add_child(this.actionsBox);
         this.actionsBox.style = "spacing: 5px;";
@@ -92,7 +90,6 @@ var Menu = class ArcMenuRavenLayout extends BaseMenuLayout {
             y_align: Clutter.ActorAlign.START,
             vertical: false,
         });
-	this.searchBox.style = "margin: 10px 10px 10px 10px;";
         this.topBox.add_child(this.searchBox);
 
         this._mainBox = new St.BoxLayout({
@@ -181,8 +178,7 @@ var Menu = class ArcMenuRavenLayout extends BaseMenuLayout {
     }
 
     _updatePosition() {
-        const style = `margin: 0px 0px 0px 0px; spacing: 10px; background-color: rgba(10, 10, 15, 0.1);
-                       padding: 5px 5px; border-color: rgba(186, 196,201, 0.2);`;
+        const style = `spacing: 5px;`;
 
         if (this.contains(this.actionsBoxContainer))
             this.remove_child(this.actionsBoxContainer);
@@ -190,10 +186,10 @@ var Menu = class ArcMenuRavenLayout extends BaseMenuLayout {
         const ravenPosition = Me.settings.get_enum('raven-position');
         if (ravenPosition === Constants.RavenPosition.LEFT) {
             this.insert_child_at_index(this.actionsBoxContainer, 0);
-            this.actionsBoxContainer.style = `border-right-width: 1px;${style}`;
+            this.actionsBoxContainer.style = `border-right-width: 0px;${style}`;
         } else if (ravenPosition === Constants.RavenPosition.RIGHT) {
             this.insert_child_at_index(this.actionsBoxContainer, 1);
-            this.actionsBoxContainer.style = `border-left-width: 1px;${style}`;
+            this.actionsBoxContainer.style = `border-left-width: 0px;${style}`;
         }
     }
 
