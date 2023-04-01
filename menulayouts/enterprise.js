@@ -10,10 +10,10 @@ const MW = Me.imports.menuWidgets;
 const _ = Gettext.gettext;
 
 function getMenuLayoutEnum() {
-    return Constants.MenuLayout.WHISKER;
+    return Constants.MenuLayout.ENTERPRISE;
 }
 
-var Menu = class ArcMenuWhiskerLayout extends BaseMenuLayout {
+var Menu = class ArcMenuEnterpriseLayout extends BaseMenuLayout {
     static {
         GObject.registerClass(this);
     }
@@ -22,53 +22,50 @@ var Menu = class ArcMenuWhiskerLayout extends BaseMenuLayout {
         super(menuButton, {
             has_search: true,
             is_dual_panel: true,
-            display_type: Constants.DisplayType.LIST,
-            search_display_type: Constants.DisplayType.LIST,
+            display_type: Constants.DisplayType.GRID,
+            search_display_type: Constants.DisplayType.GRID,
             context_menu_location: Constants.ContextMenuLocation.BOTTOM_CENTERED,
-            column_spacing: 0,
-            row_spacing: 0,
             supports_category_hover_activation: true,
+            column_spacing: 4,
+            row_spacing: 4,
             vertical: true,
+            default_menu_width: 450,
+            icon_grid_style: 'LargeRectIconGrid',
             category_icon_size: Constants.MEDIUM_ICON_SIZE,
-            apps_icon_size: Constants.EXTRA_SMALL_ICON_SIZE,
+            apps_icon_size: Constants.LARGE_ICON_SIZE,
             quicklinks_icon_size: Constants.EXTRA_SMALL_ICON_SIZE,
             buttons_icon_size: Constants.EXTRA_SMALL_ICON_SIZE,
             pinned_apps_icon_size: Constants.MEDIUM_ICON_SIZE,
         });
 
-        this.actionsBox = new St.BoxLayout({
+        this.topBox = new St.BoxLayout({
             x_expand: true,
             y_expand: false,
             x_align: Clutter.ActorAlign.FILL,
             y_align: Clutter.ActorAlign.START,
             vertical: false,
-            style: 'spacing: 6px; margin: 0px 10px;',
+            style: 'spacing: 6px; margin: 0px 6px; padding: 3px 0px;',
         });
-        this.add_child(this.actionsBox);
 
-        const userMenuItem = new MW.UserMenuItem(this, Constants.DisplayType.LIST);
-        userMenuItem.set({
+        this.userMenuBox = new St.BoxLayout({
+            vertical: false,
             x_expand: true,
-            x_align: Clutter.ActorAlign.FILL,
         });
-        this.actionsBox.add_child(userMenuItem);
+        this.userMenuIcon = new MW.UserMenuIcon(this, 36, true);
+        this.userMenuIcon.set({
+            x_expand: false,
+            x_align: Clutter.ActorAlign.START,
+        });
+        this.userMenuIcon.label.set({
+            x_align: Clutter.ActorAlign.CENTER,
+            y_align: Clutter.ActorAlign.CENTER,
+            style: 'font-weight: bold;',
+        });
 
-        const settingsButton = this.createMenuItem([_('Settings'), '', 'org.gnome.Settings.desktop'],
-            Constants.DisplayType.BUTTON, false);
-        if (settingsButton.shouldShow)
-            this.actionsBox.add_child(settingsButton);
-
-        let powerOptionsBox;
-        const powerDisplayStyle = Me.settings.get_enum('power-display-style');
-        if (powerDisplayStyle === Constants.PowerDisplayStyle.MENU)
-            powerOptionsBox = new MW.LeaveButton(this);
-        else
-            powerOptionsBox = new MW.PowerOptionsBox(this);
-        this.actionsBox.add_child(powerOptionsBox);
-
-        const separator = new MW.ArcMenuSeparator(Constants.SeparatorStyle.MEDIUM,
-            Constants.SeparatorAlignment.HORIZONTAL);
-        this.add_child(separator);
+        this.searchBox.set({
+            x_expand: false,
+            y_align: Clutter.ActorAlign.CENTER,
+        });
 
         this._mainBox = new St.BoxLayout({
             x_expand: true,
@@ -107,6 +104,12 @@ var Menu = class ArcMenuWhiskerLayout extends BaseMenuLayout {
         this._mainBox.add_child(horizontalFlip ? this.rightBox : this.leftBox);
         this._mainBox.add_child(verticalSeparator);
         this._mainBox.add_child(horizontalFlip ? this.leftBox : this.rightBox);
+        this.topBox.add_child(horizontalFlip ? this.searchBox : this.userMenuBox);
+        this.topBox.add_child(horizontalFlip ? this.userMenuBox : this.searchBox);
+        this.userMenuBox.add_child(horizontalFlip ? this.userMenuIcon.label : this.userMenuIcon);
+        this.userMenuBox.add_child(horizontalFlip ? this.userMenuIcon : this.userMenuIcon.label);
+        this.userMenuIcon.label.style += horizontalFlip ? 'padding-right: 14px;' : 'padding-left: 14px;';
+        this.userMenuBox.x_align = horizontalFlip ? Clutter.ActorAlign.END : Clutter.ActorAlign.START;
 
         this.categoriesScrollBox = this._createScrollBox({
             x_expand: true,
@@ -119,14 +122,31 @@ var Menu = class ArcMenuWhiskerLayout extends BaseMenuLayout {
         this.categoriesBox = new St.BoxLayout({vertical: true});
         this.categoriesScrollBox.add_actor(this.categoriesBox);
 
+        let powerOptionsDisplay;
+        const powerDisplayStyle = Me.settings.get_enum('power-display-style');
+        if (powerDisplayStyle === Constants.PowerDisplayStyle.MENU) {
+            powerOptionsDisplay = new MW.LeaveButton(this, true);
+        } else {
+            powerOptionsDisplay = new MW.PowerOptionsBox(this);
+            powerOptionsDisplay.set({
+                x_expand: true,
+                x_align: Clutter.ActorAlign.CENTER,
+            });
+        }
+        this.leftBox.add_child(new MW.ArcMenuSeparator(Constants.SeparatorStyle.MEDIUM,
+            Constants.SeparatorAlignment.HORIZONTAL));
+        this.leftBox.add_child(powerOptionsDisplay);
+
         const searchbarLocation = Me.settings.get_enum('searchbar-default-top-location');
+        const separator = new MW.ArcMenuSeparator(Constants.SeparatorStyle.MEDIUM,
+            Constants.SeparatorAlignment.HORIZONTAL);
+
         if (searchbarLocation === Constants.SearchbarLocation.TOP) {
-            this.searchBox.add_style_class_name('arcmenu-search-top');
-            this.searchBox.style = 'margin-top: 0px; margin-bottom: 6px;';
-            this.insert_child_at_index(this.searchBox, 0);
+            this.insert_child_at_index(separator, 0);
+            this.insert_child_at_index(this.topBox, 0);
         } else if (searchbarLocation === Constants.SearchbarLocation.BOTTOM) {
-            this.searchBox.add_style_class_name('arcmenu-search-bottom');
-            this.add_child(this.searchBox);
+            this.add_child(separator);
+            this.add_child(this.topBox);
         }
 
         this.updateWidth();
@@ -136,9 +156,21 @@ var Menu = class ArcMenuWhiskerLayout extends BaseMenuLayout {
     }
 
     updateWidth(setDefaultMenuView) {
-        const leftPanelWidthOffset = 0;
-        const rightPanelWidthOffset = 45;
-        super.updateWidth(setDefaultMenuView, leftPanelWidthOffset, rightPanelWidthOffset);
+        const leftPanelWidthOffset = 70;
+        const leftPanelWidth = Me.settings.get_int('left-panel-width') - leftPanelWidthOffset;
+        this.leftBox.style = `width: ${leftPanelWidth}px;`;
+
+        const widthAdjustment = Me.settings.get_int('menu-width-adjustment');
+        let menuWidth = this.default_menu_width + widthAdjustment;
+        // Set a 300px minimum limit for the menu width
+        menuWidth = Math.max(300, menuWidth);
+        this.applicationsScrollBox.style = `width: ${menuWidth}px;`;
+        this.menu_width = menuWidth;
+
+        this.searchBox.style = `width: ${menuWidth - 26}px;`;
+
+        if (setDefaultMenuView)
+            this.setDefaultMenuView();
     }
 
     setDefaultMenuView() {
