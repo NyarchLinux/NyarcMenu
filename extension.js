@@ -38,8 +38,12 @@ function init() {
 }
 
 async function reloadTheme() {
-    await new Promise(r => setTimeout(r, 500));
-    Theming.updateStylesheet(settings);
+    try {
+        await new Promise(r => setTimeout(r, 400));
+    } catch (e) {
+        log(e);
+    }
+    Theming.updateStylesheet(Me.settings);
 }
 let customUpdateState = function() {
     this._notificationQueue = this._notificationQueue.filter((notification) => {
@@ -78,7 +82,7 @@ function enable() {
         if (extension.uuid === Constants.DASH_TO_PANEL_UUID || extension.uuid === Constants.AZTASKBAR_UUID || extension.uuid == Constants.BLUR_MY_SHELL_UUID || extension.uuid == Constants.MATERIAL_YOU_UUID) {
             _disconnectExtensionSignals();
             _connectExtensionSignals();
-            Theming.updateStylesheet(settings);
+            reloadTheme();
             _reload();
         }
     });
