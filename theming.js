@@ -66,6 +66,7 @@ function read_file(path) {
 function get_gtk4_theme() {
     let config_path = GLib.get_home_dir() + "/.config";
     let gtk4path = config_path + "/gtk-4.0/gtk.css";
+    let color_string;
     try {
         color_string = read_file(gtk4path);
         log("BUEBIUEB");
@@ -73,11 +74,14 @@ function get_gtk4_theme() {
         log(e);
         return null;
     }
-    lines = color_string.split("\n");
+    let lines = color_string.split("\n");
+    let key;
+    let value;
+    let spl;
     const colors = {};
     for (const string of lines) {
         try{
-            let spl = string.split(' ');
+            spl = string.split(' ');
             if (spl.length < 3) {
                 continue;
             }
@@ -96,19 +100,17 @@ function get_gtk4_theme() {
 export async function updateStylesheet() {
     const {settings} = ArcMenuManager;
     const stylesheet = ArcMenuManager.customStylesheet;
-
     if (!stylesheet) {
         log('ArcMenu - Warning: Custom stylesheet not found! Unable to set contents of custom stylesheet.');
         return;
     }
-    blurMyShell = Main.extensionManager.lookup(Constants.BLUR_MY_SHELL_UUID);
+    //blurMyShell = Main.extensionManager.lookup(Constants.BLUR_MY_SHELL_UUID);
     //const ctx = St.ThemeContext.get_for_stage(global.stage);
     unloadStylesheet();
     
     let customMenuThemeCSS = ``;
     let extraStylingCSS = ``;
     let colors = get_gtk4_theme();
-
     let menuBorderColor = settings.get_string('menu-border-color');
     let menuBorderWidth = settings.get_int('menu-border-width');
     let menuBorderRadius = settings.get_int('menu-border-radius');
@@ -122,7 +124,7 @@ export async function updateStylesheet() {
     let itemActiveFGColor;
     let ravenMenu;
     let menubgtrasparency = 1;
-    if (blurMyShell.state === ExtensionState.ENABLED) {
+    if (true) {
         menubgtrasparency = 0.8;
     }
     if (colors == null) {
@@ -308,9 +310,9 @@ export async function updateStylesheet() {
             return;
         }
 
-        Me.customStylesheet = stylesheet;
-        let theme = St.ThemeContext.get_for_stage(global.stage).get_theme();
-        theme.load_stylesheet(Me.customStylesheet);
+        ArcMenuManager.customStylesheet = stylesheet;
+        const theme = St.ThemeContext.get_for_stage(global.stage).get_theme();
+        theme.load_stylesheet(ArcMenuManager.customStylesheet);
     }
     catch(e){
         log(`ArcMenu - Error replacing contents of custom stylesheet: ${e}`);
