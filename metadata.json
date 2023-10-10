@@ -5,7 +5,7 @@
 "gettext-domain": "nyarcmenu",
 "name": "NyArcMenu",
 "description": "Fork of ArcMenu, Application Menu Extension for GNOME",
-"version": 44,
-"shell-version": [ "42", "43", "44" ],
+"version": 51,
+"shell-version": [ "45" ],
 "url": "https://gitlab.com/arcmenu/ArcMenu"
 }

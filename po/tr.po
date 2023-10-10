@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ArcMenu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-12 17:27-0500\n"
-"PO-Revision-Date: 2022-12-21 18:16+0300\n"
+"POT-Creation-Date: 2023-07-22 06:52-0400\n"
+"PO-Revision-Date: 2023-10-09 13:09+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Türkçe <gnome-turk@gnome.org>\n"
 "Language: tr\n"
@@ -24,595 +24,650 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.4\n"
 
-#: appMenu.js:38 appMenu.js:230
+#: appMenu.js:52 appMenu.js:307
 msgid "Pin to ArcMenu"
 msgstr "ArcMenuʼye Sabitle"
 
-#: appMenu.js:61 appMenu.js:186
+#: appMenu.js:74 appMenu.js:263
 msgid "Create Desktop Shortcut"
 msgstr "Masaüstü Kısayolu Oluştur"
 
-#: appMenu.js:186
+#: appMenu.js:262
 msgid "Delete Desktop Shortcut"
 msgstr "Masaüstü Kısayolunu Sil"
 
-#: appMenu.js:194 appMenu.js:230
+#: appMenu.js:271 appMenu.js:307
 msgid "Unpin from ArcMenu"
 msgstr "ArcMenuʼden Ayır"
 
-#: appMenu.js:267
+#: appMenu.js:350
 msgid "Open Folder Location"
 msgstr "Klasör Konumunu Aç"
 
-#: constants.js:73
+#: constants.js:82
 msgid "Favorites"
 msgstr "Favoriler"
 
-#: constants.js:74 menulayouts/runner.js:122
-#: settings/Menu/LayoutTweaksPage.js:765
+#: constants.js:83 menulayouts/runner.js:131 menulayouts/windows.js:337
+#: settings/Menu/LayoutTweaksPage.js:821
 msgid "Frequent Apps"
 msgstr "Sık Kullanılan Uygulamalar"
 
-#: constants.js:75 menuWidgets.js:1244 menulayouts/az.js:128
-#: menulayouts/az.js:130 menulayouts/az.js:163 menulayouts/eleven.js:162
-#: menulayouts/eleven.js:163 menulayouts/eleven.js:224
-#: menulayouts/redmond.js:46 menulayouts/redmond.js:47
-#: menulayouts/redmond.js:51
+#: constants.js:84 menuWidgets.js:1302 menulayouts/az.js:67
+#: menulayouts/az.js:76 menulayouts/eleven.js:57 menulayouts/eleven.js:66
+#: menulayouts/redmond.js:77 menulayouts/redmond.js:80
+#: menulayouts/redmond.js:84
 msgid "All Apps"
 msgstr "Tüm Uygulamalar"
 
-#: constants.js:76 menuWidgets.js:734 settings/Menu/LayoutTweaksPage.js:659
-#: settings/Menu/LayoutTweaksPage.js:763 settings/MenuPage.js:97
+#: constants.js:85 menuWidgets.js:778 settings/Menu/LayoutTweaksPage.js:701
+#: settings/Menu/LayoutTweaksPage.js:819 settings/MenuPage.js:99
 msgid "Pinned Apps"
 msgstr "Sabitlenmiş Uygulamalar"
 
-#: constants.js:77 gnome43/searchProviders/recentFiles.js:26
-#: gnome43/searchProviders/recentFiles.js:27 menulayouts/raven.js:298
-#: menulayouts/unity.js:365 searchProviders/recentFiles.js:26
-#: searchProviders/recentFiles.js:27
+#: constants.js:86 gnome43/searchProviders/recentFiles.js:31
+#: gnome43/searchProviders/recentFiles.js:32 menulayouts/raven.js:304
+#: menulayouts/unity.js:376 searchProviders/recentFiles.js:31
+#: searchProviders/recentFiles.js:32
 msgid "Recent Files"
 msgstr "Son Dosyalar"
 
-#: constants.js:232 menulayouts/mint.js:223 menulayouts/unity.js:209
-#: settings/Menu/ListPinnedPage.js:339
-msgid "Log Out"
-msgstr "Çıkış"
+#: constants.js:245 menuButton.js:624 settings/Menu/ListPinnedPage.js:375
+msgid "Log Out..."
+msgstr "Oturumu Kapat..."
 
-#: constants.js:233 menulayouts/mint.js:224 menulayouts/unity.js:210
-#: settings/Menu/ListPinnedPage.js:338
+#: constants.js:246 menuButton.js:623 settings/Menu/ListPinnedPage.js:374
 msgid "Lock"
 msgstr "Kilitle"
 
-#: constants.js:234 settings/Menu/ListPinnedPage.js:341
-msgid "Restart"
-msgstr "Yeniden Başlat"
+#: constants.js:247 menuButton.js:618 settings/Menu/ListPinnedPage.js:377
+msgid "Restart..."
+msgstr "Yeniden Başlat..."
 
-#: constants.js:235 menulayouts/mint.js:225 menulayouts/unity.js:211
-#: settings/Menu/ListPinnedPage.js:340
-msgid "Power Off"
-msgstr "Gücü Kapat"
+#: constants.js:248 menuButton.js:619 settings/Menu/ListPinnedPage.js:376
+msgid "Power Off..."
+msgstr "Gücü Kapat..."
 
-#: constants.js:236 settings/Menu/ListPinnedPage.js:342
+#: constants.js:249 menuButton.js:615 settings/Menu/ListPinnedPage.js:378
 msgid "Suspend"
-msgstr "Beklemeye Al"
+msgstr "Askıya Al"
 
-#: constants.js:237 settings/Menu/ListPinnedPage.js:343
+#: constants.js:250 settings/Menu/ListPinnedPage.js:379
 msgid "Hybrid Sleep"
 msgstr "Karma Uyku"
 
-#: constants.js:238 settings/Menu/ListPinnedPage.js:344
+#: constants.js:251 settings/Menu/ListPinnedPage.js:381
 msgid "Hibernate"
-msgstr "Uyku Kipi"
+msgstr "Hazırda Beklet"
 
-#: constants.js:376 settings/AboutPage.js:12
+#: constants.js:252 menuButton.js:625 settings/Menu/ListPinnedPage.js:382
+msgid "Switch User"
+msgstr "Kullanıcı Değiştir"
+
+#: constants.js:394 settings/AboutPage.js:40
 msgid "ArcMenu"
 msgstr "ArcMenu"
 
-#: constants.js:377
+#: constants.js:399
 msgid "Brisk"
 msgstr "Brisk"
 
-#: constants.js:378
+#: constants.js:404
 msgid "Whisker"
 msgstr "Whisker"
 
-#: constants.js:379
+#: constants.js:409
 msgid "GNOME Menu"
 msgstr "GNOME Menü"
 
-#: constants.js:380
+#: constants.js:414
 msgid "Mint"
 msgstr "Mint"
 
-#: constants.js:381
+#: constants.js:419
 msgid "Budgie"
 msgstr "Budgie"
 
-#: constants.js:384
+#: constants.js:427
 msgid "Unity"
 msgstr "Unity"
 
-#: constants.js:385
+#: constants.js:432
 msgid "Plasma"
 msgstr "Plasma"
 
-#: constants.js:386
+#: constants.js:437
 msgid "tognee"
 msgstr "tognee"
 
-#: constants.js:387
+#: constants.js:442
 msgid "Insider"
 msgstr "Insider"
 
-#: constants.js:388
+#: constants.js:447
 msgid "Redmond"
 msgstr "Redmond"
 
 # İşletim sistemi, pencereler değil!
-#: constants.js:389
+#: constants.js:452
 msgid "Windows"
 msgstr "Windows"
 
-#: constants.js:390
+#: constants.js:457
 msgid "11"
 msgstr "11"
 
-#: constants.js:391
+#: constants.js:462
 msgid "a.z."
 msgstr "a.z."
 
-#: constants.js:394
+#: constants.js:467
+msgid "Enterprise"
+msgstr "Kurumsal"
+
+#: constants.js:472
+msgid "Pop"
+msgstr "Pop"
+
+#: constants.js:480
 msgid "Elementary"
 msgstr "Elementary"
 
-#: constants.js:395
+#: constants.js:485
 msgid "Chromebook"
 msgstr "Chromebook"
 
-#: constants.js:398
+#: constants.js:493
 msgid "Runner"
 msgstr "Runner"
 
-#: constants.js:399
+#: constants.js:498
 msgid "GNOME Overview"
 msgstr "GNOME Genel Görünüm"
 
-#: constants.js:402
+#: constants.js:506
 msgid "Raven"
 msgstr "Raven"
 
-#: constants.js:406
+#: constants.js:514
 msgid "Traditional"
 msgstr "Geleneksel"
 
-#: constants.js:407
+#: constants.js:519
 msgid "Modern"
 msgstr "Modern"
 
-#: constants.js:408
+#: constants.js:524
 msgid "Touch"
 msgstr "Dokunmatik"
 
-#: constants.js:409
+#: constants.js:529
 msgid "Launcher"
 msgstr "Başlatıcı"
 
-#: constants.js:410
+#: constants.js:534
 msgid "Alternative"
 msgstr "Alternatif"
 
-#: constants.js:416 menulayouts/az.js:116 menulayouts/eleven.js:148
-#: menulayouts/insider.js:60 menulayouts/mint.js:214 menulayouts/whisker.js:50
-#: menulayouts/windows.js:59 settings/AboutPage.js:144
-#: settings/AboutPage.js:152 settings/AboutPage.js:182
+#: constants.js:541 menulayouts/whisker.js:56
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: constants.js:416 menulayouts/mint.js:218 menulayouts/unity.js:204
+#: constants.js:541
 msgid "Software"
 msgstr "Yazılım"
 
-#: constants.js:416 menulayouts/az.js:113 menulayouts/eleven.js:145
-#: menulayouts/insider.js:57 menulayouts/mint.js:213 menulayouts/windows.js:56
+#: constants.js:541
 msgid "Terminal"
 msgstr "Uçbirim"
 
-#: constants.js:416
+#: constants.js:541
 msgid "Tweaks"
 msgstr "İnce Ayarlar"
 
-#: constants.js:417 menuWidgets.js:435 settings/Menu/ListPinnedPage.js:331
+#: constants.js:542 menuButton.js:568 menuWidgets.js:497
+#: settings/Menu/ListPinnedPage.js:344 settings/Menu/ListPinnedPage.js:364
 msgid "Activities Overview"
 msgstr "Etkinlikler Genel Görünüm"
 
-#: constants.js:417 menuButton.js:527 prefs.js:93
-#: settings/Menu/ListPinnedPage.js:319 settings/Menu/ListPinnedPage.js:329
+#: constants.js:542 menuButton.js:554 prefs.js:94 settings/AboutPage.js:125
+#: settings/Menu/ListPinnedPage.js:332 settings/Menu/ListPinnedPage.js:341
+#: settings/Menu/ListPinnedPage.js:351
 msgid "ArcMenu Settings"
 msgstr "ArcMenu Ayarları"
 
-#: constants.js:417 menulayouts/az.js:109 menulayouts/eleven.js:141
-#: menulayouts/insider.js:54 menulayouts/mint.js:222 menulayouts/unity.js:208
-#: menulayouts/windows.js:53
+#: constants.js:542
 msgid "Files"
 msgstr "Dosyalar"
 
-#: gnome43/search.js:731 search.js:742
+#: gnome43/search.js:668 search.js:681
 msgid "Searching..."
 msgstr "Aranıyor..."
 
-#: gnome43/search.js:733 search.js:744
+#: gnome43/search.js:670 search.js:683
 msgid "No results."
 msgstr "Sonuç yok."
 
-#: gnome43/search.js:812 search.js:823
+#: gnome43/search.js:749 search.js:762
 #, javascript-format
 msgid "+ %d more"
 msgstr "+ %d daha"
 
-#: gnome43/searchProviders/openWindows.js:26 searchProviders/openWindows.js:26
+#: gnome43/searchProviders/openWindows.js:32 searchProviders/openWindows.js:31
 msgid "List of open windows across all workspaces"
 msgstr "Tüm çalışma alanlarındaki açık pencerelerin listesi"
 
-#: gnome43/searchProviders/openWindows.js:27 searchProviders/openWindows.js:27
+#: gnome43/searchProviders/openWindows.js:33 searchProviders/openWindows.js:32
 msgid "Open Windows"
 msgstr "Açık Pencereler"
 
-#: gnome43/searchProviders/openWindows.js:39 searchProviders/openWindows.js:39
+#: gnome43/searchProviders/openWindows.js:46 searchProviders/openWindows.js:45
 #, javascript-format
 msgid "'%s' on Workspace %d"
 msgstr "'%s' çalışma alanı %d üstünde"
 
-#: gnome43/searchProviders/recentFiles.js:88 searchProviders/recentFiles.js:86
+#: gnome43/searchProviders/recentFiles.js:92 searchProviders/recentFiles.js:91
 #, javascript-format
 msgid "Failed to open “%s”"
 msgstr "“%s” açılamadı"
 
-#: menuButton.js:90
-msgid "App Icons Taskbar Settings"
-msgstr "Uygulama Simgeleri Görev Çubuğu Ayarları"
+#: menuButton.js:599 settings/Menu/ListPinnedPage.js:367
+msgid "Show Desktop"
+msgstr "Masaüstünü Göster"
 
-#: menuButton.js:94
-msgid "Dash to Panel Settings"
-msgstr "Dash to Panel Ayarları"
-
-#: menuButton.js:531 settings/GeneralPage.js:127
-msgid "General Settings"
-msgstr "Genel Ayarlar"
-
-#: menuButton.js:532
-msgid "Customize Menu"
-msgstr "Menüyü Kişiselleştir"
-
-#: menuButton.js:533
-msgid "Change Menu Layout"
-msgstr "Menü Düzenini Değiştir"
-
-#: menuButton.js:534
-msgid "Menu Button Settings"
-msgstr "Menü Düğme Ayarları"
-
-#: menuButton.js:535 settings/AboutPage.js:21
-msgid "About"
-msgstr "Hakkında"
-
-#: menuWidgets.js:708
-msgid "Configure Runner"
-msgstr "Runnerʼı Yapılandır"
-
-#: menuWidgets.js:746
-msgid "Extras"
-msgstr "Ekstralar"
-
-#: menuWidgets.js:796 menuWidgets.js:812
+#: menuButton.js:613 menuWidgets.js:853 menuWidgets.js:871
 msgid "Power Off / Log Out"
 msgstr "Gücü Kapat / Oturumu Kapat"
 
-#: menuWidgets.js:854 menulayouts/plasma.js:315
+#: menuButton.js:654
+msgid "Dash to Panel Settings"
+msgstr "Dash to Panel Ayarları"
+
+#: menuButton.js:658
+msgid "App Icons Taskbar Settings"
+msgstr "Uygulama Simgeleri Görev Çubuğu Ayarları"
+
+#: menuWidgets.js:751
+msgid "Configure Runner"
+msgstr "Runnerʼı Yapılandır"
+
+#: menuWidgets.js:792
+msgid "Extras"
+msgstr "Ekstralar"
+
+#: menuWidgets.js:908 menulayouts/plasma.js:323
 msgid "Session"
 msgstr "Oturum"
 
-#: menuWidgets.js:858 menulayouts/plasma.js:320
+#: menuWidgets.js:912 menulayouts/plasma.js:327
 msgid "System"
 msgstr "Sistem"
 
-#: menuWidgets.js:925
+#: menuWidgets.js:976
 msgid "Categories"
 msgstr "Kategoriler"
 
-#: menuWidgets.js:1098 menuWidgets.js:2553 menulayouts/plasma.js:123
+#: menuWidgets.js:1152 menuWidgets.js:3169 menulayouts/plasma.js:124
 msgid "Apps"
 msgstr "Uygulamalar"
 
-#: menuWidgets.js:1179 menuWidgets.js:1200 menulayouts/az.js:128
-#: menulayouts/eleven.js:162 menulayouts/redmond.js:46
-#: menulayouts/redmond.js:50 settings/Menu/SubPage.js:77
+#: menuWidgets.js:1238 menuWidgets.js:1256 menulayouts/az.js:68
+#: menulayouts/eleven.js:58 menulayouts/redmond.js:78 menulayouts/redmond.js:83
+#: settings/Menu/SubPage.js:77 settings/Menu/ThemingDialog.js:336
 msgid "Back"
 msgstr "Geri"
 
-#: menuWidgets.js:1886
+#: menuWidgets.js:1922
 msgid "New"
 msgstr "Yeni"
 
-#: menuWidgets.js:2392
-msgid "Search…"
-msgstr "Ara…"
+#: menuWidgets.js:2303
+msgid "Rename Folder"
+msgstr "Klasörü Yeniden Adlandır"
 
-#: menulayouts/az.js:130 menulayouts/az.js:157 menulayouts/az.js:213
-#: menulayouts/eleven.js:163 menulayouts/eleven.js:214
-#: menulayouts/eleven.js:271 menulayouts/insider.js:162
-#: menulayouts/plasma.js:118 menulayouts/raven.js:63 menulayouts/raven.js:227
-#: menulayouts/raven.js:276 menulayouts/redmond.js:47 menulayouts/redmond.js:50
-#: menulayouts/redmond.js:51 menulayouts/unity.js:39 menulayouts/unity.js:288
-#: menulayouts/unity.js:347 menulayouts/windows.js:390 utils.js:224
+#: menuWidgets.js:2304
+msgid "Delete Folder"
+msgstr "Klasörü Sil"
+
+#: menuWidgets.js:2314
+#, javascript-format
+msgid "Permanently delete %s folder?"
+msgstr "%s klasörü kalıcı olarak silinsin mi?"
+
+#: menuWidgets.js:2319
+msgid "No"
+msgstr "Hayır"
+
+#: menuWidgets.js:2327
+msgid "Yes"
+msgstr "Evet"
+
+#: menuWidgets.js:2342
+#, javascript-format
+msgid "Rename %s folder"
+msgstr "%s klasörünü yeniden adlandır"
+
+#: menuWidgets.js:2376
+msgid "Cancel"
+msgstr "İptal"
+
+#: menuWidgets.js:2384 settings/GeneralPage.js:401
+#: settings/Menu/ListPinnedPage.js:635 settings/Menu/VisualSettings.js:367
+msgid "Apply"
+msgstr "Uygula"
+
+#: menuWidgets.js:2730 menulayouts/az.js:75 menulayouts/eleven.js:65
+#: menulayouts/insider.js:175 menulayouts/plasma.js:119 menulayouts/raven.js:63
+#: menulayouts/raven.js:238 menulayouts/raven.js:286 menulayouts/redmond.js:79
+#: menulayouts/redmond.js:82 menulayouts/redmond.js:85 menulayouts/unity.js:42
+#: menulayouts/unity.js:281 menulayouts/unity.js:357 menulayouts/windows.js:414
 msgid "Pinned"
 msgstr "Sabitlenmiş"
 
-#: menulayouts/eleven.js:164 menulayouts/eleven.js:275
-#: menulayouts/windows.js:333
+#: menuWidgets.js:2892
+msgid "Unmount Drive"
+msgstr "Aygıtın Bağını Kaldır"
+
+#: menuWidgets.js:2894
+msgid "Eject Drive"
+msgstr "Sürücüyü Çıkart"
+
+#: menuWidgets.js:2940
+msgid "Remove from Recent"
+msgstr "Son Kullanılanlardan Kaldır"
+
+#: menuWidgets.js:3019
+msgid "Search…"
+msgstr "Ara…"
+
+#: menulayouts/baseMenuLayout.js:421
+msgid "More Recent Files..."
+msgstr "Daha Yeni Dosyalar..."
+
+#: menulayouts/eleven.js:73
 msgid "Frequent"
 msgstr "Sık Kullanılanlar"
 
-#: menulayouts/mint.js:211 menulayouts/unity.js:198 placeDisplay.js:112
-#: placeDisplay.js:342 settings/Menu/LayoutTweaksPage.js:465
-#: settings/Menu/LayoutTweaksPage.js:539 settings/Menu/ListPinnedPage.js:352
-#: utils.js:200
-msgid "Home"
-msgstr "Ev"
-
-#: menulayouts/mint.js:220 menulayouts/unity.js:199
-#: settings/Menu/ListPinnedPage.js:353
-msgid "Documents"
-msgstr "Belgeler"
-
-#: menulayouts/plasma.js:127 menulayouts/unity.js:206 placeDisplay.js:127
-#: placeDisplay.js:150 settings/Menu/ListPinnedPage.js:358
+#: menulayouts/plasma.js:128 placeDisplay.js:130 placeDisplay.js:153
+#: settings/Menu/ListPinnedPage.js:398
 msgid "Computer"
 msgstr "Bilgisayar"
 
-#: menulayouts/plasma.js:131
+#: menulayouts/plasma.js:132
 msgid "Leave"
 msgstr "Çık"
 
-#: menulayouts/plasma.js:256 menulayouts/windows.js:270
-#: settings/MenuPage.js:117
+#: menulayouts/plasma.js:271 menulayouts/windows.js:274
+#: settings/MenuPage.js:121
 msgid "Application Shortcuts"
 msgstr "Uygulama Kısayolları"
 
-#: menulayouts/plasma.js:260 menulayouts/windows.js:274
+#: menulayouts/plasma.js:276 menulayouts/windows.js:278
 msgid "Places"
 msgstr "Yerler"
 
-#: menulayouts/plasma.js:272 menulayouts/windows.js:188
-#: settings/Menu/LayoutTweaksPage.js:706 settings/Menu/LayoutTweaksPage.js:811
+#: menulayouts/plasma.js:291 menulayouts/windows.js:210
+#: settings/Menu/LayoutTweaksPage.js:748 settings/Menu/LayoutTweaksPage.js:867
 msgid "Bookmarks"
 msgstr "Yer İmleri"
 
-#: menulayouts/plasma.js:280 menulayouts/windows.js:196
+#: menulayouts/plasma.js:293 menulayouts/windows.js:212
 msgid "Devices"
 msgstr "Aygıtlar"
 
-#: menulayouts/plasma.js:288 menulayouts/windows.js:204
-#: settings/Menu/ListPinnedPage.js:359
+#: menulayouts/plasma.js:295 menulayouts/windows.js:214
+#: settings/Menu/ListPinnedPage.js:399
 msgid "Network"
 msgstr "Ağ"
 
-#: menulayouts/raven.js:65 menulayouts/raven.js:234 menulayouts/unity.js:41
-#: menulayouts/unity.js:293 settings/Menu/LayoutTweaksPage.js:466
-#: settings/Menu/LayoutTweaksPage.js:540 settings/Menu/LayoutTweaksPage.js:658
-#: settings/Menu/LayoutTweaksPage.js:741 settings/Menu/LayoutTweaksPage.js:766
+#: menulayouts/pop.js:244 menulayouts/pop.js:246
+msgid "Library Home"
+msgstr "Kitaplık Ana Sayfası"
+
+#: menulayouts/pop.js:302
+msgid "New Folder"
+msgstr "Yeni Klasör"
+
+#: menulayouts/pop.js:336
+msgid "Unnamed Folder"
+msgstr "Adsız Klasör"
+
+#: menulayouts/raven.js:63 menulayouts/raven.js:244 menulayouts/unity.js:42
+#: menulayouts/unity.js:285 settings/Menu/LayoutTweaksPage.js:586
+#: settings/Menu/LayoutTweaksPage.js:621 settings/Menu/LayoutTweaksPage.js:700
+#: settings/Menu/LayoutTweaksPage.js:797 settings/Menu/LayoutTweaksPage.js:822
 msgid "All Programs"
 msgstr "Tüm Programlar"
 
-#: menulayouts/raven.js:278 menulayouts/unity.js:349
-#: settings/Menu/VisualSettings.js:203
+#: menulayouts/raven.js:288 menulayouts/unity.js:359
+#: settings/Menu/VisualSettings.js:226
 msgid "Shortcuts"
 msgstr "Kısayollar"
 
-#: menulayouts/unity.js:200 settings/Menu/ListPinnedPage.js:354
-msgid "Downloads"
-msgstr "İndirilenler"
-
-#: placeDisplay.js:49
+#: placeDisplay.js:52
 #, javascript-format
 msgid "Failed to launch “%s”"
 msgstr "“%s” başlatılamadı"
 
-#: placeDisplay.js:64
+#: placeDisplay.js:67
 #, javascript-format
 msgid "Failed to mount volume for “%s”"
 msgstr "“%s” bölümü bağlanamadı"
 
-#: placeDisplay.js:216
+#: placeDisplay.js:115 placeDisplay.js:363
+#: settings/Menu/LayoutTweaksPage.js:585 settings/Menu/LayoutTweaksPage.js:620
+#: settings/Menu/ListPinnedPage.js:390 utils.js:253
+msgid "Home"
+msgstr "Ev"
+
+#: placeDisplay.js:226
 #, javascript-format
 msgid "Ejecting drive “%s” failed:"
 msgstr "“%s” sürücüsü çıkartılamadı:"
 
-#: prefsWidgets.js:304
+#: prefsWidgets.js:243
 msgid "Modify"
 msgstr "Değiştir"
 
-#: prefsWidgets.js:322
+#: prefsWidgets.js:258
 msgid "Move Up"
 msgstr "Yukarı Taşı"
 
-#: prefsWidgets.js:339
+#: prefsWidgets.js:265
 msgid "Move Down"
 msgstr "Aşagı Taşı"
 
-#: prefsWidgets.js:357
+#: prefsWidgets.js:272
 msgid "Remove"
 msgstr "Kaldır"
 
-#: settings/AboutPage.js:13
+#: settings/AboutPage.js:11
 msgid "Application Menu Extension for GNOME"
 msgstr "GNOME İçin Uygulama Menü Uzantısı"
 
-# Burada, %s Sürümü şeklinde değiştirecek şekilde başına ArcMenu ekleniyor
-#: settings/AboutPage.js:65
-msgid "Version"
-msgstr "Sürümü"
+#: settings/AboutPage.js:19 settings/Menu/ListPinnedPage.js:361
+msgid "About"
+msgstr "Hakkında"
 
-#: settings/AboutPage.js:75
+#: settings/AboutPage.js:63
+msgid "ArcMenu Version"
+msgstr "ArcMenu Sürümü"
+
+#: settings/AboutPage.js:73
 msgid "Git Commit"
 msgstr "Git Değişiklik"
 
-#: settings/AboutPage.js:85
+#: settings/AboutPage.js:83
 msgid "GNOME Version"
 msgstr "GNOME Sürümü"
 
-#: settings/AboutPage.js:94
-msgid "OS"
-msgstr "İşletim Sistemi"
+#: settings/AboutPage.js:92
+msgid "OS Name"
+msgstr "İşletim Sistemi Adı"
 
-#: settings/AboutPage.js:117
-msgid "Session Type"
-msgstr "Oturum Türü"
+#: settings/AboutPage.js:105
+msgid "Windowing System"
+msgstr "Pencere Sistemi"
 
-#: settings/AboutPage.js:126
-msgid "GitLab"
-msgstr "GitLab"
+#: settings/AboutPage.js:113
+msgid "ArcMenu GitLab"
+msgstr "ArcMenu GitLab"
 
-#: settings/AboutPage.js:130
+#: settings/AboutPage.js:116
 msgid "Donate via PayPal"
 msgstr "PayPal ile Bağış Yap"
 
-#: settings/AboutPage.js:147 settings/AboutPage.js:152
+#: settings/AboutPage.js:128 settings/Menu/ThemingDialog.js:69
+#: settings/Menu/ThemingDialog.js:74
 msgid "Load"
 msgstr "Yükle"
 
-#: settings/AboutPage.js:177 settings/AboutPage.js:182
+#: settings/AboutPage.js:133
+msgid "Load Settings"
+msgstr "Ayarları Yükle"
+
+#: settings/AboutPage.js:159 settings/Menu/ThemingDialog.js:127
+#: settings/Menu/ThemingDialog.js:140
 msgid "Save"
 msgstr "Kaydet"
 
-#: settings/AboutPage.js:203
+#: settings/AboutPage.js:164
+msgid "Save Settings"
+msgstr "Ayarları Kaydet"
+
+#: settings/AboutPage.js:185
 msgid "Credits"
 msgstr "Oluşturanlar"
 
-#: settings/GeneralPage.js:13
+#: settings/GeneralPage.js:14
 msgid "General"
 msgstr "Genel"
 
-#: settings/GeneralPage.js:20
+#: settings/GeneralPage.js:21
 msgid "Panel Display Options"
 msgstr "Panel Görünüm Seçenekleri"
 
-#: settings/GeneralPage.js:33
+#: settings/GeneralPage.js:34
 msgid "Show Activities Button"
 msgstr "Etkinlik Düğmesini Göster"
 
-#: settings/GeneralPage.js:34
+#: settings/GeneralPage.js:35
 msgid "Dash to Panel may conflict with this setting"
 msgstr "Dash to Panel bu ayarla çakışabilir"
 
-#: settings/GeneralPage.js:42 settings/GeneralPage.js:68
-#: settings/Menu/LayoutTweaksPage.js:567
+#: settings/GeneralPage.js:43 settings/GeneralPage.js:69
+#: settings/Menu/LayoutTweaksPage.js:648
 msgid "Left"
 msgstr "Sol"
 
-#: settings/GeneralPage.js:43 settings/GeneralPage.js:69
+#: settings/GeneralPage.js:44 settings/GeneralPage.js:70
 msgid "Center"
 msgstr "Orta"
 
-#: settings/GeneralPage.js:44 settings/GeneralPage.js:70
-#: settings/Menu/LayoutTweaksPage.js:568
+#: settings/GeneralPage.js:45 settings/GeneralPage.js:71
+#: settings/Menu/LayoutTweaksPage.js:649
 msgid "Right"
 msgstr "Sağ"
 
-#: settings/GeneralPage.js:46 settings/MenuButtonPage.js:127
+#: settings/GeneralPage.js:47 settings/MenuButtonPage.js:124
 msgid "Position in Panel"
 msgstr "Paneldeki Konumu"
 
-#: settings/GeneralPage.js:76
+#: settings/GeneralPage.js:77
 msgid "Menu Alignment"
 msgstr "Menü Hizalaması"
 
-#: settings/GeneralPage.js:95
+#: settings/GeneralPage.js:96
 msgid "Display ArcMenu on all Panels"
 msgstr "ArcMenuʼyu Tüm Panellerde Görüntüle"
 
-#: settings/GeneralPage.js:96
+#: settings/GeneralPage.js:97
 msgid "Dash to Panel or App Icons Taskbar extension required"
 msgstr "Dash to Panel veya App Icons Taskbar uzantısı gerekli"
 
-#: settings/GeneralPage.js:112
+#: settings/GeneralPage.js:113
 msgid "Always Prefer Top Panel"
 msgstr "Daima Üst Paneli Tercih Et"
 
-#: settings/GeneralPage.js:113
+#: settings/GeneralPage.js:114
 msgid "Useful with Dash to Panel setting 'Keep original gnome-shell top panel'"
 msgstr ""
 "'Orijinal gnome-shell üst panelini koru' ayarı Dash to Panel ile "
 "kullanışlıdır"
 
-#: settings/GeneralPage.js:131
+#: settings/GeneralPage.js:128
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: settings/GeneralPage.js:132
 msgid "ArcMenu Hotkey"
 msgstr "ArcMenu Kısayolu"
 
-#: settings/GeneralPage.js:132
+#: settings/GeneralPage.js:133
 msgid "Standalone Runner Menu"
 msgstr "Bağımsız Runner Menü"
 
-#: settings/GeneralPage.js:163
+#: settings/GeneralPage.js:146
+msgid "Hide Overview on Startup"
+msgstr "Başlangıçta Genel Görünümü Gizle"
+
+#: settings/GeneralPage.js:180
 msgid "Open on Primary Monitor"
 msgstr "Birincil Ekranda Aç"
 
-#: settings/GeneralPage.js:169
+#: settings/GeneralPage.js:186
 msgid "Left Super Key"
 msgstr "Sol Süper Tuşu"
 
-#: settings/GeneralPage.js:170
+#: settings/GeneralPage.js:187
 msgid "Custom Hotkey"
 msgstr "Özel Kısayol"
 
-#: settings/GeneralPage.js:172
+#: settings/GeneralPage.js:189
 msgid "Hotkey"
 msgstr "Kısayol"
 
-#: settings/GeneralPage.js:185
+#: settings/GeneralPage.js:202
 msgid "Modify Hotkey"
 msgstr "Kısayolu Değiştir"
 
-#: settings/GeneralPage.js:190
+#: settings/GeneralPage.js:207
 msgid "Current Hotkey"
 msgstr "Geçerli Kısayol"
 
-#: settings/GeneralPage.js:244
+#: settings/GeneralPage.js:261
 msgid "Set Custom Hotkey"
 msgstr "Özel Kısayol Ata"
 
-#: settings/GeneralPage.js:269
+#: settings/GeneralPage.js:286
 msgid "Choose Modifiers"
 msgstr "Düzenleyicileri Seç"
 
-#: settings/GeneralPage.js:279
+#: settings/GeneralPage.js:296
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: settings/GeneralPage.js:283
+#: settings/GeneralPage.js:300
 msgid "Super"
 msgstr "Super"
 
-#: settings/GeneralPage.js:287
+#: settings/GeneralPage.js:304
 msgid "Shift"
 msgstr "Shift"
 
-#: settings/GeneralPage.js:291
+#: settings/GeneralPage.js:308
 msgid "Alt"
 msgstr "Alt"
 
-#: settings/GeneralPage.js:343
+#: settings/GeneralPage.js:376
 msgid "Press any key"
 msgstr "Bir tuşa basın"
 
-#: settings/GeneralPage.js:360
+#: settings/GeneralPage.js:391
 msgid "New Hotkey"
 msgstr "Yeni Kısayol"
-
-#: settings/GeneralPage.js:370 settings/Menu/ListPinnedPage.js:603
-msgid "Apply"
-msgstr "Uygula"
 
 #: settings/Menu/FineTunePage.js:37
 msgid "Show Search Result Descriptions"
@@ -680,176 +735,159 @@ msgstr "Tümünü Temizle"
 msgid "Clear Apps Marked 'New'"
 msgstr "'Yeni' Olarak İşaretlenmiş Uygulamaları Temizle"
 
-#: settings/Menu/LayoutTweaksPage.js:88
+#: settings/Menu/LayoutTweaksPage.js:116
 msgid "Vertical Separator"
 msgstr "Dikey Ayırıcıyı"
 
-#: settings/Menu/LayoutTweaksPage.js:97
+#: settings/Menu/LayoutTweaksPage.js:125
 msgid "Mouse Click"
 msgstr "Fare Tıklaması"
 
-#: settings/Menu/LayoutTweaksPage.js:98
+#: settings/Menu/LayoutTweaksPage.js:126
 msgid "Mouse Hover"
 msgstr "Fareyle Üzerine Gelme"
 
-#: settings/Menu/LayoutTweaksPage.js:101
+#: settings/Menu/LayoutTweaksPage.js:129
 msgid "Category Activation"
 msgstr "Kategori Etkinleştirme"
 
-#: settings/Menu/LayoutTweaksPage.js:124
+#: settings/Menu/LayoutTweaksPage.js:152
 msgid "Round"
 msgstr "Yuvarlak"
 
-#: settings/Menu/LayoutTweaksPage.js:125 settings/Menu/VisualSettings.js:177
-#: settings/Menu/VisualSettings.js:178 settings/Menu/VisualSettings.js:179
+#: settings/Menu/LayoutTweaksPage.js:153 settings/Menu/VisualSettings.js:180
+#: settings/Menu/VisualSettings.js:181 settings/Menu/VisualSettings.js:182
 msgid "Square"
 msgstr "Kare"
 
-#: settings/Menu/LayoutTweaksPage.js:127
+#: settings/Menu/LayoutTweaksPage.js:155
 msgid "Avatar Icon Shape"
 msgstr "Avatar Simge Şekli"
 
-#: settings/Menu/LayoutTweaksPage.js:142 settings/Menu/LayoutTweaksPage.js:831
+#: settings/Menu/LayoutTweaksPage.js:171 settings/Menu/LayoutTweaksPage.js:888
 msgid "Bottom"
 msgstr "Alt"
 
-#: settings/Menu/LayoutTweaksPage.js:143 settings/Menu/LayoutTweaksPage.js:346
-#: settings/Menu/LayoutTweaksPage.js:832
+#: settings/Menu/LayoutTweaksPage.js:172 settings/Menu/LayoutTweaksPage.js:466
+#: settings/Menu/LayoutTweaksPage.js:889
 msgid "Top"
 msgstr "Üst"
 
-#: settings/Menu/LayoutTweaksPage.js:146
+#: settings/Menu/LayoutTweaksPage.js:175
 msgid "Searchbar Location"
 msgstr "Arama Çubuğu Konumu"
 
-#: settings/Menu/LayoutTweaksPage.js:167
+#: settings/Menu/LayoutTweaksPage.js:196
 msgid "Flip Layout Horizontally"
 msgstr "Düzeni Yatay Çevir"
 
-#: settings/Menu/LayoutTweaksPage.js:183
+#: settings/Menu/LayoutTweaksPage.js:212
 msgid "Disable User Avatar"
 msgstr "Kullanıcı Avatarını Devre Dışı Bırak"
 
-#: settings/Menu/LayoutTweaksPage.js:200 settings/Menu/LayoutTweaksPage.js:243
+#: settings/Menu/LayoutTweaksPage.js:252 settings/Menu/LayoutTweaksPage.js:588
+#: settings/Menu/LayoutTweaksPage.js:623 settings/Menu/LayoutTweaksPage.js:704
+#: settings/Menu/LayoutTweaksPage.js:799 settings/Menu/LayoutTweaksPage.js:824
+msgid "Default View"
+msgstr "Öntanımlı Görünüm"
+
+#: settings/Menu/LayoutTweaksPage.js:279 settings/Menu/LayoutTweaksPage.js:348
 msgid "Disable Frequent Apps"
 msgstr "Sık Kullanılan Uygulamaları Devre Dışı Bırak"
 
-#: settings/Menu/LayoutTweaksPage.js:224
+#: settings/Menu/LayoutTweaksPage.js:287 settings/Menu/LayoutTweaksPage.js:290
+#: settings/Menu/LayoutTweaksPage.js:306 settings/Menu/LayoutTweaksPage.js:309
+#: settings/Menu/LayoutTweaksPage.js:371 settings/Menu/LayoutTweaksPage.js:374
+#: settings/Menu/LayoutTweaksPage.js:602 settings/Menu/LayoutTweaksPage.js:605
+#: settings/Menu/LayoutTweaksPage.js:673 settings/Menu/LayoutTweaksPage.js:676
+#: settings/Menu/LayoutTweaksPage.js:762 settings/Menu/LayoutTweaksPage.js:765
+msgid "Button Shortcuts"
+msgstr "Düğme Kısayolları"
+
+#: settings/Menu/LayoutTweaksPage.js:329
 msgid "Show Apps Grid"
 msgstr "Uygulamalar Izgarasını Göster"
 
-#: settings/Menu/LayoutTweaksPage.js:257
+#: settings/Menu/LayoutTweaksPage.js:362
 msgid "Disable Pinned Apps"
 msgstr "Sabitlenmiş Uygulamaları Devre Dışı Bırak"
 
-#: settings/Menu/LayoutTweaksPage.js:278
+#: settings/Menu/LayoutTweaksPage.js:396
 msgid "Activate on Hover"
 msgstr "Üzerine Gelince Etkinleştir"
 
-#: settings/Menu/LayoutTweaksPage.js:295
-msgid "Brisk Menu Shortcuts"
-msgstr "Brisk Menü Kısayolları"
+#: settings/Menu/LayoutTweaksPage.js:414 settings/Menu/LayoutTweaksPage.js:417
+#: settings/Menu/LayoutTweaksPage.js:722 settings/Menu/LayoutTweaksPage.js:842
+msgid "Extra Shortcuts"
+msgstr "İlave Kısayollar"
 
-#: settings/Menu/LayoutTweaksPage.js:334
+#: settings/Menu/LayoutTweaksPage.js:454
 msgid "Enable Activities Overview Shortcut"
 msgstr "Etkinliklere Genel Bakış Kısayolunu Etkinleştir"
 
-#: settings/Menu/LayoutTweaksPage.js:347
+#: settings/Menu/LayoutTweaksPage.js:467
 msgid "Centered"
 msgstr "Ortalanmış"
 
-#: settings/Menu/LayoutTweaksPage.js:349
+#: settings/Menu/LayoutTweaksPage.js:469
 msgid "Position"
 msgstr "Konum"
 
-#: settings/Menu/LayoutTweaksPage.js:360 settings/Menu/LayoutTweaksPage.js:553
+#: settings/Menu/LayoutTweaksPage.js:480 settings/Menu/LayoutTweaksPage.js:634
 msgid "List"
 msgstr "Liste"
 
-#: settings/Menu/LayoutTweaksPage.js:361 settings/Menu/LayoutTweaksPage.js:554
+#: settings/Menu/LayoutTweaksPage.js:481 settings/Menu/LayoutTweaksPage.js:635
 msgid "Grid"
 msgstr "Izgara"
 
-#: settings/Menu/LayoutTweaksPage.js:363 settings/Menu/LayoutTweaksPage.js:556
+#: settings/Menu/LayoutTweaksPage.js:483 settings/Menu/LayoutTweaksPage.js:637
 msgid "Search Results Display Style"
 msgstr "Arama Sonuçları Görünüm Biçimi"
 
-#: settings/Menu/LayoutTweaksPage.js:390
+#: settings/Menu/LayoutTweaksPage.js:510 settings/Menu/VisualSettings.js:310
 msgid "Width"
 msgstr "Genişlik"
 
-#: settings/Menu/LayoutTweaksPage.js:413 settings/Menu/VisualSettings.js:35
+#: settings/Menu/LayoutTweaksPage.js:533 settings/Menu/VisualSettings.js:38
+#: settings/Menu/VisualSettings.js:329
 msgid "Height"
 msgstr "Yükseklik"
 
-#: settings/Menu/LayoutTweaksPage.js:436 settings/Menu/ThemePage.js:169
+#: settings/Menu/LayoutTweaksPage.js:556 settings/Menu/ThemePage.js:170
 msgid "Font Size"
 msgstr "Yazı Tipi Boyutu"
 
-#: settings/Menu/LayoutTweaksPage.js:437 settings/MenuButtonPage.js:104
+#: settings/Menu/LayoutTweaksPage.js:557 settings/MenuButtonPage.js:101
 #, javascript-format
 msgid "%d Default Theme Value"
 msgstr "%d Öntanımlı Tema Değeri"
 
-#: settings/Menu/LayoutTweaksPage.js:451
+#: settings/Menu/LayoutTweaksPage.js:571
 msgid "Show Frequent Apps"
 msgstr "Sık Kullanılanlar Uygulamaları Göster"
 
-#: settings/Menu/LayoutTweaksPage.js:468 settings/Menu/LayoutTweaksPage.js:542
-#: settings/Menu/LayoutTweaksPage.js:662 settings/Menu/LayoutTweaksPage.js:743
-#: settings/Menu/LayoutTweaksPage.js:768
-msgid "Default View"
-msgstr "Öntanımlı Görünüm"
-
-#: settings/Menu/LayoutTweaksPage.js:482
-msgid "Unity Layout Buttons"
-msgstr "Unity Düzen Düğmeleri"
-
-#: settings/Menu/LayoutTweaksPage.js:493
-msgid "Button Separator Position"
-msgstr "Düğme Ayırıcı Korumu"
-
-#: settings/Menu/LayoutTweaksPage.js:512 settings/Menu/LayoutTweaksPage.js:622
-msgid "Adjust the position of the separator in the button panel"
-msgstr "Ayırıcının düğme panelindeki konumunu ayarla"
-
-#: settings/Menu/LayoutTweaksPage.js:525 settings/Menu/LayoutTweaksPage.js:635
-msgid "Separator Position"
-msgstr "Ayırıcı Konumu"
-
-#: settings/Menu/LayoutTweaksPage.js:570
+#: settings/Menu/LayoutTweaksPage.js:651
 msgid "Position on Monitor"
 msgstr "Ekrandaki Konumu"
 
-#: settings/Menu/LayoutTweaksPage.js:592
-msgid "Mint Layout Shortcuts"
-msgstr "Mint Düzen Kısayolları"
-
-#: settings/Menu/LayoutTweaksPage.js:603
-msgid "Shortcut Separator Position"
-msgstr "Kısayol Ayırıcı Konumu"
-
-#: settings/Menu/LayoutTweaksPage.js:680 settings/Menu/LayoutTweaksPage.js:786
-msgid "Extra Shortcuts"
-msgstr "İlave Kısayollar"
-
-#: settings/Menu/LayoutTweaksPage.js:692 settings/Menu/LayoutTweaksPage.js:797
+#: settings/Menu/LayoutTweaksPage.js:734 settings/Menu/LayoutTweaksPage.js:853
 msgid "External Devices"
 msgstr "Harici Aygıtlar"
 
-#: settings/Menu/LayoutTweaksPage.js:730
+#: settings/Menu/LayoutTweaksPage.js:786
 msgid "Nothing Yet!"
 msgstr "Henüz değil!"
 
-#: settings/Menu/LayoutTweaksPage.js:740 settings/Menu/LayoutTweaksPage.js:764
+#: settings/Menu/LayoutTweaksPage.js:796 settings/Menu/LayoutTweaksPage.js:820
 msgid "Categories List"
 msgstr "Kategori Listesi"
 
-#: settings/Menu/LayoutTweaksPage.js:819
+#: settings/Menu/LayoutTweaksPage.js:875
 msgid "Category Quick Links"
 msgstr "Kategori Hızlı Bağlantıları"
 
-#: settings/Menu/LayoutTweaksPage.js:820
+#: settings/Menu/LayoutTweaksPage.js:876
 msgid ""
 "Display quick links of extra categories on the home page\n"
 "Must also be enabled in 'Menu -> Extra Categories' section"
@@ -857,15 +895,15 @@ msgstr ""
 "Ana sayfada ilave kategorilerin hızlı bağlantılarını görüntüleyin\n"
 "'Menü -> İlave Kategoriler' bölümünden de de etkinleştirilmelidir"
 
-#: settings/Menu/LayoutTweaksPage.js:834
+#: settings/Menu/LayoutTweaksPage.js:891
 msgid "Quick Links Location"
 msgstr "Hızlı Bağlantılar Konumu"
 
-#: settings/Menu/LayoutTweaksPage.js:867
+#: settings/Menu/LayoutTweaksPage.js:923
 msgid "Enable Weather Widget"
 msgstr "Hava Durumu Parçacığını Etkinleştir"
 
-#: settings/Menu/LayoutTweaksPage.js:881
+#: settings/Menu/LayoutTweaksPage.js:937
 msgid "Enable Clock Widget"
 msgstr "Saat Parçacığını Etkinleştir"
 
@@ -873,145 +911,193 @@ msgstr "Saat Parçacığını Etkinleştir"
 msgid "Current Menu Layout"
 msgstr "Geçerli Menü Düzeni"
 
-#: settings/Menu/LayoutsPage.js:37
+#: settings/Menu/LayoutsPage.js:40
 msgid "Choose a new menu layout?"
 msgstr "Yeni bir menü düzeni seçilsin mi?"
 
-#: settings/Menu/LayoutsPage.js:43
+#: settings/Menu/LayoutsPage.js:46
 #, javascript-format
 msgid "%s Menu Layouts"
 msgstr "%s Menü Düzenleri"
 
-#: settings/Menu/LayoutsPage.js:99 settings/SettingsUtils.js:12
-#, javascript-format
-msgid "%s Layout Tweaks"
-msgstr "%s Düzen İnce Ayarları"
-
 #: settings/Menu/ListOtherPage.js:35
+msgid "Actions will be hidden from ArcMenu if not available on your system."
+msgstr "Eğer sisteminizde yoksa eylemler ArcMenuʼden gizlenecektir."
+
+#: settings/Menu/ListOtherPage.js:39
 msgid "Power Off / Log Out Buttons"
 msgstr "Gücü Kapat / Oturumu Kapat Düğmeleri"
 
-#: settings/Menu/ListOtherPage.js:38 settings/Menu/VisualSettings.js:110
-#: settings/Menu/VisualSettings.js:176 settings/Menu/VisualSettings.js:249
+#: settings/Menu/ListOtherPage.js:42 settings/Menu/VisualSettings.js:113
+#: settings/Menu/VisualSettings.js:179 settings/Menu/VisualSettings.js:273
 msgid "Off"
 msgstr "Kapalı"
 
-#: settings/Menu/ListOtherPage.js:39
+#: settings/Menu/ListOtherPage.js:43
 msgid "Power Buttons"
 msgstr "Güç Düğmeleri"
 
-#: settings/Menu/ListOtherPage.js:40
+#: settings/Menu/ListOtherPage.js:44
 msgid "Power Menu"
 msgstr "Güç Menüsü"
 
-#: settings/Menu/ListOtherPage.js:42
+#: settings/Menu/ListOtherPage.js:46
 msgid "Override Display Style"
 msgstr "Görünüm Biçiminin Üzerine Yaz"
 
-#: settings/Menu/ListPinnedPage.js:32 settings/Menu/ListPinnedPage.js:40
+#: settings/Menu/ListPinnedPage.js:36 settings/Menu/ListPinnedPage.js:39
+#: settings/Menu/ListPinnedPage.js:45
 msgid "Add More Apps"
 msgstr "Daha Fazla Uygulama Ekle"
 
-#: settings/Menu/ListPinnedPage.js:36
+#: settings/Menu/ListPinnedPage.js:42
 msgid "Add Default User Directories"
 msgstr "Öntanımlı Kullanıcı Dizinlerini Ekle"
 
-#: settings/Menu/ListPinnedPage.js:120
+#: settings/Menu/ListPinnedPage.js:48
+msgid "Add More Shortcuts"
+msgstr "Daha Fazla Kısayol Ekle"
+
+#: settings/Menu/ListPinnedPage.js:124
 msgid "Add Custom Shortcut"
 msgstr "Özel Kısayol Ekle"
 
-#: settings/Menu/ListPinnedPage.js:232
+#: settings/Menu/ListPinnedPage.js:242
 msgid "Invalid Shortcut"
 msgstr "Geçersiz Kısayol"
 
-#: settings/Menu/ListPinnedPage.js:308
+#: settings/Menu/ListPinnedPage.js:319
 msgid "Add to your Pinned Apps"
 msgstr "Sabitlenmiş Uygulamalara Ekle"
 
-#: settings/Menu/ListPinnedPage.js:310
-msgid "Change Selected Pinned App"
-msgstr "Seçili Sabitlenmiş Uygulamaları Değiştir"
+#: settings/Menu/ListPinnedPage.js:321
+msgid "Add to your Extra Shortcuts"
+msgstr "Ek Kısayollarınıza Ekleyin"
 
-#: settings/Menu/ListPinnedPage.js:312
+#: settings/Menu/ListPinnedPage.js:323
 msgid "Select Application Shortcuts"
 msgstr "Uygulama Kısayollarını Seç"
 
-#: settings/Menu/ListPinnedPage.js:314
+#: settings/Menu/ListPinnedPage.js:325
 msgid "Select Directory Shortcuts"
 msgstr "Dizin Kısayollarını Seç"
 
-#: settings/Menu/ListPinnedPage.js:330
+#: settings/Menu/ListPinnedPage.js:327
+msgid "Add to the Context Menu"
+msgstr "Bağlam Menüsüne Ekle"
+
+#: settings/Menu/ListPinnedPage.js:343
 msgid "Run Command..."
 msgstr "Komut Çalıştır..."
 
-#: settings/Menu/ListPinnedPage.js:332
+#: settings/Menu/ListPinnedPage.js:346
 msgid "Show All Apps"
 msgstr "Tüm Uygulamaları Göster"
 
+#: settings/Menu/ListPinnedPage.js:353
+msgid "Menu Settings"
+msgstr "Menü Ayarları"
+
 #: settings/Menu/ListPinnedPage.js:355
+msgid "Menu Theming"
+msgstr "Menü Teması"
+
+#: settings/Menu/ListPinnedPage.js:357
+msgid "Change Menu Layout"
+msgstr "Menü Düzenini Değiştir"
+
+#: settings/Menu/ListPinnedPage.js:359
+msgid "Menu Button Settings"
+msgstr "Menü Düğme Ayarları"
+
+#: settings/Menu/ListPinnedPage.js:362
+msgid "Panel Extension Settings"
+msgstr "Panel Uzantı Ayarları"
+
+#: settings/Menu/ListPinnedPage.js:366 settings/MenuPage.js:142
+msgid "Power Options"
+msgstr "Güç Seçenekleri"
+
+#: settings/Menu/ListPinnedPage.js:368 settings/Menu/ListPinnedPage.js:373
+msgid "Separator"
+msgstr "Ayraç"
+
+#: settings/Menu/ListPinnedPage.js:391
+msgid "Documents"
+msgstr "Belgeler"
+
+#: settings/Menu/ListPinnedPage.js:393
+msgid "Downloads"
+msgstr "İndirilenler"
+
+#: settings/Menu/ListPinnedPage.js:395
 msgid "Music"
 msgstr "Müzik"
 
-#: settings/Menu/ListPinnedPage.js:356
+#: settings/Menu/ListPinnedPage.js:396
 msgid "Pictures"
 msgstr "Resimler"
 
-#: settings/Menu/ListPinnedPage.js:357
+#: settings/Menu/ListPinnedPage.js:397
 msgid "Videos"
 msgstr "Videolar"
 
-#: settings/Menu/ListPinnedPage.js:360
+#: settings/Menu/ListPinnedPage.js:400
 msgid "Recent"
 msgstr "Son"
 
-#: settings/Menu/ListPinnedPage.js:465
-#, javascript-format
-msgid "%s has been pinned to ArcMenu"
-msgstr "%s ArcMenuʼye sabitlendi"
+#: settings/Menu/ListPinnedPage.js:430
+msgid "Dash to Panel or App Icons Taskbar"
+msgstr "Dash to Panel ya da App Icons Taskbar"
 
-#: settings/Menu/ListPinnedPage.js:477
+#: settings/Menu/ListPinnedPage.js:512
 #, javascript-format
-msgid "%s has been unpinned from ArcMenu"
-msgstr "%s ArcMenuʼden ayrıldı"
+msgid "%s has been added"
+msgstr "%s eklendi"
 
-#: settings/Menu/ListPinnedPage.js:514
+#: settings/Menu/ListPinnedPage.js:523
+#, javascript-format
+msgid "%s has been removed"
+msgstr "%s kaldırıldı"
+
+#: settings/Menu/ListPinnedPage.js:546
 msgid "Add a Custom Shortcut"
 msgstr "Özel Kısayol Ekle"
 
-#: settings/Menu/ListPinnedPage.js:519
+#: settings/Menu/ListPinnedPage.js:551
 msgid "Edit Pinned App"
 msgstr "Sabitlenmiş Uygulamayı Düzenle"
 
-#: settings/Menu/ListPinnedPage.js:521
+#: settings/Menu/ListPinnedPage.js:553
 msgid "Edit Shortcut"
 msgstr "Kısayolu Düzenle"
 
-#: settings/Menu/ListPinnedPage.js:532
+#: settings/Menu/ListPinnedPage.js:564
 msgid "Title"
 msgstr "Başlık"
 
-#: settings/Menu/ListPinnedPage.js:544 settings/MenuButtonPage.js:58
+#: settings/Menu/ListPinnedPage.js:576 settings/MenuButtonPage.js:57
 msgid "Icon"
 msgstr "Simge"
 
-#: settings/Menu/ListPinnedPage.js:556 settings/MenuButtonPage.js:159
-#: settings/MenuButtonPage.js:481
+#: settings/Menu/ListPinnedPage.js:588 settings/MenuButtonPage.js:156
+#: settings/MenuButtonPage.js:456
 msgid "Browse..."
 msgstr "Göz At..."
 
-#: settings/Menu/ListPinnedPage.js:562 settings/MenuButtonPage.js:486
+#: settings/Menu/ListPinnedPage.js:594 settings/MenuButtonPage.js:461
 msgid "Select an Icon"
 msgstr "Simge seç"
 
-#: settings/Menu/ListPinnedPage.js:591
+#: settings/Menu/ListPinnedPage.js:623
 msgid "Command"
 msgstr "Komut"
 
-#: settings/Menu/ListPinnedPage.js:591
+#: settings/Menu/ListPinnedPage.js:623
 msgid "Directory"
 msgstr "Dizin"
 
-#: settings/Menu/ListPinnedPage.js:603
+#: settings/Menu/ListPinnedPage.js:635
 msgid "Add"
 msgstr "Ekle"
 
@@ -1027,7 +1113,7 @@ msgstr "Tüm çalışma alanlarında açık pencereleri ara"
 msgid "Search for recent files"
 msgstr "Son dosyalar için ara"
 
-#: settings/Menu/SearchOptionsPage.js:57 settings/MenuPage.js:127
+#: settings/Menu/SearchOptionsPage.js:57 settings/MenuPage.js:132
 msgid "Search Options"
 msgstr "Arama Seçenekleri"
 
@@ -1039,298 +1125,325 @@ msgstr "Arama sonucu terimlerini vurgula"
 msgid "Max Search Results"
 msgstr "En Fazla Arama Sonucu"
 
-#: settings/Menu/SearchOptionsPage.js:131
+#: settings/Menu/SearchOptionsPage.js:132
 msgid "Search Box Border Radius"
 msgstr "Arama Kutusu Kenarlık Çapı"
 
-#: settings/Menu/SubPage.js:54 settings/MenuButtonPage.js:28
+#: settings/Menu/SubPage.js:54 settings/MenuButtonPage.js:27
 msgid "Reset settings"
 msgstr "Ayarları sıfırla"
 
-#: settings/Menu/SubPage.js:59 settings/MenuButtonPage.js:36
+#: settings/Menu/SubPage.js:59 settings/MenuButtonPage.js:35
 #, javascript-format
 msgid "Reset all %s settings?"
 msgstr "Tüm %s ayarları sıfırlansın mı?"
 
-#: settings/Menu/SubPage.js:60 settings/MenuButtonPage.js:37
+#: settings/Menu/SubPage.js:60 settings/MenuButtonPage.js:36
 #, javascript-format
 msgid "All %s settings will be reset to the default value."
 msgstr "Tüm %s ayarları öntanımlı değerlere sıfırlanacak."
 
-#: settings/Menu/ThemePage.js:42
+#: settings/Menu/ThemePage.js:40
 msgid "Override Theme"
 msgstr "Temanın Üzerine Yaz"
 
-#: settings/Menu/ThemePage.js:43 settings/MenuButtonPage.js:205
+#: settings/Menu/ThemePage.js:41 settings/MenuButtonPage.js:202
 msgid "Results may vary with third party themes"
 msgstr "Sonuçlar üçüncü taraf temalarda değişiklik gösterebilir"
 
-#: settings/Menu/ThemePage.js:50
+#: settings/Menu/ThemePage.js:48 settings/Menu/ThemingDialog.js:66
+#: settings/Menu/ThemingDialog.js:74 settings/Menu/ThemingDialog.js:140
 msgid "Menu Themes"
 msgstr "Menü Temaları"
 
-#: settings/Menu/ThemePage.js:94
+#: settings/Menu/ThemePage.js:92
 msgid "Current Theme"
 msgstr "Geçerli Tema"
 
-#: settings/Menu/ThemePage.js:122
+#: settings/Menu/ThemePage.js:120
 msgid "Save as Theme"
 msgstr "Tema Olarak Kaydet"
 
-#: settings/Menu/ThemePage.js:149
+#: settings/Menu/ThemePage.js:150
 msgid "Menu Styling"
 msgstr "Menü Biçimi"
 
-#: settings/Menu/ThemePage.js:154 settings/Menu/ThemePage.js:180
-#: settings/Menu/ThemePage.js:186 settings/MenuButtonPage.js:212
-#: settings/MenuButtonPage.js:218
+#: settings/Menu/ThemePage.js:155 settings/Menu/ThemePage.js:181
+#: settings/Menu/ThemePage.js:187 settings/MenuButtonPage.js:209
+#: settings/MenuButtonPage.js:215
 msgid "Background Color"
 msgstr "Arkaplan Rengi"
 
-#: settings/Menu/ThemePage.js:157 settings/Menu/ThemePage.js:183
-#: settings/Menu/ThemePage.js:189 settings/MenuButtonPage.js:209
-#: settings/MenuButtonPage.js:215 settings/MenuButtonPage.js:221
+#: settings/Menu/ThemePage.js:158 settings/Menu/ThemePage.js:184
+#: settings/Menu/ThemePage.js:190 settings/MenuButtonPage.js:206
+#: settings/MenuButtonPage.js:212 settings/MenuButtonPage.js:218
 msgid "Foreground Color"
 msgstr "Önplan Rengi"
 
-#: settings/Menu/ThemePage.js:160 settings/MenuButtonPage.js:230
+#: settings/Menu/ThemePage.js:161 settings/MenuButtonPage.js:229
 msgid "Border Color"
 msgstr "Kenarlık Rengi"
 
-#: settings/Menu/ThemePage.js:163 settings/MenuButtonPage.js:227
+#: settings/Menu/ThemePage.js:164 settings/MenuButtonPage.js:225
 msgid "Border Width"
 msgstr "Kenarlık Genişliği"
 
-#: settings/Menu/ThemePage.js:166 settings/MenuButtonPage.js:224
+#: settings/Menu/ThemePage.js:167 settings/MenuButtonPage.js:221
 msgid "Border Radius"
 msgstr "Kenarlık Çapı"
 
-#: settings/Menu/ThemePage.js:172
+#: settings/Menu/ThemePage.js:173
 msgid "Separator Color"
 msgstr "Ayırıcı Rengi"
 
-#: settings/Menu/ThemePage.js:176
+#: settings/Menu/ThemePage.js:177
 msgid "Menu Items Styling"
 msgstr "Menü Ogeleri Biçimi"
 
-#: settings/Menu/ThemePage.js:180 settings/Menu/ThemePage.js:183
-#: settings/MenuButtonPage.js:212 settings/MenuButtonPage.js:215
+#: settings/Menu/ThemePage.js:181 settings/Menu/ThemePage.js:184
+#: settings/MenuButtonPage.js:209 settings/MenuButtonPage.js:212
 msgid "Hover"
 msgstr "Üzerine Gelme"
 
-#: settings/Menu/ThemePage.js:186 settings/Menu/ThemePage.js:189
-#: settings/MenuButtonPage.js:218 settings/MenuButtonPage.js:221
+#: settings/Menu/ThemePage.js:187 settings/Menu/ThemePage.js:190
+#: settings/MenuButtonPage.js:215 settings/MenuButtonPage.js:218
 msgid "Active"
 msgstr "Etkin"
 
 #: settings/Menu/ThemingDialog.js:14
-msgid "Manage Themes"
-msgstr "Temaları Yönet"
-
-#: settings/Menu/ThemingDialog.js:85
 msgid "Save Theme As..."
 msgstr "Temayı Farklı Kaydet..."
 
-#: settings/Menu/ThemingDialog.js:97
+#: settings/Menu/ThemingDialog.js:26
 msgid "Theme Name"
 msgstr "Tema Adı"
 
-#: settings/Menu/ThemingDialog.js:114
+#: settings/Menu/ThemingDialog.js:43
 msgid "Save Theme"
 msgstr "Temayı Kaydet"
 
-#: settings/Menu/VisualSettings.js:17
+#: settings/Menu/ThemingDialog.js:59
+msgid "Manage Themes"
+msgstr "Temaları Yönet"
+
+#: settings/Menu/ThemingDialog.js:314
+msgid "Save Themes"
+msgstr "Temaları Kaydet"
+
+#: settings/Menu/ThemingDialog.js:316
+msgid "Load Themes"
+msgstr "Temaları Yükle"
+
+#: settings/Menu/ThemingDialog.js:396
+#, javascript-format
+msgid "%s has been selected"
+msgstr "%s seçildi"
+
+#: settings/Menu/ThemingDialog.js:408
+#, javascript-format
+msgid "%s has been unselected"
+msgstr "%s seçimi kaldırıldı"
+
+#: settings/Menu/VisualSettings.js:20
 msgid "Menu Size"
 msgstr "Menü Boyutu"
 
-#: settings/Menu/VisualSettings.js:55
+#: settings/Menu/VisualSettings.js:58
 msgid "Left-Panel Width"
 msgstr "Sol Panel Genişliği"
 
-#: settings/Menu/VisualSettings.js:56 settings/Menu/VisualSettings.js:77
+#: settings/Menu/VisualSettings.js:59 settings/Menu/VisualSettings.js:80
 msgid "Traditional Layouts"
 msgstr "Geleneksel Düzenler"
 
-#: settings/Menu/VisualSettings.js:76
+#: settings/Menu/VisualSettings.js:79
 msgid "Right-Panel Width"
 msgstr "Sağ Panel Genişliği"
 
-#: settings/Menu/VisualSettings.js:97
+#: settings/Menu/VisualSettings.js:100
 msgid "Width Offset"
 msgstr "Genişlik Konumu"
 
-#: settings/Menu/VisualSettings.js:98 settings/Menu/VisualSettings.js:184
+#: settings/Menu/VisualSettings.js:101 settings/Menu/VisualSettings.js:188
 msgid "Non-Traditional Layouts"
 msgstr "Geleneksel Olmayan Düzenler"
 
-#: settings/Menu/VisualSettings.js:105
+#: settings/Menu/VisualSettings.js:108
 msgid "Menu Location"
 msgstr "Menü Konumu"
 
-#: settings/Menu/VisualSettings.js:111
+#: settings/Menu/VisualSettings.js:114
 msgid "Top Centered"
 msgstr "Üst Ortalanmış"
 
-#: settings/Menu/VisualSettings.js:112
+#: settings/Menu/VisualSettings.js:115
 msgid "Bottom Centered"
 msgstr "Alt Ortalanmış"
 
-#: settings/Menu/VisualSettings.js:114
+#: settings/Menu/VisualSettings.js:117
 msgid "Override Menu Location"
 msgstr "Menü Konumunun Üzerine Yaz"
 
-#: settings/Menu/VisualSettings.js:155
+#: settings/Menu/VisualSettings.js:158
 msgid "Override Menu Rise"
 msgstr "Menü Yükselmesinin Üzerine Yaz"
 
-#: settings/Menu/VisualSettings.js:156
+#: settings/Menu/VisualSettings.js:159
 msgid "Menu Distance from Panel and Screen Edge"
 msgstr "Panel ve Ekran Kenarından Menü Mesafesi"
 
-#: settings/Menu/VisualSettings.js:170
+#: settings/Menu/VisualSettings.js:173
 msgid "Override Icon Sizes"
 msgstr "Simge Boyutlarının Üzerine Yaz"
 
-#: settings/Menu/VisualSettings.js:171
+#: settings/Menu/VisualSettings.js:174
 msgid "Override the icon size of various menu items"
 msgstr "Çeşitli menü ögelerinin simge boyutunun üzerine yaz"
 
-#: settings/Menu/VisualSettings.js:177 settings/Menu/VisualSettings.js:180
-#: settings/Menu/VisualSettings.js:251
+#: settings/Menu/VisualSettings.js:180 settings/Menu/VisualSettings.js:183
+#: settings/Menu/VisualSettings.js:275
 msgid "Small"
 msgstr "Küçük"
 
-#: settings/Menu/VisualSettings.js:178 settings/Menu/VisualSettings.js:181
-#: settings/Menu/VisualSettings.js:252
+#: settings/Menu/VisualSettings.js:181 settings/Menu/VisualSettings.js:184
+#: settings/Menu/VisualSettings.js:276
 msgid "Medium"
 msgstr "Orta"
 
-#: settings/Menu/VisualSettings.js:179 settings/Menu/VisualSettings.js:182
-#: settings/Menu/VisualSettings.js:253
+#: settings/Menu/VisualSettings.js:182 settings/Menu/VisualSettings.js:185
+#: settings/Menu/VisualSettings.js:277
 msgid "Large"
 msgstr "Büyük"
 
-#: settings/Menu/VisualSettings.js:180 settings/Menu/VisualSettings.js:181
-#: settings/Menu/VisualSettings.js:182
+#: settings/Menu/VisualSettings.js:183 settings/Menu/VisualSettings.js:184
+#: settings/Menu/VisualSettings.js:185
 msgid "Wide"
 msgstr "Geniş"
 
-#: settings/Menu/VisualSettings.js:184
+#: settings/Menu/VisualSettings.js:186
+msgid "Custom"
+msgstr "Özel"
+
+#: settings/Menu/VisualSettings.js:188
 msgid "Grid Menu Items"
 msgstr "Izgara Menü Ögeleri"
 
-#: settings/Menu/VisualSettings.js:185
+#: settings/Menu/VisualSettings.js:189
 msgid "Apps, Pinned Apps, Shortcuts, Grid Search Results"
 msgstr ""
 "Uygulamalar, Sabitlenmiş Uygulamalar, Kısayollar, Kılavuz Arama Sonuçları"
 
-#: settings/Menu/VisualSettings.js:196
+#: settings/Menu/VisualSettings.js:219
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: settings/Menu/VisualSettings.js:197
+#: settings/Menu/VisualSettings.js:220
 msgid "Apps, Pinned Apps, Items within Category, List Search Results"
 msgstr ""
 "Uygulamalar, Sabitlenmiş Uygulamalar, Kategorideki Öğeler, Arama Sonuçlarını "
 "Listele"
 
-#: settings/Menu/VisualSettings.js:204
+#: settings/Menu/VisualSettings.js:227
 msgid "Directory / Application / Other Shortcuts, Power Menu"
 msgstr "Dizin / Uygulama / Diğer Kısayollar, Güç Menüsü"
 
-#: settings/Menu/VisualSettings.js:210
+#: settings/Menu/VisualSettings.js:233
 msgid "Application Categories"
 msgstr "Uygulama Kategorileri"
 
-#: settings/Menu/VisualSettings.js:216
+#: settings/Menu/VisualSettings.js:239
 msgid "Button Widgets"
 msgstr "Düğme Parçacıkları"
 
-#: settings/Menu/VisualSettings.js:217
+#: settings/Menu/VisualSettings.js:240
 msgid "Power Buttons, Unity Bottom Bar, Mint Side Bar, etc"
 msgstr "Güç Düğmeleri, Unity Alt Çubuğu, Mint Kenar Çubuğu, vb."
 
-#: settings/Menu/VisualSettings.js:223
+#: settings/Menu/VisualSettings.js:246
 msgid "Miscellaneous"
 msgstr "Çeşitli"
 
-#: settings/Menu/VisualSettings.js:224
+#: settings/Menu/VisualSettings.js:247
 msgid "Avatar, Search, Navigation Icons"
 msgstr "Avatar, Arama, Gezinme Simgeleri"
 
-#: settings/Menu/VisualSettings.js:250
+#: settings/Menu/VisualSettings.js:274
 msgid "Extra Small"
 msgstr "Çok Küçük"
 
-#: settings/Menu/VisualSettings.js:254
+#: settings/Menu/VisualSettings.js:278
 msgid "Extra Large"
 msgstr "Çok Büyük"
 
-#: settings/Menu/VisualSettings.js:257 settings/MenuButtonPage.js:62
+#: settings/Menu/VisualSettings.js:281 settings/MenuButtonPage.js:61
 msgid "Hidden"
 msgstr "Gizli"
 
-#: settings/MenuButtonPage.js:17
-msgid "Menu Button"
-msgstr "Menü Düğmesi"
+#: settings/Menu/VisualSettings.js:300
+msgid "Custom Grid Icon Size"
+msgstr "Özel Izgara Simge Boyutu"
 
-#: settings/MenuButtonPage.js:53
-msgid "Menu Button Appearance"
-msgstr "Menü Düğmesi Görünümü"
-
-#: settings/MenuButtonPage.js:59 settings/MenuButtonPage.js:144
-msgid "Text"
-msgstr "Metin"
-
-#: settings/MenuButtonPage.js:60
-msgid "Icon and Text"
-msgstr "Simge ve Metin"
-
-#: settings/MenuButtonPage.js:61
-msgid "Text and Icon"
-msgstr "Metin ve Simge"
-
-#: settings/MenuButtonPage.js:64
-msgid "Display Style"
-msgstr "Görünüm Biçimi"
-
-#: settings/MenuButtonPage.js:103
-msgid "Padding"
-msgstr "Dolgu"
-
-#: settings/MenuButtonPage.js:156
-msgid "Menu Button Icon"
-msgstr "Menü Düğmesi Simgesi"
-
-#: settings/MenuButtonPage.js:170
-msgid "Choose a new icon"
-msgstr "Yeni simge seç"
-
-#: settings/MenuButtonPage.js:193
+#: settings/Menu/VisualSettings.js:348 settings/MenuButtonPage.js:190
 msgid "Icon Size"
 msgstr "Simge Boyutu"
 
-#: settings/MenuButtonPage.js:204
+#: settings/MenuButtonPage.js:16
+msgid "Menu Button"
+msgstr "Menü Düğmesi"
+
+#: settings/MenuButtonPage.js:52
+msgid "Menu Button Appearance"
+msgstr "Menü Düğmesi Görünümü"
+
+#: settings/MenuButtonPage.js:58 settings/MenuButtonPage.js:141
+msgid "Text"
+msgstr "Metin"
+
+#: settings/MenuButtonPage.js:59
+msgid "Icon and Text"
+msgstr "Simge ve Metin"
+
+#: settings/MenuButtonPage.js:60
+msgid "Text and Icon"
+msgstr "Metin ve Simge"
+
+#: settings/MenuButtonPage.js:63
+msgid "Display Style"
+msgstr "Görünüm Biçimi"
+
+#: settings/MenuButtonPage.js:100
+msgid "Padding"
+msgstr "Dolgu"
+
+#: settings/MenuButtonPage.js:153
+msgid "Menu Button Icon"
+msgstr "Menü Düğmesi Simgesi"
+
+#: settings/MenuButtonPage.js:167
+msgid "Choose a new icon"
+msgstr "Yeni simge seç"
+
+#: settings/MenuButtonPage.js:201
 msgid "Menu Button Styling"
 msgstr "Menü Düğme Biçimi"
 
-#: settings/MenuButtonPage.js:227
+#: settings/MenuButtonPage.js:226
 msgid "Background colors required if set to 0"
 msgstr "0 olarak ayarlanırsa gerekli arka plan renkleri"
 
-#: settings/MenuButtonPage.js:374 settings/MenuButtonPage.js:379
+#: settings/MenuButtonPage.js:373 settings/MenuButtonPage.js:377
 msgid "ArcMenu Icons"
 msgstr "ArcMenu Simgeleri"
 
-#: settings/MenuButtonPage.js:405
+#: settings/MenuButtonPage.js:397
 msgid "Distro Icons"
 msgstr "Dağıtım Simgeleri"
 
-#: settings/MenuButtonPage.js:442 settings/MenuButtonPage.js:475
+#: settings/MenuButtonPage.js:422 settings/MenuButtonPage.js:487
 msgid "Custom Icon"
 msgstr "Özel Simge"
 
-#: settings/MenuButtonPage.js:575
+#: settings/MenuButtonPage.js:545
 msgid "Legal disclaimer for Distro Icons"
 msgstr "Dağıtım Simgeleri için yasal sorumluluk reddi"
 
@@ -1342,86 +1455,71 @@ msgstr "Menü"
 msgid "How should the menu look?"
 msgstr "Menü nasıl görünsün?"
 
-#: settings/MenuPage.js:38
+#: settings/MenuPage.js:40
 msgid "Menu Layout"
 msgstr "Menü Düzeni"
 
-#: settings/MenuPage.js:39
+#: settings/MenuPage.js:41
 msgid "Choose a layout style for the menu"
 msgstr "Menü için düzen biçimi seç"
 
-#: settings/MenuPage.js:52
+#: settings/MenuPage.js:54
 msgid "Menu Theme"
 msgstr "Menü Teması"
 
-#: settings/MenuPage.js:53
+#: settings/MenuPage.js:55
 msgid "Modify menu colors, font size, and border"
 msgstr "Menü renklerini, yazı tipi boyutunu ve kenarlığı değiştir"
 
-#: settings/MenuPage.js:62
+#: settings/MenuPage.js:64
 msgid "Menu Visual Appearance"
 msgstr "Menü Görsel Görünümü"
 
-#: settings/MenuPage.js:63
+#: settings/MenuPage.js:65
 msgid "Change menu height, width, location, and icon sizes"
 msgstr "Menü yüksekliğini, genişliğini, konumunu ve simge boyutlarını değiştir"
 
-#: settings/MenuPage.js:72
+#: settings/MenuPage.js:74
 msgid "Fine Tune"
 msgstr "İnce Ayar"
 
-#: settings/MenuPage.js:73
+#: settings/MenuPage.js:75
 msgid "Adjust less commonly used visual settings"
 msgstr "Daha az kullanılan görsel ayarları düzenle"
 
-#: settings/MenuPage.js:82
+#: settings/MenuPage.js:84
 msgid "What should show on the menu?"
 msgstr "Menüde ne gösterilmeli?"
 
-#: settings/MenuPage.js:88
+#: settings/MenuPage.js:90
 msgid "Settings specific to the current menu layout"
 msgstr "Geçerli menü düzenine özel ayarlar"
 
-#: settings/MenuPage.js:107
+#: settings/MenuPage.js:110
 msgid "Directory Shortcuts"
 msgstr "Dizin Kısayolları"
 
-#: settings/MenuPage.js:136
-msgid "Power Options"
-msgstr "Güç Seçenekleri"
-
-#: settings/MenuPage.js:137
+#: settings/MenuPage.js:143
 msgid "Choose which power options to show and the display style"
 msgstr "Hangi güç seçeneklerinin gösterileceğini ve görüntüleme biçimini seç"
 
-#: settings/MenuPage.js:147
+#: settings/MenuPage.js:154
 msgid "Extra Categories"
 msgstr "İlave Kategoriler"
 
-#: settings/MenuPage.js:149
+#: settings/MenuPage.js:156
 msgid "Add or remove additional custom categories"
 msgstr "Ek özel kategoriler ekle veya kaldır"
 
-#: utils.js:32
-msgid "ArcMenu - Hibernate Error!"
-msgstr "ArcMenu - Uyku Hatası!"
+#: settings/MenuPage.js:166
+msgid "What should show on the context menu?"
+msgstr "Bağlam menüsünde ne gösterilmeli?"
 
-#: utils.js:32
-msgid "System unable to hibernate."
-msgstr "Sistem uyutulamadı."
+#: settings/MenuPage.js:171
+msgid "Modify ArcMenu Context Menu"
+msgstr "ArcMenu Bağlam Menüsünü Düzenle"
 
-#: utils.js:42
-msgid "ArcMenu - Hybrid Sleep Error!"
-msgstr "ArcMenu - Karma Uyku Hatası!"
-
-#: utils.js:42
-msgid "System unable to hybrid sleep."
-msgstr "Sistem karma uyutulamadı."
-
-#: settings/AboutPage.js:94
-msgid "OS Name"
-msgstr "İşletim Sistemi Adı"
-
-#: settings/AboutPage.js:107
-msgid "Windowing System"
-msgstr "Pencere Sistemi"
+#: settings/SettingsUtils.js:19
+#, javascript-format
+msgid "%s Layout Tweaks"
+msgstr "%s Düzen İnce Ayarları"

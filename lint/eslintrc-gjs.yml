@@ -68,7 +68,10 @@ rules:
   jsdoc/check-tag-names: error
   jsdoc/check-types: error
   jsdoc/implements-on-classes: error
-  jsdoc/newline-after-description: error
+  jsdoc/tag-lines: 
+    - error
+    - any
+    - startLines: 1
   jsdoc/require-jsdoc: error
   jsdoc/require-param: error
   jsdoc/require-param-description: error
@@ -91,11 +94,6 @@ rules:
     - exceptAfterSingleLine: true
   max-nested-callbacks: error
   max-statements-per-line: error
-  max-len:
-    - error
-    - code: 120
-      ignoreUrls: true
-      ignoreTemplateLiterals: true
   new-parens: error
   no-array-constructor: error
   no-await-in-loop: error
@@ -132,12 +130,6 @@ rules:
   no-restricted-globals: [error, window]
   no-restricted-properties:
     - error
-    - object: imports
-      property: format
-      message: Use template strings
-    - object: pkg
-      property: initFormat
-      message: Use template strings
     - object: Lang
       property: copyProperties
       message: Use Object.assign()
@@ -205,7 +197,7 @@ rules:
     - error
     - never
   # These may be a bit controversial, we can try them out and enable them later
-  # prefer-const: error
+  prefer-const: error
   # prefer-destructuring: error
   prefer-numeric-literals: error
   prefer-promise-reject-errors: error

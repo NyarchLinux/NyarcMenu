@@ -2,17 +2,20 @@
 
 UUID = nyarcmenu@nyarchlinux.moe
 BASE_MODULES = COPYING extension.js keybinder.js metadata.json README.md stylesheet.css theming.js
-EXTRA_MODULES = appMenu.js constants.js controller.js menuButton.js menuWidgets.js placeDisplay.js prefs.js prefsWidgets.js recentFilesManager.js search.js standaloneRunner.js utils.js
+EXTRA_MODULES = appMenu.js arcmenuManager.js constants.js controller.js menuButton.js menuWidgets.js placeDisplay.js prefs.js prefsWidgets.js recentFilesManager.js search.js standaloneRunner.js utils.js
 
-TOLOCALIZE = $(EXTRA_MODULES) gnome43/* menulayouts/* settings/*
+TOLOCALIZE = $(EXTRA_MODULES) menulayouts/* settings/*
 
-EXTRA_DIRECTORIES = gnome43 media menulayouts searchProviders settings
+EXTRA_DIRECTORIES = icons menulayouts searchProviders settings
 
 MSGSRC = $(wildcard po/*.po)
 ifeq ($(strip $(DESTDIR)),)
+	INSTALLTYPE = local
 	INSTALLBASE = $(HOME)/.local/share/gnome-shell/extensions
 else
-	INSTALLBASE = $(DESTDIR)/usr/share/gnome-shell/extensions
+	INSTALLTYPE = system
+	SHARE_PREFIX = $(DESTDIR)/usr/share
+	INSTALLBASE = $(SHARE_PREFIX)/gnome-shell/extensions
 endif
 INSTALLNAME = nyarcmenu@nyarchlinux.moe
 
@@ -35,7 +38,7 @@ clean:
 
 extension: ./schemas/gschemas.compiled $(MSGSRC:.po=.mo)
 
-./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.nyarcmenu.gschema.xml
+./schemas/gschemas.compiled: ./schemas/org.gnome.shell.extensions.arcmenu.gschema.xml
 	glib-compile-schemas ./schemas/
 
 potfile: ./po/arcmenu.pot
@@ -58,6 +61,13 @@ install-local: _build
 	rm -rf $(INSTALLBASE)/$(INSTALLNAME)
 	mkdir -p $(INSTALLBASE)/$(INSTALLNAME)
 	cp -r ./_build/* $(INSTALLBASE)/$(INSTALLNAME)/
+ifeq ($(INSTALLTYPE),system)
+	# system-wide settings and locale files
+	rm -r $(INSTALLBASE)/$(INSTALLNAME)/schemas $(INSTALLBASE)/$(INSTALLNAME)/locale
+	mkdir -p $(SHARE_PREFIX)/glib-2.0/schemas $(SHARE_PREFIX)/locale
+	cp -r ./schemas/*gschema.* $(SHARE_PREFIX)/glib-2.0/schemas
+	cp -r ./_build/locale/* $(SHARE_PREFIX)/locale
+endif
 	-rm -fR _build
 	echo done
 

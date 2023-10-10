@@ -1,248 +1,242 @@
-# SOME DESCRIPTIVE TITLE.
+# Czech translation for ArcMenu.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Amerey.eu <info@amerey.eu>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 13:45-0500\n"
-"PO-Revision-Date: 2023-01-10 13:45-0500\n"
-"Last-Translator: Amerey.eu <web@amerey.eu>\n"
+"POT-Creation-Date: 2023-02-15 12:11-0500\n"
+"PO-Revision-Date: 2023-06-19 10:49+0200\n"
+"Last-Translator: Amerey.eu <info@amerey.eu>\n"
 "Language-Team: Gnome.CZE\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
 
-#: appMenu.js:43 appMenu.js:240
+#: appMenu.js:42 appMenu.js:233
 msgid "Pin to ArcMenu"
 msgstr "Připnout do ArcMenu"
 
-#: appMenu.js:66 appMenu.js:196
+#: appMenu.js:65 appMenu.js:189
 msgid "Create Desktop Shortcut"
 msgstr "Vytvořit zástupce na ploše"
 
-#: appMenu.js:196
+#: appMenu.js:189
 msgid "Delete Desktop Shortcut"
 msgstr "Smazat zástupce na ploše"
 
-#: appMenu.js:204 appMenu.js:240
+#: appMenu.js:197 appMenu.js:233
 msgid "Unpin from ArcMenu"
 msgstr "Odepnout z ArcMenu"
 
-#: appMenu.js:277
+#: appMenu.js:270
 msgid "Open Folder Location"
 msgstr "Otevřete umístění složky"
 
-#: constants.js:73
+#: constants.js:79
 msgid "Favorites"
 msgstr "Oblíbené"
 
-#: constants.js:74 menulayouts/runner.js:122
-#: settings/Menu/LayoutTweaksPage.js:765
+#: constants.js:80 menulayouts/runner.js:130 menulayouts/windows.js:330
+#: settings/Menu/LayoutTweaksPage.js:775
 msgid "Frequent Apps"
 msgstr "Časté aplikace"
 
-#: constants.js:75 menuWidgets.js:1246 menulayouts/az.js:128
-#: menulayouts/az.js:130 menulayouts/az.js:163 menulayouts/eleven.js:162
-#: menulayouts/eleven.js:163 menulayouts/eleven.js:224
-#: menulayouts/redmond.js:46 menulayouts/redmond.js:47
-#: menulayouts/redmond.js:51
+#: constants.js:81 menuWidgets.js:1273 menulayouts/az.js:63
+#: menulayouts/az.js:70 menulayouts/eleven.js:54 menulayouts/eleven.js:61
+#: menulayouts/redmond.js:72 menulayouts/redmond.js:73
+#: menulayouts/redmond.js:77
 msgid "All Apps"
 msgstr "Všechny aplikace"
 
-#: constants.js:76 menuWidgets.js:736 settings/Menu/LayoutTweaksPage.js:659
-#: settings/Menu/LayoutTweaksPage.js:763 settings/MenuPage.js:97
+#: constants.js:82 menuWidgets.js:764 settings/Menu/LayoutTweaksPage.js:656
+#: settings/Menu/LayoutTweaksPage.js:773 settings/MenuPage.js:99
 msgid "Pinned Apps"
 msgstr "Připnuté aplikace"
 
-#: constants.js:77 gnome43/searchProviders/recentFiles.js:26
-#: gnome43/searchProviders/recentFiles.js:27 menulayouts/raven.js:298
-#: menulayouts/unity.js:365 searchProviders/recentFiles.js:26
+#: constants.js:83 gnome43/searchProviders/recentFiles.js:26
+#: gnome43/searchProviders/recentFiles.js:27 menulayouts/raven.js:286
+#: menulayouts/unity.js:356 searchProviders/recentFiles.js:26
 #: searchProviders/recentFiles.js:27
 msgid "Recent Files"
 msgstr "Nedávné soubory"
 
-#: constants.js:234 menuButton.js:609 menulayouts/mint.js:223
-#: menulayouts/unity.js:209 settings/Menu/ListPinnedPage.js:365
+#: constants.js:240 menuButton.js:619 settings/Menu/ListPinnedPage.js:372
 msgid "Log Out..."
 msgstr "Odhlásit se ..."
 
-#: constants.js:235 menuButton.js:608 menulayouts/mint.js:224
-#: menulayouts/unity.js:210 settings/Menu/ListPinnedPage.js:364
+#: constants.js:241 menuButton.js:618 settings/Menu/ListPinnedPage.js:371
 msgid "Lock"
 msgstr "Zamknout"
 
-#: constants.js:236 menuButton.js:603 settings/Menu/ListPinnedPage.js:367
+#: constants.js:242 menuButton.js:613 settings/Menu/ListPinnedPage.js:374
 msgid "Restart..."
 msgstr "Restartovat ..."
 
-#: constants.js:237 menuButton.js:604 menulayouts/mint.js:225
-#: menulayouts/unity.js:211 settings/Menu/ListPinnedPage.js:366
+#: constants.js:243 menuButton.js:614 settings/Menu/ListPinnedPage.js:373
 msgid "Power Off..."
 msgstr "Vypnout ..."
 
-#: constants.js:238 menuButton.js:601 settings/Menu/ListPinnedPage.js:368
+#: constants.js:244 menuButton.js:611 settings/Menu/ListPinnedPage.js:375
 msgid "Suspend"
 msgstr "Pozastavit"
 
-#: constants.js:239 settings/Menu/ListPinnedPage.js:369
+#: constants.js:245 settings/Menu/ListPinnedPage.js:376
 msgid "Hybrid Sleep"
 msgstr "Hybridní spánek"
 
-#: constants.js:240 settings/Menu/ListPinnedPage.js:370
+#: constants.js:246 settings/Menu/ListPinnedPage.js:377
 msgid "Hibernate"
 msgstr "Hibernace"
 
-#: constants.js:241 menuButton.js:610 settings/Menu/ListPinnedPage.js:371
+#: constants.js:247 menuButton.js:620 settings/Menu/ListPinnedPage.js:378
 msgid "Switch User"
 msgstr "Přepnout uživatele"
 
-#: constants.js:379 settings/AboutPage.js:12
+#: constants.js:386 settings/AboutPage.js:41
 msgid "ArcMenu"
 msgstr "ArcMenu"
 
-#: constants.js:380
+#: constants.js:387
 msgid "Brisk"
 msgstr "Brisk"
 
-#: constants.js:381
+#: constants.js:388
 msgid "Whisker"
 msgstr "Whisker"
 
-#: constants.js:382
+#: constants.js:389
 msgid "GNOME Menu"
 msgstr "GNOME Menu"
 
-#: constants.js:383
+#: constants.js:390
 msgid "Mint"
 msgstr "Mint"
 
-#: constants.js:384
+#: constants.js:391
 msgid "Budgie"
 msgstr "Budgie"
 
-#: constants.js:387
+#: constants.js:394
 msgid "Unity"
 msgstr "Unity"
 
-#: constants.js:388
+#: constants.js:395
 msgid "Plasma"
 msgstr "Plasma"
 
-#: constants.js:389
+#: constants.js:396
 msgid "tognee"
 msgstr "tognee"
 
-#: constants.js:390
+#: constants.js:397
 msgid "Insider"
 msgstr "Insider"
 
-#: constants.js:391
+#: constants.js:398
 msgid "Redmond"
 msgstr "Redmond"
 
-#: constants.js:392
+#: constants.js:399
 msgid "Windows"
 msgstr "Windows"
 
-#: constants.js:393
+#: constants.js:400
 msgid "11"
 msgstr "11"
 
-#: constants.js:394
+#: constants.js:401
 msgid "a.z."
 msgstr "a.z."
 
-#: constants.js:397
+#: constants.js:402
+msgid "Enterprise"
+msgstr "Enterprise"
+
+#: constants.js:405
 msgid "Elementary"
 msgstr "Elementary"
 
-#: constants.js:398
+#: constants.js:406
 msgid "Chromebook"
 msgstr "Chromebook"
 
-#: constants.js:401
+#: constants.js:409
 msgid "Runner"
 msgstr "Runner"
 
-#: constants.js:402
+#: constants.js:410
 msgid "GNOME Overview"
 msgstr "GNOME Overview"
 
-#: constants.js:405
+#: constants.js:413
 msgid "Raven"
 msgstr "Raven"
 
-#: constants.js:409
+#: constants.js:417
 msgid "Traditional"
 msgstr "Tradiční"
 
-#: constants.js:410
+#: constants.js:418
 msgid "Modern"
 msgstr "Moderní"
 
-#: constants.js:411
+#: constants.js:419
 msgid "Touch"
 msgstr "Dotykové"
 
-#: constants.js:412
+#: constants.js:420
 msgid "Launcher"
 msgstr "Launcher"
 
-#: constants.js:413
+#: constants.js:421
 msgid "Alternative"
 msgstr "Alternativni"
 
-#: constants.js:419 menulayouts/az.js:116 menulayouts/eleven.js:148
-#: menulayouts/insider.js:60 menulayouts/mint.js:214 menulayouts/whisker.js:50
-#: menulayouts/windows.js:59 settings/AboutPage.js:127
-#: settings/AboutPage.js:135 settings/AboutPage.js:165
+#: constants.js:427 menulayouts/whisker.js:52
 msgid "Settings"
 msgstr "Nastavení"
 
-#: constants.js:419 menulayouts/mint.js:218 menulayouts/unity.js:204
+#: constants.js:427
 msgid "Software"
 msgstr "Software"
 
-#: constants.js:419 menulayouts/az.js:113 menulayouts/eleven.js:145
-#: menulayouts/insider.js:57 menulayouts/mint.js:213 menulayouts/windows.js:56
+#: constants.js:427
 msgid "Terminal"
 msgstr "Terminál"
 
-#: constants.js:419
+#: constants.js:427
 msgid "Tweaks"
 msgstr "Přizpůsobení"
 
-#: constants.js:420 menuButton.js:557 menuWidgets.js:437
-#: settings/Menu/ListPinnedPage.js:342 settings/Menu/ListPinnedPage.js:355
+#: constants.js:428 menuButton.js:565 menuWidgets.js:472
+#: settings/Menu/ListPinnedPage.js:347 settings/Menu/ListPinnedPage.js:361
 msgid "Activities Overview"
 msgstr "Přehled aktivit"
 
-#: constants.js:420 menuButton.js:542 prefs.js:98
-#: settings/Menu/ListPinnedPage.js:330 settings/Menu/ListPinnedPage.js:340
-#: settings/Menu/ListPinnedPage.js:349
+#: constants.js:428 menuButton.js:550 prefs.js:98 settings/AboutPage.js:126
+#: settings/Menu/ListPinnedPage.js:335 settings/Menu/ListPinnedPage.js:345
+#: settings/Menu/ListPinnedPage.js:354
 msgid "ArcMenu Settings"
 msgstr "Nastavení ArcMenu"
 
-#: constants.js:420 menulayouts/az.js:109 menulayouts/eleven.js:141
-#: menulayouts/insider.js:54 menulayouts/mint.js:222 menulayouts/unity.js:208
-#: menulayouts/windows.js:53
+#: constants.js:428
 msgid "Files"
 msgstr "Soubory"
 
-#: gnome43/search.js:731 search.js:741
+#: gnome43/search.js:667 search.js:678
 msgid "Searching..."
 msgstr "Hledání ..."
 
-#: gnome43/search.js:733 search.js:743
+#: gnome43/search.js:669 search.js:680
 msgid "No results."
 msgstr "Žádné výsledky."
 
-#: gnome43/search.js:812 search.js:822
+#: gnome43/search.js:747 search.js:758
 #, javascript-format
 msgid "+ %d more"
 msgstr "+ %d více"
@@ -265,206 +259,224 @@ msgstr "'%s' na pracovní ploše %d"
 msgid "Failed to open “%s”"
 msgstr "Nepodařilo se otevřít “%s”"
 
-#: menuButton.js:585 settings/Menu/ListPinnedPage.js:357
+#: menuButton.js:595 settings/Menu/ListPinnedPage.js:363
 msgid "Show Desktop"
 msgstr "Zobrazit plochu"
 
-#: menuButton.js:599 menuWidgets.js:798 menuWidgets.js:814
+#: menuButton.js:609 menuWidgets.js:835 menuWidgets.js:854
 msgid "Power Off / Log Out"
 msgstr "Vypnout / Odhlásit se"
 
-#: menuWidgets.js:710
+#: menuButton.js:646
+msgid "Dash to Panel Settings"
+msgstr "Dash to Panel nastavení"
+
+#: menuButton.js:651
+msgid "App Icons Taskbar Settings"
+msgstr "Nastavení App Icons Taskbar"
+
+#: menuWidgets.js:738
 msgid "Configure Runner"
 msgstr "Nakonfigurujte Runner"
 
-#: menuWidgets.js:748
+#: menuWidgets.js:776
 msgid "Extras"
 msgstr "Extra"
 
-#: menuWidgets.js:856 menulayouts/plasma.js:315
+#: menuWidgets.js:889 menulayouts/plasma.js:317
 msgid "Session"
 msgstr "Relace"
 
-#: menuWidgets.js:860 menulayouts/plasma.js:320
+#: menuWidgets.js:893 menulayouts/plasma.js:321
 msgid "System"
 msgstr "Systém"
 
-#: menuWidgets.js:927
+#: menuWidgets.js:958
 msgid "Categories"
 msgstr "Kategorie"
 
-#: menuWidgets.js:1100 menuWidgets.js:2574 menulayouts/plasma.js:123
+#: menuWidgets.js:1130 menuWidgets.js:2554 menulayouts/plasma.js:122
 msgid "Apps"
 msgstr "Aplikace"
 
-#: menuWidgets.js:1181 menuWidgets.js:1202 menulayouts/az.js:128
-#: menulayouts/eleven.js:162 menulayouts/redmond.js:46
-#: menulayouts/redmond.js:50 settings/Menu/SubPage.js:77
-#: settings/Menu/ThemingDialog.js:290
+#: menuWidgets.js:1213 menuWidgets.js:1230 menulayouts/az.js:63
+#: menulayouts/eleven.js:54 menulayouts/redmond.js:72 menulayouts/redmond.js:76
+#: settings/Menu/SubPage.js:77 settings/Menu/ThemingDialog.js:290
 msgid "Back"
 msgstr "Zpět"
 
-#: menuWidgets.js:1890
+#: menuWidgets.js:1881
 msgid "New"
 msgstr "Nový"
 
-#: menuWidgets.js:2413
-msgid "Search…"
-msgstr "Vyhledávání ..."
-
-#: menulayouts/az.js:130 menulayouts/az.js:157 menulayouts/az.js:213
-#: menulayouts/eleven.js:163 menulayouts/eleven.js:214
-#: menulayouts/eleven.js:271 menulayouts/insider.js:162
-#: menulayouts/plasma.js:118 menulayouts/raven.js:63 menulayouts/raven.js:227
-#: menulayouts/raven.js:276 menulayouts/redmond.js:47 menulayouts/redmond.js:50
-#: menulayouts/redmond.js:51 menulayouts/unity.js:39 menulayouts/unity.js:288
-#: menulayouts/unity.js:347 menulayouts/windows.js:402 utils.js:224
+#: menuWidgets.js:2119 menulayouts/az.js:70 menulayouts/eleven.js:61
+#: menulayouts/insider.js:167 menulayouts/plasma.js:117 menulayouts/raven.js:56
+#: menulayouts/raven.js:213 menulayouts/raven.js:262 menulayouts/redmond.js:73
+#: menulayouts/redmond.js:76 menulayouts/redmond.js:77 menulayouts/unity.js:38
+#: menulayouts/unity.js:260 menulayouts/unity.js:334 menulayouts/windows.js:402
 msgid "Pinned"
 msgstr "Připnuté"
 
-#: menulayouts/eleven.js:164 menulayouts/eleven.js:275
-#: menulayouts/windows.js:333
+#: menuWidgets.js:2281
+msgid "Unmount Drive"
+msgstr "Odpojit disk"
+
+#: menuWidgets.js:2283
+msgid "Eject Drive"
+msgstr "Vysunout disk"
+
+#: menuWidgets.js:2329
+msgid "Remove from Recent"
+msgstr "Odebrat z Nedávných"
+
+#: menuWidgets.js:2406
+msgid "Search…"
+msgstr "Vyhledávání…"
+
+#: menulayouts/baseMenuLayout.js:439
+msgid "More Recent Files..."
+msgstr "Další nedávné soubory..."
+
+#: menulayouts/eleven.js:68
 msgid "Frequent"
 msgstr "Časté"
 
-#: menulayouts/mint.js:211 menulayouts/unity.js:198 placeDisplay.js:112
-#: placeDisplay.js:342 settings/Menu/LayoutTweaksPage.js:465
-#: settings/Menu/LayoutTweaksPage.js:539 settings/Menu/ListPinnedPage.js:379
-#: utils.js:200
-msgid "Home"
-msgstr "Domov"
-
-#: menulayouts/mint.js:220 menulayouts/unity.js:199
-#: settings/Menu/ListPinnedPage.js:380
-msgid "Documents"
-msgstr "Dokumenty"
-
-#: menulayouts/plasma.js:127 menulayouts/unity.js:206 placeDisplay.js:127
-#: placeDisplay.js:150 settings/Menu/ListPinnedPage.js:385
+#: menulayouts/plasma.js:126 placeDisplay.js:129 placeDisplay.js:152
+#: settings/Menu/ListPinnedPage.js:392
 msgid "Computer"
 msgstr "Počítač"
 
-#: menulayouts/plasma.js:131
+#: menulayouts/plasma.js:130
 msgid "Leave"
 msgstr "Odejít"
 
-#: menulayouts/plasma.js:256 menulayouts/windows.js:270
-#: settings/MenuPage.js:117
+#: menulayouts/plasma.js:265 menulayouts/windows.js:264
+#: settings/MenuPage.js:121
 msgid "Application Shortcuts"
 msgstr "Zástupci aplikací"
 
-#: menulayouts/plasma.js:260 menulayouts/windows.js:274
+#: menulayouts/plasma.js:270 menulayouts/windows.js:268
 msgid "Places"
 msgstr "Místa"
 
-#: menulayouts/plasma.js:272 menulayouts/windows.js:188
-#: settings/Menu/LayoutTweaksPage.js:706 settings/Menu/LayoutTweaksPage.js:811
+#: menulayouts/plasma.js:285 menulayouts/windows.js:199
+#: settings/Menu/LayoutTweaksPage.js:703 settings/Menu/LayoutTweaksPage.js:821
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: menulayouts/plasma.js:280 menulayouts/windows.js:196
+#: menulayouts/plasma.js:287 menulayouts/windows.js:201
 msgid "Devices"
 msgstr "Zařízení"
 
-#: menulayouts/plasma.js:288 menulayouts/windows.js:204
-#: settings/Menu/ListPinnedPage.js:386
+#: menulayouts/plasma.js:289 menulayouts/windows.js:203
+#: settings/Menu/ListPinnedPage.js:393
 msgid "Network"
 msgstr "Síť"
 
-#: menulayouts/raven.js:65 menulayouts/raven.js:234 menulayouts/unity.js:41
-#: menulayouts/unity.js:293 settings/Menu/LayoutTweaksPage.js:466
-#: settings/Menu/LayoutTweaksPage.js:540 settings/Menu/LayoutTweaksPage.js:658
-#: settings/Menu/LayoutTweaksPage.js:741 settings/Menu/LayoutTweaksPage.js:766
+#: menulayouts/raven.js:56 menulayouts/raven.js:220 menulayouts/unity.js:38
+#: menulayouts/unity.js:265 settings/Menu/LayoutTweaksPage.js:541
+#: settings/Menu/LayoutTweaksPage.js:576 settings/Menu/LayoutTweaksPage.js:655
+#: settings/Menu/LayoutTweaksPage.js:751 settings/Menu/LayoutTweaksPage.js:776
 msgid "All Programs"
 msgstr "Všechny programy"
 
-#: menulayouts/raven.js:278 menulayouts/unity.js:349
+#: menulayouts/raven.js:264 menulayouts/unity.js:336
 #: settings/Menu/VisualSettings.js:203
 msgid "Shortcuts"
 msgstr "Zástupci"
 
-#: menulayouts/unity.js:200 settings/Menu/ListPinnedPage.js:381
-msgid "Downloads"
-msgstr "Stahování"
-
-#: placeDisplay.js:49
+#: placeDisplay.js:51
 #, javascript-format
 msgid "Failed to launch “%s”"
 msgstr "Nepodařilo se spustit “%s”"
 
-#: placeDisplay.js:64
+#: placeDisplay.js:66
 #, javascript-format
 msgid "Failed to mount volume for “%s”"
 msgstr "Nepodařilo se připojit svazek pro “%s”"
 
-#: placeDisplay.js:216
+#: placeDisplay.js:114 placeDisplay.js:362
+#: settings/Menu/LayoutTweaksPage.js:540 settings/Menu/LayoutTweaksPage.js:575
+#: settings/Menu/ListPinnedPage.js:386 utils.js:234
+msgid "Home"
+msgstr "Domov"
+
+#: placeDisplay.js:225
 #, javascript-format
 msgid "Ejecting drive “%s” failed:"
 msgstr "Vysunutí disku “%s” se nezdařilo:"
 
-#: prefsWidgets.js:261
+#: prefsWidgets.js:243
 msgid "Modify"
 msgstr "Upravit"
 
-#: prefsWidgets.js:273
+#: prefsWidgets.js:258
 msgid "Move Up"
 msgstr "Posunout nahoru"
 
-#: prefsWidgets.js:280
+#: prefsWidgets.js:265
 msgid "Move Down"
 msgstr "Posunout dolů"
 
-#: prefsWidgets.js:287
+#: prefsWidgets.js:272
 msgid "Remove"
 msgstr "Odstranit"
 
-#: settings/AboutPage.js:13
+#: settings/AboutPage.js:12
 msgid "Application Menu Extension for GNOME"
 msgstr "Menu aplikací pro GNOME"
 
-#: settings/AboutPage.js:21 settings/Menu/ListPinnedPage.js:354
+#: settings/AboutPage.js:20 settings/Menu/ListPinnedPage.js:359
 msgid "About"
 msgstr "O ArcMenu"
 
-#: settings/AboutPage.js:65
-msgid "Version"
-msgstr "verze"
+#: settings/AboutPage.js:64
+msgid "ArcMenu Version"
+msgstr "Verze ArcMenu"
 
-#: settings/AboutPage.js:75
+#: settings/AboutPage.js:74
 msgid "Git Commit"
 msgstr "Git Commit"
 
-#: settings/AboutPage.js:85
+#: settings/AboutPage.js:84
 msgid "GNOME Version"
 msgstr "Verze GNOME"
 
-#: settings/AboutPage.js:94
+#: settings/AboutPage.js:93
 msgid "OS Name"
 msgstr "Název OS"
 
-#: settings/AboutPage.js:107
+#: settings/AboutPage.js:106
 msgid "Windowing System"
 msgstr "Prostředí"
 
-#: settings/AboutPage.js:115
-msgid "GitLab"
-msgstr "GitLab"
+#: settings/AboutPage.js:114
+msgid "ArcMenu GitLab"
+msgstr "ArcMenu GitLab"
 
-#: settings/AboutPage.js:118
+#: settings/AboutPage.js:117
 msgid "Donate via PayPal"
 msgstr "Darujte přes PayPal"
 
-#: settings/AboutPage.js:130 settings/AboutPage.js:135
-#: settings/Menu/ThemingDialog.js:24 settings/Menu/ThemingDialog.js:29
+#: settings/AboutPage.js:129 settings/Menu/ThemingDialog.js:24
+#: settings/Menu/ThemingDialog.js:29
 msgid "Load"
 msgstr "Nahrát"
 
-#: settings/AboutPage.js:160 settings/AboutPage.js:165
-#: settings/Menu/ThemingDialog.js:81 settings/Menu/ThemingDialog.js:94
+#: settings/AboutPage.js:134
+msgid "Load Settings"
+msgstr "Načíst nastavení"
+
+#: settings/AboutPage.js:159 settings/Menu/ThemingDialog.js:81
+#: settings/Menu/ThemingDialog.js:94
 msgid "Save"
 msgstr "Uložit"
 
-#: settings/AboutPage.js:186
+#: settings/AboutPage.js:164
+msgid "Save Settings"
+msgstr "Uložit nastavení"
+
+#: settings/AboutPage.js:185
 msgid "Credits"
 msgstr "Autoři"
 
@@ -485,7 +497,7 @@ msgid "Dash to Panel may conflict with this setting"
 msgstr "Dash to Panel může být v konfliktu s tímto nastavením"
 
 #: settings/GeneralPage.js:42 settings/GeneralPage.js:68
-#: settings/Menu/LayoutTweaksPage.js:567
+#: settings/Menu/LayoutTweaksPage.js:603
 msgid "Left"
 msgstr "Vlevo"
 
@@ -494,7 +506,7 @@ msgid "Center"
 msgstr "Uprostřed"
 
 #: settings/GeneralPage.js:44 settings/GeneralPage.js:70
-#: settings/Menu/LayoutTweaksPage.js:568
+#: settings/Menu/LayoutTweaksPage.js:604
 msgid "Right"
 msgstr "Vpravo"
 
@@ -520,7 +532,9 @@ msgstr "Vždy preferovat horní panel"
 
 #: settings/GeneralPage.js:113
 msgid "Useful with Dash to Panel setting 'Keep original gnome-shell top panel'"
-msgstr "Užitečné s nastavením Dash to Panel 'Zachovat původní horní panel gnome-shell'"
+msgstr ""
+"Užitečné s nastavením Dash to Panel 'Zachovat původní horní panel gnome-"
+"shell'"
 
 #: settings/GeneralPage.js:127
 msgid "General Settings"
@@ -534,63 +548,67 @@ msgstr "Klávesová zkratka ArcMenu"
 msgid "Standalone Runner Menu"
 msgstr "Samostatné Runner menu"
 
-#: settings/GeneralPage.js:163
+#: settings/GeneralPage.js:145
+msgid "Hide Overview on Startup"
+msgstr "Skrýt přehled při spuštění"
+
+#: settings/GeneralPage.js:178
 msgid "Open on Primary Monitor"
 msgstr "Otevřit na primárním monitoru"
 
-#: settings/GeneralPage.js:169
+#: settings/GeneralPage.js:184
 msgid "Left Super Key"
 msgstr "Levé Super tlačítko"
 
-#: settings/GeneralPage.js:170
+#: settings/GeneralPage.js:185
 msgid "Custom Hotkey"
 msgstr "Vlastní klávesová zkratka"
 
-#: settings/GeneralPage.js:172
+#: settings/GeneralPage.js:187
 msgid "Hotkey"
 msgstr "Klávesová zkratka"
 
-#: settings/GeneralPage.js:185
+#: settings/GeneralPage.js:200
 msgid "Modify Hotkey"
 msgstr "Upravit klávesovou zkratku"
 
-#: settings/GeneralPage.js:190
+#: settings/GeneralPage.js:205
 msgid "Current Hotkey"
 msgstr "Aktuální klávesová zkratka"
 
-#: settings/GeneralPage.js:244
+#: settings/GeneralPage.js:259
 msgid "Set Custom Hotkey"
 msgstr "Nastavit vlastní klávesovou zkratku"
 
-#: settings/GeneralPage.js:269
+#: settings/GeneralPage.js:284
 msgid "Choose Modifiers"
 msgstr "Vyberte modifikátory"
 
-#: settings/GeneralPage.js:279
+#: settings/GeneralPage.js:294
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: settings/GeneralPage.js:283
+#: settings/GeneralPage.js:298
 msgid "Super"
 msgstr "Super"
 
-#: settings/GeneralPage.js:287
+#: settings/GeneralPage.js:302
 msgid "Shift"
 msgstr "Shift"
 
-#: settings/GeneralPage.js:291
+#: settings/GeneralPage.js:306
 msgid "Alt"
 msgstr "Alt"
 
-#: settings/GeneralPage.js:343
+#: settings/GeneralPage.js:358
 msgid "Press any key"
 msgstr "Stiskněte libovolnou klávesu"
 
-#: settings/GeneralPage.js:360
+#: settings/GeneralPage.js:375
 msgid "New Hotkey"
 msgstr "Nová klávesová zkratka"
 
-#: settings/GeneralPage.js:370 settings/Menu/ListPinnedPage.js:636
+#: settings/GeneralPage.js:385 settings/Menu/ListPinnedPage.js:629
 msgid "Apply"
 msgstr "Aplikovat"
 
@@ -658,176 +676,158 @@ msgstr "Vymazat vše"
 msgid "Clear Apps Marked 'New'"
 msgstr "Vymazat tag 'Nový' u všech aplikací"
 
-#: settings/Menu/LayoutTweaksPage.js:88
+#: settings/Menu/LayoutTweaksPage.js:113
 msgid "Vertical Separator"
 msgstr "Vertikální oddělovač"
 
-#: settings/Menu/LayoutTweaksPage.js:97
+#: settings/Menu/LayoutTweaksPage.js:122
 msgid "Mouse Click"
 msgstr "Kliknutím myši"
 
-#: settings/Menu/LayoutTweaksPage.js:98
+#: settings/Menu/LayoutTweaksPage.js:123
 msgid "Mouse Hover"
 msgstr "Najetím myši"
 
-#: settings/Menu/LayoutTweaksPage.js:101
+#: settings/Menu/LayoutTweaksPage.js:126
 msgid "Category Activation"
 msgstr "Změna kategorie"
 
-#: settings/Menu/LayoutTweaksPage.js:124
+#: settings/Menu/LayoutTweaksPage.js:149
 msgid "Round"
 msgstr "Kulatý"
 
-#: settings/Menu/LayoutTweaksPage.js:125 settings/Menu/VisualSettings.js:177
+#: settings/Menu/LayoutTweaksPage.js:150 settings/Menu/VisualSettings.js:177
 #: settings/Menu/VisualSettings.js:178 settings/Menu/VisualSettings.js:179
 msgid "Square"
 msgstr "Čtvercový"
 
-#: settings/Menu/LayoutTweaksPage.js:127
+#: settings/Menu/LayoutTweaksPage.js:152
 msgid "Avatar Icon Shape"
 msgstr "Tvar ikony avatara"
 
-#: settings/Menu/LayoutTweaksPage.js:142 settings/Menu/LayoutTweaksPage.js:831
+#: settings/Menu/LayoutTweaksPage.js:167 settings/Menu/LayoutTweaksPage.js:841
 msgid "Bottom"
 msgstr "Dole"
 
-#: settings/Menu/LayoutTweaksPage.js:143 settings/Menu/LayoutTweaksPage.js:346
-#: settings/Menu/LayoutTweaksPage.js:832
+#: settings/Menu/LayoutTweaksPage.js:168 settings/Menu/LayoutTweaksPage.js:421
+#: settings/Menu/LayoutTweaksPage.js:842
 msgid "Top"
 msgstr "Nahoře"
 
-#: settings/Menu/LayoutTweaksPage.js:146
+#: settings/Menu/LayoutTweaksPage.js:171
 msgid "Searchbar Location"
 msgstr "Umístění vyhledávacího panelu"
 
-#: settings/Menu/LayoutTweaksPage.js:167
+#: settings/Menu/LayoutTweaksPage.js:192
 msgid "Flip Layout Horizontally"
 msgstr "Převrátit horizontální rozložení"
 
-#: settings/Menu/LayoutTweaksPage.js:183
+#: settings/Menu/LayoutTweaksPage.js:208
 msgid "Disable User Avatar"
 msgstr "Zakázat avatara uživatele"
 
-#: settings/Menu/LayoutTweaksPage.js:200 settings/Menu/LayoutTweaksPage.js:243
+#: settings/Menu/LayoutTweaksPage.js:233 settings/Menu/LayoutTweaksPage.js:302
 msgid "Disable Frequent Apps"
 msgstr "Zakázat časté aplikace"
 
-#: settings/Menu/LayoutTweaksPage.js:224
+#: settings/Menu/LayoutTweaksPage.js:241 settings/Menu/LayoutTweaksPage.js:244
+#: settings/Menu/LayoutTweaksPage.js:260 settings/Menu/LayoutTweaksPage.js:263
+#: settings/Menu/LayoutTweaksPage.js:325 settings/Menu/LayoutTweaksPage.js:328
+#: settings/Menu/LayoutTweaksPage.js:557 settings/Menu/LayoutTweaksPage.js:560
+#: settings/Menu/LayoutTweaksPage.js:628 settings/Menu/LayoutTweaksPage.js:631
+#: settings/Menu/LayoutTweaksPage.js:716 settings/Menu/LayoutTweaksPage.js:719
+msgid "Button Shortcuts"
+msgstr "Tlačítkové zkratky"
+
+#: settings/Menu/LayoutTweaksPage.js:283
 msgid "Show Apps Grid"
 msgstr "Zobrazit mřížku aplikací"
 
-#: settings/Menu/LayoutTweaksPage.js:257
+#: settings/Menu/LayoutTweaksPage.js:316
 msgid "Disable Pinned Apps"
 msgstr "Zakázat připnuté aplikace"
 
-#: settings/Menu/LayoutTweaksPage.js:278
+#: settings/Menu/LayoutTweaksPage.js:350
 msgid "Activate on Hover"
 msgstr "Aktivujte při najetí myší"
 
-#: settings/Menu/LayoutTweaksPage.js:295
-msgid "Brisk Menu Shortcuts"
-msgstr "Brisk Menu zástupci"
+#: settings/Menu/LayoutTweaksPage.js:368 settings/Menu/LayoutTweaksPage.js:371
+#: settings/Menu/LayoutTweaksPage.js:677 settings/Menu/LayoutTweaksPage.js:796
+msgid "Extra Shortcuts"
+msgstr "Další zástupci"
 
-#: settings/Menu/LayoutTweaksPage.js:334
+#: settings/Menu/LayoutTweaksPage.js:409
 msgid "Enable Activities Overview Shortcut"
 msgstr "Zobrazit zástupce činností"
 
-#: settings/Menu/LayoutTweaksPage.js:347
+#: settings/Menu/LayoutTweaksPage.js:422
 msgid "Centered"
 msgstr "Na střed"
 
-#: settings/Menu/LayoutTweaksPage.js:349
+#: settings/Menu/LayoutTweaksPage.js:424
 msgid "Position"
 msgstr "Pozice"
 
-#: settings/Menu/LayoutTweaksPage.js:360 settings/Menu/LayoutTweaksPage.js:553
+#: settings/Menu/LayoutTweaksPage.js:435 settings/Menu/LayoutTweaksPage.js:589
 msgid "List"
 msgstr "Seznam"
 
-#: settings/Menu/LayoutTweaksPage.js:361 settings/Menu/LayoutTweaksPage.js:554
+#: settings/Menu/LayoutTweaksPage.js:436 settings/Menu/LayoutTweaksPage.js:590
 msgid "Grid"
 msgstr "Mřížka"
 
-#: settings/Menu/LayoutTweaksPage.js:363 settings/Menu/LayoutTweaksPage.js:556
+#: settings/Menu/LayoutTweaksPage.js:438 settings/Menu/LayoutTweaksPage.js:592
 msgid "Search Results Display Style"
 msgstr "Styl zobrazení výsledků vyhledávání"
 
-#: settings/Menu/LayoutTweaksPage.js:390
+#: settings/Menu/LayoutTweaksPage.js:465
 msgid "Width"
 msgstr "Šířka"
 
-#: settings/Menu/LayoutTweaksPage.js:413 settings/Menu/VisualSettings.js:35
+#: settings/Menu/LayoutTweaksPage.js:488 settings/Menu/VisualSettings.js:35
 msgid "Height"
 msgstr "Výška"
 
-#: settings/Menu/LayoutTweaksPage.js:436 settings/Menu/ThemePage.js:169
+#: settings/Menu/LayoutTweaksPage.js:511 settings/Menu/ThemePage.js:169
 msgid "Font Size"
 msgstr "Velikost písma"
 
-#: settings/Menu/LayoutTweaksPage.js:437 settings/MenuButtonPage.js:104
+#: settings/Menu/LayoutTweaksPage.js:512 settings/MenuButtonPage.js:104
 #, javascript-format
 msgid "%d Default Theme Value"
 msgstr "%d je výchozí hodnota motivu"
 
-#: settings/Menu/LayoutTweaksPage.js:451
+#: settings/Menu/LayoutTweaksPage.js:526
 msgid "Show Frequent Apps"
 msgstr "Zobrazit časté aplikace"
 
-#: settings/Menu/LayoutTweaksPage.js:468 settings/Menu/LayoutTweaksPage.js:542
-#: settings/Menu/LayoutTweaksPage.js:662 settings/Menu/LayoutTweaksPage.js:743
-#: settings/Menu/LayoutTweaksPage.js:768
+#: settings/Menu/LayoutTweaksPage.js:543 settings/Menu/LayoutTweaksPage.js:578
+#: settings/Menu/LayoutTweaksPage.js:659 settings/Menu/LayoutTweaksPage.js:753
+#: settings/Menu/LayoutTweaksPage.js:778
 msgid "Default View"
 msgstr "Výchozí zobrazení"
 
-#: settings/Menu/LayoutTweaksPage.js:482
-msgid "Unity Layout Buttons"
-msgstr "Rozložení tlačítek Unity"
-
-#: settings/Menu/LayoutTweaksPage.js:493
-msgid "Button Separator Position"
-msgstr "Pozice oddělovače tlačítka"
-
-#: settings/Menu/LayoutTweaksPage.js:512 settings/Menu/LayoutTweaksPage.js:622
-msgid "Adjust the position of the separator in the button panel"
-msgstr "Upravte pozici oddělovače na panelu tlačítek"
-
-#: settings/Menu/LayoutTweaksPage.js:525 settings/Menu/LayoutTweaksPage.js:635
-msgid "Separator Position"
-msgstr "Umístění oddělovače"
-
-#: settings/Menu/LayoutTweaksPage.js:570
+#: settings/Menu/LayoutTweaksPage.js:606
 msgid "Position on Monitor"
 msgstr "Umístění na monitoru"
 
-#: settings/Menu/LayoutTweaksPage.js:592
-msgid "Mint Layout Shortcuts"
-msgstr "Zástupci rozložení Mint"
-
-#: settings/Menu/LayoutTweaksPage.js:603
-msgid "Shortcut Separator Position"
-msgstr "Pozice oddělovače zástupce"
-
-#: settings/Menu/LayoutTweaksPage.js:680 settings/Menu/LayoutTweaksPage.js:786
-msgid "Extra Shortcuts"
-msgstr "Další zástupci"
-
-#: settings/Menu/LayoutTweaksPage.js:692 settings/Menu/LayoutTweaksPage.js:797
+#: settings/Menu/LayoutTweaksPage.js:689 settings/Menu/LayoutTweaksPage.js:807
 msgid "External Devices"
 msgstr "Externí zařízení"
 
-#: settings/Menu/LayoutTweaksPage.js:730
+#: settings/Menu/LayoutTweaksPage.js:740
 msgid "Nothing Yet!"
 msgstr "Zatím nic!"
 
-#: settings/Menu/LayoutTweaksPage.js:740 settings/Menu/LayoutTweaksPage.js:764
+#: settings/Menu/LayoutTweaksPage.js:750 settings/Menu/LayoutTweaksPage.js:774
 msgid "Categories List"
 msgstr "Seznam kategorií"
 
-#: settings/Menu/LayoutTweaksPage.js:819
+#: settings/Menu/LayoutTweaksPage.js:829
 msgid "Category Quick Links"
 msgstr "Kategorie Rychlé odkazy"
 
-#: settings/Menu/LayoutTweaksPage.js:820
+#: settings/Menu/LayoutTweaksPage.js:830
 msgid ""
 "Display quick links of extra categories on the home page\n"
 "Must also be enabled in 'Menu -> Extra Categories' section"
@@ -835,15 +835,15 @@ msgstr ""
 "Zobrazení rychlých odkazů dalších kategorií na domovské stránce\n"
 "Musí být také povoleno v sekci 'Menu -> Další kategorie'"
 
-#: settings/Menu/LayoutTweaksPage.js:834
+#: settings/Menu/LayoutTweaksPage.js:844
 msgid "Quick Links Location"
 msgstr "Umístění rychlých odkazů"
 
-#: settings/Menu/LayoutTweaksPage.js:867
+#: settings/Menu/LayoutTweaksPage.js:877
 msgid "Enable Weather Widget"
 msgstr "Povolit doplněk počasí"
 
-#: settings/Menu/LayoutTweaksPage.js:881
+#: settings/Menu/LayoutTweaksPage.js:891
 msgid "Enable Clock Widget"
 msgstr "Povolit doplněk hodin"
 
@@ -865,160 +865,184 @@ msgstr "%s menu"
 msgid "%s Layout Tweaks"
 msgstr "%s - úpravy rozložení"
 
-#: settings/Menu/ListOtherPage.js:36
+#: settings/Menu/ListOtherPage.js:34
+msgid "Actions will be hidden from ArcMenu if not available on your system."
+msgstr "Pokud akce nejsou dostupné ve vašem systému, budou v ArcMenu skryty."
+
+#: settings/Menu/ListOtherPage.js:38
 msgid "Power Off / Log Out Buttons"
 msgstr "Tlačítka pro vypnutí/odhlášení"
 
-#: settings/Menu/ListOtherPage.js:39 settings/Menu/VisualSettings.js:110
+#: settings/Menu/ListOtherPage.js:41 settings/Menu/VisualSettings.js:110
 #: settings/Menu/VisualSettings.js:176 settings/Menu/VisualSettings.js:249
 msgid "Off"
 msgstr "Vypnout"
 
-#: settings/Menu/ListOtherPage.js:40
+#: settings/Menu/ListOtherPage.js:42
 msgid "Power Buttons"
 msgstr "Tlačítka napájení"
 
-#: settings/Menu/ListOtherPage.js:41
+#: settings/Menu/ListOtherPage.js:43
 msgid "Power Menu"
 msgstr "Menu napájení"
 
-#: settings/Menu/ListOtherPage.js:43
+#: settings/Menu/ListOtherPage.js:45
 msgid "Override Display Style"
 msgstr "Přepsat styl zobrazení"
 
-#: settings/Menu/ListPinnedPage.js:33 settings/Menu/ListPinnedPage.js:37
-#: settings/Menu/ListPinnedPage.js:45
+#: settings/Menu/ListPinnedPage.js:35 settings/Menu/ListPinnedPage.js:39
+#: settings/Menu/ListPinnedPage.js:47
 msgid "Add More Apps"
 msgstr "Přidat další aplikace"
 
-#: settings/Menu/ListPinnedPage.js:41
+#: settings/Menu/ListPinnedPage.js:43
 msgid "Add Default User Directories"
 msgstr "Přidat výchozí uživatelské adresáře"
 
-#: settings/Menu/ListPinnedPage.js:125
+#: settings/Menu/ListPinnedPage.js:51
+msgid "Add More Shortcuts"
+msgstr "Přidat další zástupce"
+
+#: settings/Menu/ListPinnedPage.js:128
 msgid "Add Custom Shortcut"
 msgstr "Přidat vlastního zástupce"
 
-#: settings/Menu/ListPinnedPage.js:238
+#: settings/Menu/ListPinnedPage.js:245
 msgid "Invalid Shortcut"
 msgstr "Neplatný zástupce"
 
-#: settings/Menu/ListPinnedPage.js:317
+#: settings/Menu/ListPinnedPage.js:322
 msgid "Add to your Pinned Apps"
 msgstr "Přidat do vašich připnutých aplikací"
 
-#: settings/Menu/ListPinnedPage.js:319
-msgid "Change Selected Pinned App"
-msgstr "Změnit vybranou připnutou aplikaci"
+#: settings/Menu/ListPinnedPage.js:324
+msgid "Add to your Extra Shortcuts"
+msgstr "Přidat do svých Extra zástupců"
 
-#: settings/Menu/ListPinnedPage.js:321
+#: settings/Menu/ListPinnedPage.js:326
 msgid "Select Application Shortcuts"
 msgstr "Vyberte zástupce aplikací"
 
-#: settings/Menu/ListPinnedPage.js:323
+#: settings/Menu/ListPinnedPage.js:328
 msgid "Select Directory Shortcuts"
 msgstr "Vyberte zástupce adresáře"
 
-#: settings/Menu/ListPinnedPage.js:325
+#: settings/Menu/ListPinnedPage.js:330
 msgid "Add to the Context Menu"
 msgstr "Přidat do kontextového menu"
 
-#: settings/Menu/ListPinnedPage.js:341
+#: settings/Menu/ListPinnedPage.js:346
 msgid "Run Command..."
 msgstr "Spustit příkaz ..."
 
-#: settings/Menu/ListPinnedPage.js:343
+#: settings/Menu/ListPinnedPage.js:348
 msgid "Show All Apps"
 msgstr "Zobrazit všechny aplikace"
 
-#: settings/Menu/ListPinnedPage.js:350
+#: settings/Menu/ListPinnedPage.js:355
 msgid "Menu Settings"
 msgstr "Nastavení menu"
 
-#: settings/Menu/ListPinnedPage.js:351
+#: settings/Menu/ListPinnedPage.js:356
 msgid "Menu Theming"
 msgstr "Motiv menu"
 
-#: settings/Menu/ListPinnedPage.js:352
+#: settings/Menu/ListPinnedPage.js:357
 msgid "Change Menu Layout"
 msgstr "Změnit rozvržení menu"
 
-#: settings/Menu/ListPinnedPage.js:353
+#: settings/Menu/ListPinnedPage.js:358
 msgid "Menu Button Settings"
 msgstr "Nastavení tlačítka menu"
 
-#: settings/Menu/ListPinnedPage.js:356 settings/MenuPage.js:136
+#: settings/Menu/ListPinnedPage.js:360
+msgid "Panel Extension Settings"
+msgstr "Nastavení rozšíření panelu"
+
+#: settings/Menu/ListPinnedPage.js:362 settings/MenuPage.js:142
 msgid "Power Options"
 msgstr "Možnosti napájení"
 
-#: settings/Menu/ListPinnedPage.js:358
+#: settings/Menu/ListPinnedPage.js:364 settings/Menu/ListPinnedPage.js:370
 msgid "Separator"
 msgstr "Oddělovač"
 
-#: settings/Menu/ListPinnedPage.js:382
+#: settings/Menu/ListPinnedPage.js:387
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: settings/Menu/ListPinnedPage.js:388
+msgid "Downloads"
+msgstr "Stahování"
+
+#: settings/Menu/ListPinnedPage.js:389
 msgid "Music"
 msgstr "Hudba"
 
-#: settings/Menu/ListPinnedPage.js:383
+#: settings/Menu/ListPinnedPage.js:390
 msgid "Pictures"
 msgstr "Obrázky"
 
-#: settings/Menu/ListPinnedPage.js:384
+#: settings/Menu/ListPinnedPage.js:391
 msgid "Videos"
 msgstr "Videa"
 
-#: settings/Menu/ListPinnedPage.js:387
+#: settings/Menu/ListPinnedPage.js:394
 msgid "Recent"
 msgstr "Nedávné"
 
-#: settings/Menu/ListPinnedPage.js:495
-#, javascript-format
-msgid "%s has been pinned to ArcMenu"
-msgstr "%s byl připnut do ArcMenu"
+#: settings/Menu/ListPinnedPage.js:424
+msgid "Dash to Panel or App Icons Taskbar"
+msgstr "Dash to Panel nebo App Icons Taskbar"
 
-#: settings/Menu/ListPinnedPage.js:507
+#: settings/Menu/ListPinnedPage.js:505
 #, javascript-format
-msgid "%s has been unpinned from ArcMenu"
-msgstr "%s byl odepnut z ArcMenu"
+msgid "%s has been added"
+msgstr "%s byl přidán"
 
-#: settings/Menu/ListPinnedPage.js:547
+#: settings/Menu/ListPinnedPage.js:517
+#, javascript-format
+msgid "%s has been removed"
+msgstr "%s byl odstraněn"
+
+#: settings/Menu/ListPinnedPage.js:540
 msgid "Add a Custom Shortcut"
 msgstr "Přidat vlastní zkratku"
 
-#: settings/Menu/ListPinnedPage.js:552
+#: settings/Menu/ListPinnedPage.js:545
 msgid "Edit Pinned App"
 msgstr "Upravit připnutou aplikaci"
 
-#: settings/Menu/ListPinnedPage.js:554
+#: settings/Menu/ListPinnedPage.js:547
 msgid "Edit Shortcut"
 msgstr "Upravit zástupce"
 
-#: settings/Menu/ListPinnedPage.js:565
+#: settings/Menu/ListPinnedPage.js:558
 msgid "Title"
 msgstr "Název"
 
-#: settings/Menu/ListPinnedPage.js:577 settings/MenuButtonPage.js:58
+#: settings/Menu/ListPinnedPage.js:570 settings/MenuButtonPage.js:58
 msgid "Icon"
 msgstr "Ikona"
 
-#: settings/Menu/ListPinnedPage.js:589 settings/MenuButtonPage.js:159
+#: settings/Menu/ListPinnedPage.js:582 settings/MenuButtonPage.js:159
 #: settings/MenuButtonPage.js:481
 msgid "Browse..."
-msgstr "Procházet"
+msgstr "Procházet..."
 
-#: settings/Menu/ListPinnedPage.js:595 settings/MenuButtonPage.js:486
+#: settings/Menu/ListPinnedPage.js:588 settings/MenuButtonPage.js:486
 msgid "Select an Icon"
 msgstr "Vybrat ikonu"
 
-#: settings/Menu/ListPinnedPage.js:624
+#: settings/Menu/ListPinnedPage.js:617
 msgid "Command"
 msgstr "Příkaz"
 
-#: settings/Menu/ListPinnedPage.js:624
+#: settings/Menu/ListPinnedPage.js:617
 msgid "Directory"
 msgstr "Adresář"
 
-#: settings/Menu/ListPinnedPage.js:636
+#: settings/Menu/ListPinnedPage.js:629
 msgid "Add"
 msgstr "Přidat"
 
@@ -1034,7 +1058,7 @@ msgstr "Hledat otevřená okna na všech pracovních plochách"
 msgid "Search for recent files"
 msgstr "Vyhledat poslední soubory"
 
-#: settings/Menu/SearchOptionsPage.js:57 settings/MenuPage.js:127
+#: settings/Menu/SearchOptionsPage.js:57 settings/MenuPage.js:132
 msgid "Search Options"
 msgstr "Možnosti hledání"
 
@@ -1255,7 +1279,8 @@ msgstr "Aplikace"
 
 #: settings/Menu/VisualSettings.js:197
 msgid "Apps, Pinned Apps, Items within Category, List Search Results"
-msgstr "Aplikace, Připnuté aplikace, Položky v kategorii, Seznam výsledků hledání"
+msgstr ""
+"Aplikace, Připnuté aplikace, Položky v kategorii, Seznam výsledků hledání"
 
 #: settings/Menu/VisualSettings.js:204
 msgid "Directory / Application / Other Shortcuts, Power Menu"
@@ -1292,7 +1317,6 @@ msgstr "Extra velká"
 #: settings/Menu/VisualSettings.js:257 settings/MenuButtonPage.js:62
 msgid "Hidden"
 msgstr "Skryté"
-
 
 #: settings/MenuButtonPage.js:17
 msgid "Menu Button"
@@ -1345,6 +1369,7 @@ msgstr "Pokud je nastaveno na 0, jsou vyžadovány barvy pozadí"
 #: settings/MenuButtonPage.js:374 settings/MenuButtonPage.js:379
 msgid "ArcMenu Icons"
 msgstr "Ikony ArcMenu"
+
 #: settings/MenuButtonPage.js:405
 msgid "Distro Icons"
 msgstr "Ikony distribucí"
@@ -1365,82 +1390,119 @@ msgstr "Menu"
 msgid "How should the menu look?"
 msgstr "Jak by mělo menu vypadat?"
 
-#: settings/MenuPage.js:38
+#: settings/MenuPage.js:40
 msgid "Menu Layout"
 msgstr "Typ menu"
 
-#: settings/MenuPage.js:39
+#: settings/MenuPage.js:41
 msgid "Choose a layout style for the menu"
 msgstr "Vyberte styl rozvržení menu"
 
-#: settings/MenuPage.js:52
+#: settings/MenuPage.js:54
 msgid "Menu Theme"
 msgstr "Téma menu"
 
-#: settings/MenuPage.js:53
+#: settings/MenuPage.js:55
 msgid "Modify menu colors, font size, and border"
 msgstr "Upravte barvy nabídky, velikost písma a ohraničení"
 
-#: settings/MenuPage.js:62
+#: settings/MenuPage.js:64
 msgid "Menu Visual Appearance"
 msgstr "Vizuální nastavení menu"
 
-#: settings/MenuPage.js:63
+#: settings/MenuPage.js:65
 msgid "Change menu height, width, location, and icon sizes"
 msgstr "Upravte barvy menu, velikost písma a ohraničení"
 
-#: settings/MenuPage.js:72
+#: settings/MenuPage.js:74
 msgid "Fine Tune"
 msgstr "Další nastavení"
 
-#: settings/MenuPage.js:73
+#: settings/MenuPage.js:75
 msgid "Adjust less commonly used visual settings"
 msgstr "Upravte méně často používaná vizuální nastavení"
 
-#: settings/MenuPage.js:82
+#: settings/MenuPage.js:84
 msgid "What should show on the menu?"
 msgstr "Co by mělo být zobrazeno v menu?"
 
-#: settings/MenuPage.js:88
+#: settings/MenuPage.js:90
 msgid "Settings specific to the current menu layout"
 msgstr "Nastavení specifická pro aktuální rozložení menu"
 
-#: settings/MenuPage.js:107
+#: settings/MenuPage.js:110
 msgid "Directory Shortcuts"
 msgstr "Adresářové zkratky"
 
-#: settings/MenuPage.js:137
+#: settings/MenuPage.js:143
 msgid "Choose which power options to show and the display style"
 msgstr "Vyberte, které možnosti napájení se mají zobrazit, a styl zobrazení"
 
-#: settings/MenuPage.js:147
+#: settings/MenuPage.js:154
 msgid "Extra Categories"
 msgstr "Další kategorie"
 
-#: settings/MenuPage.js:149
+#: settings/MenuPage.js:156
 msgid "Add or remove additional custom categories"
 msgstr "Přidejte nebo odeberte další kategorie"
 
-#: settings/MenuPage.js:158
-msgid "Context Menu"
-msgstr "Kontextové menu"
+#: settings/MenuPage.js:166
+msgid "What should show on the context menu?"
+msgstr "Co by mělo být zobrazeno v menu?"
 
-#: settings/MenuPage.js:160
-msgid "Modify entries in the ArcMenu context menu"
+#: settings/MenuPage.js:171
+msgid "Modify ArcMenu Context Menu"
 msgstr "Upravte položky v místní nabídce ArcMenu"
 
-#: utils.js:32
-msgid "ArcMenu - Hibernate Error!"
-msgstr "ArcMenu - chyba režimu spánku!"
+#~ msgid "Version"
+#~ msgstr "verze"
 
-#: utils.js:32
-msgid "System unable to hibernate."
-msgstr "Systém nemůže přejít do režimu spánku."
+#~ msgid "GitLab"
+#~ msgstr "GitLab"
 
-#: utils.js:42
-msgid "ArcMenu - Hybrid Sleep Error!"
-msgstr "ArcMenu - chyba hybridního spánku!"
+#~ msgid "Brisk Menu Shortcuts"
+#~ msgstr "Brisk Menu zástupci"
 
-#: utils.js:42
-msgid "System unable to hybrid sleep."
-msgstr "Systém není schopen hybridního spánku."
+#~ msgid "Unity Layout Buttons"
+#~ msgstr "Rozložení tlačítek Unity"
+
+#~ msgid "Button Separator Position"
+#~ msgstr "Pozice oddělovače tlačítka"
+
+#~ msgid "Adjust the position of the separator in the button panel"
+#~ msgstr "Upravte pozici oddělovače na panelu tlačítek"
+
+#~ msgid "Separator Position"
+#~ msgstr "Umístění oddělovače"
+
+#~ msgid "Mint Layout Shortcuts"
+#~ msgstr "Zástupci rozložení Mint"
+
+#~ msgid "Shortcut Separator Position"
+#~ msgstr "Pozice oddělovače zástupce"
+
+#~ msgid "Change Selected Pinned App"
+#~ msgstr "Změnit vybranou připnutou aplikaci"
+
+#, javascript-format
+#~ msgid "%s has been pinned to ArcMenu"
+#~ msgstr "%s byl připnut do ArcMenu"
+
+#, javascript-format
+#~ msgid "%s has been unpinned from ArcMenu"
+#~ msgstr "%s byl odepnut z ArcMenu"
+
+#~ msgid "Context Menu"
+#~ msgstr "Kontextové menu"
+
+#~ msgid "ArcMenu - Hibernate Error!"
+#~ msgstr "ArcMenu - chyba režimu spánku!"
+
+#~ msgid "System unable to hibernate."
+#~ msgstr "Systém nemůže přejít do režimu spánku."
+
+#~ msgid "ArcMenu - Hybrid Sleep Error!"
+#~ msgstr "ArcMenu - chyba hybridního spánku!"
+
+#~ msgid "System unable to hybrid sleep."
+#~ msgstr "Systém není schopen hybridního spánku."
