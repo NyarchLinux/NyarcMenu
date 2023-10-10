@@ -264,7 +264,8 @@ export function getCategoryDetails(currentCategory) {
         gicon = categoryIcon;
 
         fallbackIcon = Gio.icon_new_for_string(`${fallbackIconDirectory}${symbolicIconFile}`);
-        return [name, gicon, fallbackIcon];
+        //return [name, gicon, fallbackIcon];
+        return [name, fallbackIcon, fallbackIcon];
     }
 }
 
