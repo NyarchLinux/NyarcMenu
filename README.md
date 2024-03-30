@@ -1,3 +1,6 @@
+# Not maintained anymore
+Nyarcmenu support has endend since it created quite a few problems and bugs. Material You will now theme standard ArcMenu.
+
 ![](https://gitlab.com/arcmenu/arcmenu-assets/raw/master/images/ArcMenu_WideBanner.png)
 
 -----
